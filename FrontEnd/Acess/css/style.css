@@ -5,6 +5,7 @@
 .main .header{
     height: 160px;
     background-color: #222934;
+    position: relative;
 }
 .main .header .header__img{
     position: relative;
@@ -87,8 +88,33 @@
    color:  #e9c02d;
 }
 .header .header__content{
-    width: 1250px;
+    width: 1200px;
     height: 65px;
     background-color: #313a47;
-    background-color: aliceblue;
+    color: white;
+}
+.header .header__content{
+
+    position: absolute;
+    top :80%;
+    left: 4%;
+    justify-content: center;
+    align-items: center;
+}
+.header .header__content .menu{
+    width: 80%;
+
+}
+.header__content .menu .menu_menubar{
+display: inline-block;
+}
+.header__content .menu .menu_menubar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin: 0 20px;
+}
+.header__content .menu .menu_menubar a:hover{
+    color:  #e9c02d;
 }
