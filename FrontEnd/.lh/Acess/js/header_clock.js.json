@@ -1,0 +1,82 @@
+{
+    "sourceFile": "Acess/js/header_clock.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1658480997522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658481285234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,2 @@\n-<script>\r\n+\r\n     document.getElementById(\"year\").innerHTML = new Date().getFullYear();\r\n\\ No newline at end of file\n-</script>\n"
+                },
+                {
+                    "date": 1658481630111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-\r\n-    document.getElementById(\"year\").innerHTML = new Date().getFullYear();\n\\ No newline at end of file\n+var d = new Date();\r\n+document.getElementById(\"year\").innerHTML =d.getDate()+\"/\"+d.getMonth+\"/\"+d.getFullYear;\r\n"
+                },
+                {
+                    "date": 1658481692458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n-var d = new Date();\r\n-document.getElementById(\"year\").innerHTML =d.getDate()+\"/\"+d.getMonth+\"/\"+d.getFullYear;\r\n+\r\n+function getDate(){\r\n+    var d = new Date();\r\n+    document.getElementById(\"year\").innerHTML =d.getDate()+\"/\"+d.getMonth+\"/\"+d.getFullYear;   \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658481824885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,23 @@\n \r\n-function getDate(){\r\n-    var d = new Date();\r\n-    document.getElementById(\"year\").innerHTML =d.getDate()+\"/\"+d.getMonth+\"/\"+d.getFullYear;   \r\n+function startTime() \r\n+{\r\n+    // Lấy Object ngày hiện tại\r\n+    var today = new Date();\r\n+ \r\n+    // Giờ, phút, giây hiện tại\r\n+    var h = today.getHours();\r\n+    var m = today.getMinutes();\r\n+    var s = today.getSeconds();\r\n+ \r\n+    // Chuyển đổi sang dạng 01, 02, 03\r\n+    m = checkTime(m);\r\n+    s = checkTime(s);\r\n+ \r\n+    // Ghi ra trình duyệt\r\n+    document.getElementById('year').innerHTML = h + \":\" + m + \":\" + s;\r\n+ \r\n+    // Dùng hàm setTimeout để thiết lập gọi lại 0.5 giây / lần\r\n+    var t = setTimeout(function() {\r\n+        startTime();\r\n+    }, 500);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658481851259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \r\n-function startTime() \r\n-{\r\n+\r\n+\r\n     // Lấy Object ngày hiện tại\r\n     var today = new Date();\r\n  \r\n     // Giờ, phút, giây hiện tại\r\n@@ -19,5 +19,4 @@\n     // Dùng hàm setTimeout để thiết lập gọi lại 0.5 giây / lần\r\n     var t = setTimeout(function() {\r\n         startTime();\r\n     }, 500);\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658481968403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,5 @@\n \r\n \r\n-\r\n-    // Lấy Object ngày hiện tại\r\n-    var today = new Date();\r\n+    document.getElementById('year').innerHTML = new Date().getDate+\":\"+new Date().getMonth+\":\"+new Date().getFullYear;\r\n  \r\n-    // Giờ, phút, giây hiện tại\r\n-    var h = today.getHours();\r\n-    var m = today.getMinutes();\r\n-    var s = today.getSeconds();\r\n- \r\n-    // Chuyển đổi sang dạng 01, 02, 03\r\n-    m = checkTime(m);\r\n-    s = checkTime(s);\r\n- \r\n-    // Ghi ra trình duyệt\r\n-    document.getElementById('year').innerHTML = h + \":\" + m + \":\" + s;\r\n- \r\n-    // Dùng hàm setTimeout để thiết lập gọi lại 0.5 giây / lần\r\n-    var t = setTimeout(function() {\r\n-        startTime();\r\n-    }, 500);\r\n+   \r\n"
+                },
+                {
+                    "date": 1658481998620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n \r\n \r\n-    document.getElementById('year').innerHTML = new Date().getDate+\":\"+new Date().getMonth+\":\"+new Date().getFullYear;\r\n+    \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482335827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n \r\n-\r\n+var d = new Date();\r\n+var ngay = d.getDate();\r\n+var thang = d.getMonth();\r\n+var nam = d.getFullYear();\r\n+alert(ngay+thang+nam)\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482497917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n var d = new Date();\r\n var ngay = d.getDate();\r\n var thang = d.getMonth();\r\n var nam = d.getFullYear();\r\n-alert(ngay+thang+nam)\r\n+document.getElementById(\"year\").innerHTML=ngay+thang+nam\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482520976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n var d = new Date();\r\n var ngay = d.getDate();\r\n var thang = d.getMonth();\r\n-var nam = d.getFullYear();\r\n+\r\n document.getElementById(\"year\").innerHTML=ngay+thang+nam\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482741862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n \r\n var d = new Date();\r\n var ngay = d.getDate();\r\n-var thang = d.getMonth();\r\n+var thang = d.getMonth()+1;\r\n+var nam = d.getFullYear();\r\n \r\n document.getElementById(\"year\").innerHTML=ngay+thang+nam\r\n     \r\n  \r\n"
+                },
+                {
+                    "date": 1658482891996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n var ngay = d.getDate();\r\n var thang = d.getMonth()+1;\r\n var nam = d.getFullYear();\r\n \r\n-document.getElementById(\"year\").innerHTML=ngay+thang+nam\r\n+document.getElementById(\"year\").innerHTML=ngay\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482918176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n var ngay = d.getDate();\r\n var thang = d.getMonth()+1;\r\n var nam = d.getFullYear();\r\n \r\n-document.getElementById(\"year\").innerHTML=ngay\r\n+document.getElementById(\"year\").innerHTML=ngay+\"/\"\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482933438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n var ngay = d.getDate();\r\n var thang = d.getMonth()+1;\r\n var nam = d.getFullYear();\r\n \r\n-document.getElementById(\"year\").innerHTML=ngay+\"/\"\r\n+document.getElementById(\"year\").innerHTML=ngay+\"/\" +thang\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658482954398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n var ngay = d.getDate();\r\n var thang = d.getMonth()+1;\r\n var nam = d.getFullYear();\r\n \r\n-document.getElementById(\"year\").innerHTML=ngay+\"/\" +thang\r\n+document.getElementById(\"year\").innerHTML=ngay+\"/\" +thang +\"/\"+ nam\r\n     \r\n  \r\n    \r\n"
+                },
+                {
+                    "date": 1658484164073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n var thang = d.getMonth()+1;\r\n var nam = d.getFullYear();\r\n \r\n document.getElementById(\"year\").innerHTML=ngay+\"/\" +thang +\"/\"+ nam\r\n-    \r\n+   \r\n+\r\n  \r\n    \r\n"
+                }
+            ],
+            "date": 1658480997522,
+            "name": "Commit-0",
+            "content": "<script>\r\n    document.getElementById(\"year\").innerHTML = new Date().getFullYear();\r\n</script>"
+        }
+    ]
+}
