@@ -65,7 +65,9 @@
    
 }
      
-    
+   .color{
+    color:  #e9c02d !important;
+   }
 
 .header__img__share .img__icon__internet {
     /* width: 130px; */
@@ -142,3 +144,64 @@ padding: 0 5px;
 .header__contact .contactlink .conte__2{
     color:  #e9c02d;
 }
+.main .club__List{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 470px;
+   
+}
+.club__List .club__club{
+font-size: 30px;
+margin-top: 100px;
+}
+.club__List .club__line{
+margin: 50px 0;
+}
+.club__line .clubline_1{
+    width: 100px;
+    height: 2px;
+    background-color: #fcd061;
+
+}
+.club__line .clubline__2{
+    width: 100px;
+    height: 2px;
+    background-color: #5875ac;
+
+}
+.club__List .clublist_box{
+
+}
+.club__List .clublist_box .club_box{
+    width: 190px;
+    height: 180px;
+   
+    text-align: center;
+   
+    
+}
+.background__xamtrang{
+    background: #f2f2f2;
+}
+.background__xamden{
+    background: #eaeaea ;
+}
+.club__List .clublist_box .club_box img{
+    width: 80px;
+    height: 50px;
+    padding-top: 30px;
+    
+}
+.club__List .clublist_box .club_box .cytyclub{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.club__List .clublist_box .club_box .cytyclub:hover{
+    color:  #e9c02d;
+}
+.club__List .clublist_box .club_box .languagecity{ 
+    padding-top: 10px;
+}
+
+
