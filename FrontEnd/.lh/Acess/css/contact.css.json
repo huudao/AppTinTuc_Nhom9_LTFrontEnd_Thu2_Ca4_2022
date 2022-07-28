@@ -1,0 +1,206 @@
+{
+    "sourceFile": "Acess/css/contact.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 47,
+            "patches": [
+                {
+                    "date": 1658973873983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658974886215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,65 +143,4 @@\n }\r\n .header__contact .contactlink .conte__2{\r\n     color:  #e9c02d;\r\n }\r\n-.main .club__List{\r\n-    width: 80%;\r\n-    margin-left: auto;\r\n-    margin-right: auto;\r\n-    height: 470px;\r\n-   \r\n-}\r\n-.club__List .club__club{\r\n-font-size: 30px;\r\n-margin-top: 100px;\r\n-}\r\n-.club__List .club__line{\r\n-margin: 50px 0;\r\n-}\r\n-.club__line .clubline_1{\r\n-    width: 100px;\r\n-    height: 2px;\r\n-    background-color: #fcd061;\r\n-\r\n-}\r\n-.club__line .clubline__2{\r\n-    width: 100px;\r\n-    height: 2px;\r\n-    background-color: #5875ac;\r\n-\r\n-}\r\n-.club__List .clublist_box{\r\n-\r\n-}\r\n-.club__List .clublist_box .club_box{\r\n-    width: 190px;\r\n-    height: 180px;\r\n-   \r\n-    text-align: center;\r\n-   \r\n-    \r\n-}\r\n-.background__xamtrang{\r\n-    background: #f2f2f2;\r\n-}\r\n-.background__xamden{\r\n-    background: #eaeaea ;\r\n-}\r\n-.club__List .clublist_box .club_box img{\r\n-    width: 80px;\r\n-    height: 50px;\r\n-    padding-top: 30px;\r\n-    \r\n-}\r\n-.club__List .clublist_box .club_box .cytyclub{\r\n-    font-size: 20px;\r\n-    padding-top: 10px;\r\n-}\r\n-.club__List .clublist_box .club_box .cytyclub:hover{\r\n-    color:  #e9c02d;\r\n-}\r\n-.club__List .clublist_box .club_box .languagecity{ \r\n-    padding-top: 10px;\r\n-}\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1658975158889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,4 +143,5 @@\n }\r\n .header__contact .contactlink .conte__2{\r\n     color:  #e9c02d;\r\n }\r\n+\r\n"
+                },
+                {
+                    "date": 1658975393314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,4 +144,20 @@\n .header__contact .contactlink .conte__2{\r\n     color:  #e9c02d;\r\n }\r\n \r\n+.main .personal_contact__information{\r\n+\r\n+}\r\n+.personal_contact__information .iconcontact{\r\n+    width: 280px;\r\n+    height: 250px;\r\n+}\r\n+.iconcontact .icon_imfomation {\r\n+\r\n+}\r\n+.iconcontact .name__imformation{\r\n+\r\n+}\r\n+.iconcontact .imformation__contact{\r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658975443547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,8 +150,9 @@\n }\r\n .personal_contact__information .iconcontact{\r\n     width: 280px;\r\n     height: 250px;\r\n+    background-color: #05196f;\r\n }\r\n .iconcontact .icon_imfomation {\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658975670129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,9 @@\n .personal_contact__information .iconcontact{\r\n     width: 280px;\r\n     height: 250px;\r\n     background-color: #05196f;\r\n+    margin-top: 200px;\r\n }\r\n .iconcontact .icon_imfomation {\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658975817063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,19 +147,19 @@\n \r\n .main .personal_contact__information{\r\n \r\n }\r\n-.personal_contact__information .iconcontact{\r\n+.personal_contact__information .imformationfact{\r\n     width: 280px;\r\n     height: 250px;\r\n     background-color: #05196f;\r\n     margin-top: 200px;\r\n }\r\n-.iconcontact .icon_imfomation {\r\n+.imformationfact .icon_imfomation {\r\n \r\n }\r\n-.iconcontact .name__imformation{\r\n+.imformationfact .name__imformation{\r\n \r\n }\r\n-.iconcontact .imformation__contact{\r\n+.imformationfact .imformation__contact{\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658975857435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n .personal_contact__information .imformationfact{\r\n     width: 280px;\r\n     height: 250px;\r\n     background-color: #05196f;\r\n-    margin-top: 200px;\r\n+   \r\n }\r\n .imformationfact .icon_imfomation {\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658975936220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,13 @@\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n \r\n+\r\n }\r\n+.imformationfact .icon_imfomation i {\r\n+color: white;\r\n+}\r\n .imformationfact .name__imformation{\r\n \r\n }\r\n .imformationfact .imformation__contact{\r\n"
+                },
+                {
+                    "date": 1658976109903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,10 +154,10 @@\n     background-color: #05196f;\r\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n+background-color: #fbc02d ;\r\n \r\n-\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1658976137394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,8 +155,10 @@\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n+width: 50px;\r\n+height: 50px;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976160757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,10 +155,10 @@\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n-width: 50px;\r\n-height: 50px;\r\n+width: 80px;\r\n+height: 80px;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976183986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,10 +155,10 @@\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n-width: 80px;\r\n-height: 80px;\r\n+width: 60px;\r\n+height: 60px;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976206479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,8 +157,9 @@\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n width: 60px;\r\n height: 60px;\r\n+border-radius: 1px solid;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976220012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,9 +157,9 @@\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n width: 60px;\r\n height: 60px;\r\n-border-radius: 1px solid;\r\n+border-radius: 20px;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976257075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,9 +157,9 @@\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n width: 60px;\r\n height: 60px;\r\n-border-radius: 20px;\r\n+border-radius: 28px;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976277354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -158,8 +158,9 @@\n background-color: #fbc02d ;\r\n width: 60px;\r\n height: 60px;\r\n border-radius: 28px;\r\n+text-align: center;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976300599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,8 +159,9 @@\n width: 60px;\r\n height: 60px;\r\n border-radius: 28px;\r\n text-align: center;\r\n+margin-top: 50%;\r\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n"
+                },
+                {
+                    "date": 1658976344178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,13 +159,17 @@\n width: 60px;\r\n height: 60px;\r\n border-radius: 28px;\r\n text-align: center;\r\n-margin-top: 50%;\r\n+position: relative;\r\n \r\n+\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n+position: absolute;\r\n+top: 50%;\r\n+\r\n }\r\n .imformationfact .name__imformation{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658976363285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,17 +159,16 @@\n width: 60px;\r\n height: 60px;\r\n border-radius: 28px;\r\n text-align: center;\r\n-position: relative;\r\n \r\n \r\n+\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n-position: absolute;\r\n-top: 50%;\r\n \r\n+\r\n }\r\n .imformationfact .name__imformation{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658976377233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,10 +165,10 @@\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n+margin-top: 50px;\r\n \r\n-\r\n }\r\n .imformationfact .name__imformation{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658976413281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,9 +165,9 @@\n \r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n-margin-top: 50px;\r\n+margin-top: 20px;\r\n \r\n }\r\n .imformationfact .name__imformation{\r\n \r\n"
+                },
+                {
+                    "date": 1658976736017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,8 +163,12 @@\n \r\n \r\n \r\n }\r\n+.imformationfact h2{\r\n+    color: white;\r\n+    font-size: 14px;\r\n+}\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n \r\n"
+                },
+                {
+                    "date": 1658976749764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,9 +165,9 @@\n \r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n-    font-size: 14px;\r\n+    font-size: 24px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658976777447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,9 @@\n .personal_contact__information .imformationfact{\r\n     width: 280px;\r\n     height: 250px;\r\n     background-color: #05196f;\r\n+    text-align: center;\r\n    \r\n }\r\n .imformationfact .icon_imfomation {\r\n background-color: #fbc02d ;\r\n"
+                },
+                {
+                    "date": 1658976827402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,8 +160,10 @@\n width: 60px;\r\n height: 60px;\r\n border-radius: 28px;\r\n text-align: center;\r\n+margin-left: auto;\r\n+margin-right: auto;\r\n \r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658976868303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,8 +162,10 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n+margin-top: 10px;\r\n+margin-bottom: 10px;\r\n \r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658976907515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,13 +162,12 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n-margin-top: 10px;\r\n-margin-bottom: 10px;\r\n \r\n \r\n \r\n+\r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1658976932942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,8 +170,9 @@\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n+    margin-left: 20px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658976947787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n-    margin-left: 20px;\r\n+    margin-bottom: 20px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658976960831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n-    margin-bottom: 20px;\r\n+    margin-bottom: 50px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658976977169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n-    margin-bottom: 50px;\r\n+    margin-bottom: 80px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658977027468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,12 +162,12 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n+padding-top: 20px;\r\n \r\n \r\n \r\n-\r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1658977065413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,12 +162,12 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n-padding-top: 20px;\r\n \r\n \r\n \r\n+\r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1658977088951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n-    margin-bottom: 80px;\r\n+    margin-top: 40px;\r\n }\r\n .imformationfact .icon_imfomation i {\r\n color: white;\r\n margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1658977135059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,10 @@\n     color:  #e9c02d;\r\n }\r\n \r\n .main .personal_contact__information{\r\n+    width: 90%;\r\n+    margin: auto;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 280px;\r\n"
+                },
+                {
+                    "date": 1658977178112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,12 +164,12 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n+margin-top: 20px;\r\n \r\n \r\n \r\n-\r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1658977222309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,12 +164,12 @@\n border-radius: 28px;\r\n text-align: center;\r\n margin-left: auto;\r\n margin-right: auto;\r\n-margin-top: 20px;\r\n \r\n \r\n \r\n+\r\n }\r\n .imformationfact h2{\r\n     color: white;\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1658977249764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 280px;\r\n-    height: 250px;\r\n+    height: 230px;\r\n     background-color: #05196f;\r\n     text-align: center;\r\n    \r\n }\r\n"
+                },
+                {
+                    "date": 1658977466797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,10 +145,9 @@\n     color:  #e9c02d;\r\n }\r\n \r\n .main .personal_contact__information{\r\n-    width: 90%;\r\n-    margin: auto;\r\n+   \r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 280px;\r\n"
+                },
+                {
+                    "date": 1658977479049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n    \r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n-    width: 280px;\r\n+    width: 250px;\r\n     height: 230px;\r\n     background-color: #05196f;\r\n     text-align: center;\r\n    \r\n"
+                },
+                {
+                    "date": 1658978627778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n     color:  #e9c02d;\r\n }\r\n \r\n .main .personal_contact__information{\r\n-   \r\n+   justify-content: space-between;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                },
+                {
+                    "date": 1658978652836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,9 @@\n }\r\n \r\n .main .personal_contact__information{\r\n    justify-content: space-between;\r\n+   width: 80%;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                },
+                {
+                    "date": 1658978673016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,10 @@\n \r\n .main .personal_contact__information{\r\n    justify-content: space-between;\r\n    width: 80%;\r\n+   margin-left: auto;\r\n+   margin-right: auto;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                },
+                {
+                    "date": 1658978694088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n     color:  #e9c02d;\r\n }\r\n \r\n .main .personal_contact__information{\r\n-   justify-content: space-between;\r\n+   justify-content: space-around;\r\n    width: 80%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n \r\n"
+                },
+                {
+                    "date": 1658978703583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n }\r\n \r\n .main .personal_contact__information{\r\n    justify-content: space-around;\r\n-   width: 80%;\r\n+   width: 90%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658978730596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,8 +149,9 @@\n    justify-content: space-around;\r\n    width: 90%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n+   margin-top: 50px;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                },
+                {
+                    "date": 1658978747100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n    justify-content: space-around;\r\n    width: 90%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n-   margin-top: 50px;\r\n+   margin-top: 100px;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                }
+            ],
+            "date": 1658973873983,
+            "name": "Commit-0",
+            "content": ".main {\r\n\r\n}\r\n.main .header{\r\n    height: 420px;\r\n    background-color: #222934;\r\n    position: relative;\r\n}\r\n.main .header .header__img{\r\n    position: relative;\r\n    top: 20px;\r\n    justify-content: space-between;\r\n    \r\n    \r\n}\r\n.flex{\r\n    display: flex;\r\n}\r\n\r\n.main .header__img .header__img__icon{\r\n    max-height: 65px;\r\n    max-width: 160px;\r\n   \r\n    \r\n    overflow: hidden;\r\n}\r\n.main .header__img .header__img__icon .img{\r\n    width: 100%;\r\n    height: 100%;\r\n  \r\n}\r\n.main .header__img .header__img__icon{\r\n    margin-left: 35px;\r\n}\r\n\r\n.header .header__img .header__img__share{\r\n    position: absolute;\r\n    top: 60px;\r\n    right: 0%;\r\n    align-items: center ;\r\n    justify-content: space-around;\r\n    width: 360px;\r\n\r\n}\r\n.header__img .header__img__share .imgshare{\r\n    \r\n   \r\n}\r\n.header__img .header__img__share .imgshare i{\r\n    margin-right: 5px;\r\n    background: #313a47;\r\n    width: 35px;\r\n    height: 35px;\r\n    font-size: 14px;\r\n    line-height: 35px;\r\n    border-radius: 50%;\r\n    text-align: center;\r\n    margin-left: 5px;\r\n}\r\n.header__img .header__img__share .imgshare .img__calendare{\r\n    color: white;\r\n   margin-top: 10px;\r\n   font-size: 14px;\r\n   margin-left: 10px;\r\n   \r\n}\r\n     \r\n   .color{\r\n    color:  #e9c02d !important;\r\n   }\r\n\r\n.header__img__share .img__icon__internet {\r\n    /* width: 130px; */\r\n    margin-left: 15px;\r\n\r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover {\r\n    \r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover i {\r\n    margin-right: 5px;\r\n    /* background: #313a47; */\r\n    width: 35px;\r\n    height: 35px;\r\n    font-size: 14px;\r\n    line-height: 35px;\r\n    text-align: center;\r\n    color: white;\r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover .hover__icon:hover{\r\n   color:  #e9c02d;\r\n}\r\n.header .header__content{\r\n    width: 1000px;\r\n    height: 65px;\r\n    background-color: #313a47;\r\n    color: white;\r\n}\r\n.header .header__content{\r\n\r\n    \r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.header .header__content .menu{\r\n    \r\n\r\n}\r\n.header__content .menu .menu_menubar{\r\ndisplay: inline-block;\r\n}\r\n.header__content .menu .menu_menubar a{\r\n    text-decoration: none;\r\n    color: white;\r\n    display: block;\r\n    font-size: 14px;\r\n    margin: 0 20px;\r\n}\r\n.header__content .menu .menu_menubar a:hover{\r\n    color:  #e9c02d;\r\n}\r\n.header .header__contact{\r\n    position: absolute;\r\n    top:70%;\r\n    left: 40%;\r\n    color: white;\r\n    \r\n\r\n}\r\n.header .header__contact .contact__information{\r\nmargin: 20px 0;\r\nfont-size: 30px;\r\n\r\n}\r\n.header .header__contact .contactlink{\r\n    padding-left: 5px;\r\n}\r\n.header__contact .contactlink .contec__1{\r\npadding: 0 5px;\r\n}\r\n.header__contact .contactlink .iconcontact{\r\n    \r\n}\r\n.header__contact .contactlink .conte__2{\r\n    color:  #e9c02d;\r\n}\r\n.main .club__List{\r\n    width: 80%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    height: 470px;\r\n   \r\n}\r\n.club__List .club__club{\r\nfont-size: 30px;\r\nmargin-top: 100px;\r\n}\r\n.club__List .club__line{\r\nmargin: 50px 0;\r\n}\r\n.club__line .clubline_1{\r\n    width: 100px;\r\n    height: 2px;\r\n    background-color: #fcd061;\r\n\r\n}\r\n.club__line .clubline__2{\r\n    width: 100px;\r\n    height: 2px;\r\n    background-color: #5875ac;\r\n\r\n}\r\n.club__List .clublist_box{\r\n\r\n}\r\n.club__List .clublist_box .club_box{\r\n    width: 190px;\r\n    height: 180px;\r\n   \r\n    text-align: center;\r\n   \r\n    \r\n}\r\n.background__xamtrang{\r\n    background: #f2f2f2;\r\n}\r\n.background__xamden{\r\n    background: #eaeaea ;\r\n}\r\n.club__List .clublist_box .club_box img{\r\n    width: 80px;\r\n    height: 50px;\r\n    padding-top: 30px;\r\n    \r\n}\r\n.club__List .clublist_box .club_box .cytyclub{\r\n    font-size: 20px;\r\n    padding-top: 10px;\r\n}\r\n.club__List .clublist_box .club_box .cytyclub:hover{\r\n    color:  #e9c02d;\r\n}\r\n.club__List .clublist_box .club_box .languagecity{ \r\n    padding-top: 10px;\r\n}\r\n\r\n\r\n"
+        }
+    ]
+}

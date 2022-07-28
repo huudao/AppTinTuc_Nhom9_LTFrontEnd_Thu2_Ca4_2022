@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 50,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1658484200786,
@@ -208,6 +208,10 @@
                 {
                     "date": 1658573894710,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n                 <div class=\"languagecity\">(ENG)</div>\r\n             </div>\r\n         </div>\r\n      </div>\r\n-     <div class=\"club__List background__xamtrang\">\r\n+     <div class=\"club__List \">\r\n         <h1 class=\"club__club\">ENGLISH PREMIER LEAGUE</h1>\r\n         <div class=\"club__line flex\">\r\n             <div class=\"clubline_1\"></div>\r\n             <div class=\"clubline__2\"></div>\r\n"
+                },
+                {
+                    "date": 1658973964677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n                     \r\n                 </div>\r\n             </div>\r\n             <div class=\"header__contact\">\r\n-                <h1 class=\"contact__information\">CONTACT</h1>\r\n+                <h1 class=\"contact__information\">CLUB DIRECTORY</h1>\r\n                 <p class=\"contactlink\">\r\n                     <span class=\"contec__1\">Home</span>\r\n                     <i class=\"fa-solid fa-link iconcontact\"></i>\r\n                     <span class=\"conte__2\"> Contact</span>\r\n"
                 }
             ],
             "date": 1658484200786,
