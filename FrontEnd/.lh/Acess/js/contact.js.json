@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Acess/js/contact.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1659088269557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659089285770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+function validateform() {\r\n+    var name = document.form1.name.value;\r\n+    var email = document.form1.email.value;\r\n+    var phone = document.form1.phone.value;\r\n+    var subject = document.form1.subject.value;\r\n+    var mess= document.form1.mess.value;\r\n+    \r\n+    if (name == null || name == \"\"||email==\"\"||phone==\"\"||subject==\"\"||mess==\"\") {\r\n+    alert(\"Tên đăng nhập không được để trống!\");\r\n+    return false;\r\n+    }\r\n+    }\r\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659089561500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,18 @@\n     var phone = document.form1.phone.value;\r\n     var subject = document.form1.subject.value;\r\n     var mess= document.form1.mess.value;\r\n     \r\n+    var atposition = email.indexOf(\"@\");\r\n+    var dotposition = email.lastIndexOf(\".\");\r\n+    \r\n     if (name == null || name == \"\"||email==\"\"||phone==\"\"||subject==\"\"||mess==\"\") {\r\n-    alert(\"Tên đăng nhập không được để trống!\");\r\n+    alert(\"Không được để trống thông tin\");\r\n     return false;\r\n     }\r\n+    else if (atposition < 1 || dotposition < (atposition + 2)\r\n+                || (dotposition + 2) >= x.length) {\r\n+            alert(\"Please enter a valid e-mail address.\");\r\n+            return false;\r\n+        }\r\n     }\r\n     \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659088269557,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

@@ -189,3 +189,69 @@ margin-top: 20px;
 .imformationfact .imformation__contact{
 
 }
+.main .touchuform{
+background-color: #eff4fd;
+height: 600px;
+margin-top: 100px;
+}
+.main .touchuform .getinrouch{
+font-size: 20px;
+
+}
+.main .touchuform .gachchan{
+
+}
+.main .touchuform .gachchan .gachchan1{
+    width: 60px;
+    height: 2px;
+    background-color:   #e9c02d;
+}
+.main .touchuform .gachchan .gachchan2{
+    width: 60px;
+    height: 2px;
+    background-color:  #5472ab;
+}
+.main .touchuform .inputnamenademail{
+justify-content: space-around;
+}
+.main .touchuform  input{
+background-color: white;
+}
+.main .touchuform .inputnamenademail #name__input{
+    width: 40%;
+    height: 50px;
+}
+.main .touchuform .inputnamenademail #email__input{
+    width: 40%;
+    height: 50px;
+}
+.main .touchuform .formnumberandsubuject{
+    justify-content: space-around;
+}
+.main .touchuform .formnumberandsubuject #phone__input{
+    width: 40%;
+    height: 50px;
+}
+.main .touchuform .formnumberandsubuject #subjuect__input{
+    width: 40%;
+    height: 50px;
+}
+.main .touchuform .yourmesseageheare #mess__input{
+    width: 80%;
+    height: 100px;
+    margin-left: 60px;
+    
+}
+.main .touchuform .buttonsenndsubmid{
+background-color: #fbc02d;
+width: 100px;
+height: 50px;
+margin-left: 5%;
+}
+.main .touchuform .buttonsenndsubmid .button{
+    color: black;
+
+}
+.magintop20px{
+    margin-top: 20px;
+}

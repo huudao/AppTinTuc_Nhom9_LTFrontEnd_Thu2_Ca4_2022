@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 47,
+            "activePatchIndex": 92,
             "patches": [
                 {
                     "date": 1658973873983,
@@ -196,6 +196,186 @@
                 {
                     "date": 1658978747100,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n    justify-content: space-around;\r\n    width: 90%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n-   margin-top: 50px;\r\n+   margin-top: 100px;\r\n \r\n }\r\n .personal_contact__information .imformationfact{\r\n     width: 250px;\r\n"
+                },
+                {
+                    "date": 1659083603382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -187,5 +187,20 @@\n \r\n }\r\n .imformationfact .imformation__contact{\r\n \r\n+}\r\n+.main .touchuform{\r\n+background-color: #eff4fd;\r\n+}\r\n+.main .touchuform .getinrouch{\r\n+\r\n+}\r\n+.main .touchuform .gachchan{\r\n+\r\n+}\r\n+.main .touchuform .gachchan .gachchan1{\r\n+    \r\n+}\r\n+.main .touchuform .gachchan .gachchan2{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659083620429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,8 +190,9 @@\n \r\n }\r\n .main .touchuform{\r\n background-color: #eff4fd;\r\n+height: 600px;\r\n }\r\n .main .touchuform .getinrouch{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659083643135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,8 +191,9 @@\n }\r\n .main .touchuform{\r\n background-color: #eff4fd;\r\n height: 600px;\r\n+margin-top: 100px;\r\n }\r\n .main .touchuform .getinrouch{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659083674001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,9 +194,9 @@\n height: 600px;\r\n margin-top: 100px;\r\n }\r\n .main .touchuform .getinrouch{\r\n-\r\n+font-size: 20px;\r\n }\r\n .main .touchuform .gachchan{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659083758854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,11 @@\n .main .touchuform .gachchan{\r\n \r\n }\r\n .main .touchuform .gachchan .gachchan1{\r\n-    \r\n+    width: 20px;\r\n+    height: 20px;\r\n+    background-color:   #e9c02d;\r\n }\r\n .main .touchuform .gachchan .gachchan2{\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659083779966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n \r\n }\r\n .main .touchuform .gachchan .gachchan1{\r\n     width: 20px;\r\n-    height: 20px;\r\n+    height: 2px;\r\n     background-color:   #e9c02d;\r\n }\r\n .main .touchuform .gachchan .gachchan2{\r\n     \r\n"
+                },
+                {
+                    "date": 1659083794796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n .main .touchuform .gachchan{\r\n \r\n }\r\n .main .touchuform .gachchan .gachchan1{\r\n-    width: 20px;\r\n+    width: 50px;\r\n     height: 2px;\r\n     background-color:   #e9c02d;\r\n }\r\n .main .touchuform .gachchan .gachchan2{\r\n"
+                },
+                {
+                    "date": 1659083807352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n .main .touchuform .gachchan{\r\n \r\n }\r\n .main .touchuform .gachchan .gachchan1{\r\n-    width: 50px;\r\n+    width: 60px;\r\n     height: 2px;\r\n     background-color:   #e9c02d;\r\n }\r\n .main .touchuform .gachchan .gachchan2{\r\n"
+                },
+                {
+                    "date": 1659083860453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,6 +205,8 @@\n     height: 2px;\r\n     background-color:   #e9c02d;\r\n }\r\n .main .touchuform .gachchan .gachchan2{\r\n-    \r\n+    width: 60px;\r\n+    height: 2px;\r\n+    background-color:  #5472ab;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659084482924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,5 +208,14 @@\n .main .touchuform .gachchan .gachchan2{\r\n     width: 60px;\r\n     height: 2px;\r\n     background-color:  #5472ab;\r\n+}\r\n+.main .touchuform .inputnamenademail{\r\n+\r\n+}\r\n+.main .touchuform .inputnamenademail #name__input{\r\n+    \r\n+}\r\n+.main .touchuform .inputnamenademail #email__input{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659084570505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -212,8 +212,11 @@\n }\r\n .main .touchuform .inputnamenademail{\r\n \r\n }\r\n+.main .touchuform .inputnamenademail input{\r\n+background-color: #eff4fd;\r\n+}\r\n .main .touchuform .inputnamenademail #name__input{\r\n     \r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n"
+                },
+                {
+                    "date": 1659084600871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,9 +213,9 @@\n .main .touchuform .inputnamenademail{\r\n \r\n }\r\n .main .touchuform .inputnamenademail input{\r\n-background-color: #eff4fd;\r\n+background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1659084618189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,10 @@\n .main .touchuform .inputnamenademail input{\r\n background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n-    \r\n+    width: 100px;\r\n+    height: 20px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659084651535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,10 +216,10 @@\n .main .touchuform .inputnamenademail input{\r\n background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n-    width: 100px;\r\n-    height: 20px;\r\n+    width: 200px;\r\n+    height: 50px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659084672928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,6 +220,7 @@\n     width: 200px;\r\n     height: 50px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n-    \r\n+    width: 200px;\r\n+    height: 50px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659085527922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,5 +222,26 @@\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n     width: 200px;\r\n     height: 50px;\r\n+}\r\n+.main .touchuform .formnumberandsubuject{\r\n+\r\n+}\r\n+.main .touchuform .formnumberandsubuject #phone__input{\r\n+    width: 200px;\r\n+    height: 50px;\r\n+}\r\n+.main .touchuform .formnumberandsubuject #subjuect__input{\r\n+    width: 200px;\r\n+    height: 50px;\r\n+}\r\n+.main .touchuform .yourmesseageheare #mess__input{\r\n+    width: 400px;\r\n+    height: 100px;\r\n+}\r\n+.main .touchuform .buttonsenndsubmid{\r\n+\r\n+}\r\n+.main .touchuform .buttonsenndsubmid .button{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659085553704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -212,9 +212,9 @@\n }\r\n .main .touchuform .inputnamenademail{\r\n \r\n }\r\n-.main .touchuform .inputnamenademail input{\r\n+.main .touchuform  input{\r\n background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n     width: 200px;\r\n"
+                },
+                {
+                    "date": 1659085627822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,5 +243,8 @@\n \r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     \r\n+}\r\n+.magintop20px{\r\n+    margin-top: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659085691439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n .main .touchuform  input{\r\n background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n-    width: 200px;\r\n+    width: 50%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n     width: 200px;\r\n"
+                },
+                {
+                    "date": 1659085701837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n     width: 50%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n-    width: 200px;\r\n+    width: 50%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .formnumberandsubuject{\r\n \r\n"
+                },
+                {
+                    "date": 1659085726057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,17 +227,17 @@\n .main .touchuform .formnumberandsubuject{\r\n \r\n }\r\n .main .touchuform .formnumberandsubuject #phone__input{\r\n-    width: 200px;\r\n+    width: 50%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .formnumberandsubuject #subjuect__input{\r\n-    width: 200px;\r\n+    width: 50%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n-    width: 400px;\r\n+    width: 100%;\r\n     height: 100px;\r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659085808464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,24 +216,24 @@\n .main .touchuform  input{\r\n background-color: white;\r\n }\r\n .main .touchuform .inputnamenademail #name__input{\r\n-    width: 50%;\r\n+    width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .inputnamenademail #email__input{\r\n-    width: 50%;\r\n+    width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .formnumberandsubuject{\r\n \r\n }\r\n .main .touchuform .formnumberandsubuject #phone__input{\r\n-    width: 50%;\r\n+    width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .formnumberandsubuject #subjuect__input{\r\n-    width: 50%;\r\n+    width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 100%;\r\n"
+                },
+                {
+                    "date": 1659085853737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,9 +210,9 @@\n     height: 2px;\r\n     background-color:  #5472ab;\r\n }\r\n .main .touchuform .inputnamenademail{\r\n-\r\n+justify-content: space-between;\r\n }\r\n .main .touchuform  input{\r\n background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1659085882377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,9 +210,9 @@\n     height: 2px;\r\n     background-color:  #5472ab;\r\n }\r\n .main .touchuform .inputnamenademail{\r\n-justify-content: space-between;\r\n+justify-content: space-around;\r\n }\r\n .main .touchuform  input{\r\n background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1659085908006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n     width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .formnumberandsubuject{\r\n-\r\n+    justify-content: space-around;\r\n }\r\n .main .touchuform .formnumberandsubuject #phone__input{\r\n     width: 40%;\r\n     height: 50px;\r\n"
+                },
+                {
+                    "date": 1659085957328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,10 +235,11 @@\n     width: 40%;\r\n     height: 50px;\r\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n-    width: 100%;\r\n+    width: 80%;\r\n     height: 100px;\r\n+    margin: auto;\r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659085990222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,10 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin: auto;\r\n+    margin-left: auto;\r\n+    margin-right: auto;\r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659086019513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,10 +237,10 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: auto;\r\n-    margin-right: auto;\r\n+    margin-left: 20px;\r\n+    \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659086027871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,9 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: 20px;\r\n+    margin-left: 40px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659086034866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,9 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: 40px;\r\n+    margin-left: 50px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659086044752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,9 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: 50px;\r\n+    margin-left: 55px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659086052191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,9 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: 55px;\r\n+    margin-left: 57px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659086060536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,9 +237,9 @@\n }\r\n .main .touchuform .yourmesseageheare #mess__input{\r\n     width: 80%;\r\n     height: 100px;\r\n-    margin-left: 57px;\r\n+    margin-left: 60px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n \r\n"
+                },
+                {
+                    "date": 1659087596529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,12 +241,12 @@\n     margin-left: 60px;\r\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n-\r\n+background-color: #fbc02d;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n-    \r\n+    color: black;\r\n }\r\n .magintop20px{\r\n     margin-top: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659087624012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -242,8 +242,10 @@\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n+width: 200px;\r\n+height: 100px;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1659087644010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -242,10 +242,10 @@\n     \r\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n-width: 200px;\r\n-height: 100px;\r\n+width: 100px;\r\n+height: 50px;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1659087655922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,9 +243,9 @@\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n-height: 50px;\r\n+height: 100px;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1659087698447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,9 +243,9 @@\n }\r\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n-height: 100px;\r\n+height: 50px;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1659087761000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,8 +247,9 @@\n height: 50px;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n+text-align: center;\r\n }\r\n .magintop20px{\r\n     margin-top: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659087812380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,12 +244,13 @@\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n height: 50px;\r\n+left: 50%;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n-text-align: center;\r\n+\r\n }\r\n .magintop20px{\r\n     margin-top: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659087846981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,9 @@\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n height: 50px;\r\n-left: 50%;\r\n+margin-left: 50%;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n \r\n"
+                },
+                {
+                    "date": 1659087869713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,9 @@\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n height: 50px;\r\n-margin-left: 50%;\r\n+margin-left: 10%;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n \r\n"
+                },
+                {
+                    "date": 1659087880098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,9 @@\n .main .touchuform .buttonsenndsubmid{\r\n background-color: #fbc02d;\r\n width: 100px;\r\n height: 50px;\r\n-margin-left: 10%;\r\n+margin-left: 5%;\r\n }\r\n .main .touchuform .buttonsenndsubmid .button{\r\n     color: black;\r\n \r\n"
+                },
+                {
+                    "date": 1659087920417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n margin-top: 100px;\r\n }\r\n .main .touchuform .getinrouch{\r\n font-size: 20px;\r\n+margin-top: 20px;\r\n }\r\n .main .touchuform .gachchan{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1659088155026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n margin-top: 100px;\r\n }\r\n .main .touchuform .getinrouch{\r\n font-size: 20px;\r\n-margin-top: 20px;\r\n+\r\n }\r\n .main .touchuform .gachchan{\r\n \r\n }\r\n"
                 }
             ],
             "date": 1658973873983,
