@@ -1,0 +1,118 @@
+{
+    "sourceFile": "header.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1658477019267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658478457653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                     </div>\r\n                  \r\n                 </div>\r\n             </div>\r\n-            <div class=\"header__content\">\r\n+            <div class=\"header__content flex\">\r\n                 <ul class=\"menu\">\r\n                     <li class=\"menu_menubar\"><a href=\"\">HOME</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"> CLUB DIRECTORY</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">PAGES</a></li>\r\n"
+                },
+                {
+                    "date": 1658479322676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,10 @@\n                     <li class=\"menu_menubar\"><a href=\"\">RESULTS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\"><i class=\"fa-light fa-magnifying-glass\"></i></a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\"> </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     \r\n                 </ul>\r\n                 \r\n"
+                },
+                {
+                    "date": 1658479367716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n                     <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"><i class=\"fa-light fa-magnifying-glass\"></i></a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"> </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     \r\n                 </ul>\r\n                 \r\n             </div>\r\n"
+                },
+                {
+                    "date": 1658479453200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\">RESULTS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"><i class=\"fa-light fa-magnifying-glass\"></i></a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\"><i class=\"fa-duotone fa-magnifying-glass\"></i></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     \r\n                 </ul>\r\n"
+                },
+                {
+                    "date": 1658479467351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,11 +48,11 @@\n                     <li class=\"menu_menubar\"><a href=\"\">RESULTS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"><i class=\"fa-duotone fa-magnifying-glass\"></i></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     \r\n                 </ul>\r\n                 \r\n             </div>\r\n"
+                },
+                {
+                    "date": 1658479513731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n-                    \r\n+                    <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479540400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n+                    <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479566188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n+                    <i class=\"fa-thin fa-magnifying-glass-minus\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479634076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass-minus\"></i>\r\n+                    <i class=\"fa-brands fa-searchengin\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479702314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n                     <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass-minus\"></i>\r\n                     <i class=\"fa-brands fa-searchengin\"></i>\r\n+                    <i class=\"fa-light fa-magnifying-glass\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479768838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n                     <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n                     <i class=\"fa-thin fa-magnifying-glass-minus\"></i>\r\n                     <i class=\"fa-brands fa-searchengin\"></i>\r\n                     <i class=\"fa-light fa-magnifying-glass\"></i>\r\n+                    <i class=\"fa-light fa-magnifying-glass-plus\"></i>\r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479787576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,14 +51,11 @@\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n-                    <i class=\"fa-regular fa-magnifying-glass\"></i>\r\n-                    <i class=\"fa-thin fa-magnifying-glass\"></i>\r\n-                    <i class=\"fa-thin fa-magnifying-glass-minus\"></i>\r\n+                   \r\n                     <i class=\"fa-brands fa-searchengin\"></i>\r\n-                    <i class=\"fa-light fa-magnifying-glass\"></i>\r\n-                    <i class=\"fa-light fa-magnifying-glass-plus\"></i>\r\n+                  \r\n                 </ul>\r\n                 \r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1658479853216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,13 +48,15 @@\n                     <li class=\"menu_menubar\"><a href=\"\">RESULTS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\">\r\n+                        <i class=\"fa-brands fa-searchengin\"></i>\r\n+                    </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n-                    <i class=\"fa-brands fa-searchengin\"></i>\r\n+                   \r\n                   \r\n                 </ul>\r\n                 \r\n             </div>\r\n"
+                },
+                {
+                    "date": 1658479932017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,10 +51,12 @@\n                     <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\">\r\n+                        <i class=\"fa-thin fa-cart-shopping\"></i>\r\n+                    </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n                    \r\n                   \r\n                 </ul>\r\n"
+                },
+                {
+                    "date": 1658479993837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n-                        <i class=\"fa-thin fa-cart-shopping\"></i>\r\n+                        <i class=\"fa-thin fa-cart-plus\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n                    \r\n"
+                },
+                {
+                    "date": 1658480023181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-thin fa-cart-plus\"></i>\r\n+                        <i class=\"fa-thin fa-cart-circle-check\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n                    \r\n"
+                },
+                {
+                    "date": 1658480045033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n-                        <i class=\"fa-thin fa-cart-plus\"></i>\r\n+                        \r\n                         <i class=\"fa-thin fa-cart-circle-check\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n"
+                },
+                {
+                    "date": 1658480119244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n-                        \r\n-                        <i class=\"fa-thin fa-cart-circle-check\"></i>\r\n+                        <i class=\"fa-thin fa-bag-shopping\"></i>\r\n+                      \r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n                    \r\n"
+                },
+                {
+                    "date": 1658480158389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n-                        <i class=\"fa-thin fa-bag-shopping\"></i>\r\n+                        <i class=\"fa-solid fa-shop\"></i>\r\n                       \r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n"
+                },
+                {
+                    "date": 1658480201684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-solid fa-shop\"></i>\r\n+                        <i class=\"fa-regular fa-basket-shopping\"></i>\r\n                       \r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n"
+                },
+                {
+                    "date": 1658480217547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                         <i class=\"fa-brands fa-searchengin\"></i>\r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\">\r\n                         <i class=\"fa-solid fa-shop\"></i>\r\n-                        <i class=\"fa-regular fa-basket-shopping\"></i>\r\n+                       \r\n                       \r\n                     </a></li>\r\n                     <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n"
+                },
+                {
+                    "date": 1658480297870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,11 @@\n                         <i class=\"fa-solid fa-shop\"></i>\r\n                        \r\n                       \r\n                     </a></li>\r\n-                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n+                    <li class=\"menu_menubar\"><a href=\"\">\r\n+                        <i class=\"fa-solid fa-align-justify\"></i>\r\n+                    </a></li>\r\n                    \r\n                    \r\n                   \r\n                 </ul>\r\n"
+                },
+                {
+                    "date": 1658480999784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                 </div>\r\n                 <div class=\"header__img__share flex\">\r\n                     <div class=\"imgshare flex\">\r\n                         <i class=\"fa-regular fa-calendar-check\"></i>\r\n-                        <div class=\"img__calendare\">\r\n+                        <div class=\"img__calendare\" id=\"year\">\r\n                             Thursday, Jul 21, 2022\r\n                         </div>\r\n                     </div>\r\n                     <div class=\"img__icon__internet flex\">\r\n@@ -68,5 +68,6 @@\n             </div>\r\n         </div>\r\n     </div>\r\n </body>\r\n+<script src=\"./Acess/js/header_clock.js\"></script>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1658481203224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,8 @@\n                 \r\n             </div>\r\n         </div>\r\n     </div>\r\n+    <script src=\"./Acess/js/header_clock.js\"></script>\r\n </body>\r\n-<script src=\"./Acess/js/header_clock.js\"></script>\r\n+\r\n </html>\r\n"
+                },
+                {
+                    "date": 1658484273561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <link rel=\"stylesheet\" href=\"./Acess/fontawesome-free-6.1.1-web/css/all.min.css\">\r\n     <link rel=\"stylesheet\" href=\"./Acess/css/reset.css\">\r\n-    <link rel=\"stylesheet\" href=\"./Acess/css/style.css\">\r\n+    <link rel=\"stylesheet\" href=\"./Acess/css/header.css\">\r\n     <title>Web tin tức bóng đá</title>\r\n </head>\r\n <body>\r\n     <div class=\"main\">\r\n"
+                }
+            ],
+            "date": 1658477019267,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"stylesheet\" href=\"./Acess/fontawesome-free-6.1.1-web/css/all.min.css\">\r\n    <link rel=\"stylesheet\" href=\"./Acess/css/reset.css\">\r\n    <link rel=\"stylesheet\" href=\"./Acess/css/style.css\">\r\n    <title>Web tin tức bóng đá</title>\r\n</head>\r\n<body>\r\n    <div class=\"main\">\r\n        <div class=\"header\">\r\n            <div class=\"header__img flex\">\r\n                <div class=\"header__img__icon\">\r\n                    <img class=\"img\" src=\"./Acess/img/khelo-logo.png\" alt=\"\">\r\n                </div>\r\n                <div class=\"header__img__share flex\">\r\n                    <div class=\"imgshare flex\">\r\n                        <i class=\"fa-regular fa-calendar-check\"></i>\r\n                        <div class=\"img__calendare\">\r\n                            Thursday, Jul 21, 2022\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"img__icon__internet flex\">\r\n                        <div class=\"img__icon__cover\">\r\n                            <i class=\"fa-brands fa-facebook-f hover__icon\"></i>\r\n                        </div>\r\n                        <div class=\"img__icon__cover\">\r\n                            <i class=\"fa-brands fa-twitter hover__icon\"></i>\r\n                        </div>\r\n                        <div class=\"img__icon__cover\">\r\n                            <i class=\"fa-brands fa-linkedin-in hover__icon\"></i>\r\n                        </div>\r\n                        <div class=\"img__icon__cover\">\r\n                            <i class=\"fa-brands fa-google-plus-g hover__icon\"></i>\r\n                        </div>\r\n                    </div>\r\n                 \r\n                </div>\r\n            </div>\r\n            <div class=\"header__content\">\r\n                <ul class=\"menu\">\r\n                    <li class=\"menu_menubar\"><a href=\"\">HOME</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\"> CLUB DIRECTORY</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\">PAGES</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\">RESULTS</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\">POINT TABLE</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\">NEWS</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\">CONTACT</a></li>\r\n                    <li class=\"menu_menubar\"><a href=\"\"></a></li>\r\n                    \r\n                </ul>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>\r\n"
+        }
+    ]
+}

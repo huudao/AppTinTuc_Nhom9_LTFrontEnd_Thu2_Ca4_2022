@@ -1,0 +1,306 @@
+{
+    "sourceFile": "Acess/css/club.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 72,
+            "patches": [
+                {
+                    "date": 1658484460095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658484835964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .main {\r\n \r\n }\r\n .main .header{\r\n-    height: 160px;\r\n+    height: 420px;\r\n     background-color: #222934;\r\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n"
+                },
+                {
+                    "date": 1658484913511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,13 +93,13 @@\n     color: white;\r\n }\r\n .header .header__content{\r\n \r\n-    position: absolute;\r\n+    /* position: absolute;\r\n     top :80%;\r\n     left: 4%;\r\n     justify-content: center;\r\n-    align-items: center;\r\n+    align-items: center; */\r\n }\r\n .header .header__content .menu{\r\n     width: 80%;\r\n \r\n"
+                },
+                {
+                    "date": 1658484956250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n     justify-content: center;\r\n     align-items: center; */\r\n }\r\n .header .header__content .menu{\r\n-    width: 80%;\r\n+    width: 60%;\r\n \r\n }\r\n .header__content .menu .menu_menubar{\r\n display: inline-block;\r\n"
+                },
+                {
+                    "date": 1658484968457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n     justify-content: center;\r\n     align-items: center; */\r\n }\r\n .header .header__content .menu{\r\n-    width: 60%;\r\n+    width: 80%;\r\n \r\n }\r\n .header__content .menu .menu_menubar{\r\n display: inline-block;\r\n"
+                },
+                {
+                    "date": 1658484976772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n .header__img__share .img__icon__internet .img__icon__cover .hover__icon:hover{\r\n    color:  #e9c02d;\r\n }\r\n .header .header__content{\r\n-    width: 1200px;\r\n+    width: 1000px;\r\n     height: 65px;\r\n     background-color: #313a47;\r\n     color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1658484993683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n     justify-content: center;\r\n     align-items: center; */\r\n }\r\n .header .header__content .menu{\r\n-    width: 80%;\r\n+    \r\n \r\n }\r\n .header__content .menu .menu_menubar{\r\n display: inline-block;\r\n"
+                },
+                {
+                    "date": 1658485088705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,13 +93,13 @@\n     color: white;\r\n }\r\n .header .header__content{\r\n \r\n-    /* position: absolute;\r\n+    position: absolute;\r\n     top :80%;\r\n     left: 4%;\r\n     justify-content: center;\r\n-    align-items: center; */\r\n+    align-items: center;\r\n }\r\n .header .header__content .menu{\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1658485145513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,10 +96,9 @@\n \r\n     position: absolute;\r\n     top :80%;\r\n     left: 4%;\r\n-    justify-content: center;\r\n-    align-items: center;\r\n+    \r\n }\r\n .header .header__content .menu{\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1658485155812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,10 @@\n \r\n     position: absolute;\r\n     top :80%;\r\n     left: 4%;\r\n-    \r\n+    justify-content: center;\r\n+    align-items: center;\r\n }\r\n .header .header__content .menu{\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1658485562542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n     \r\n }\r\n .flex{\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1658485580361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,10 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n-    justify-content: center;\r\n-    align-items: center;\r\n     \r\n+    \r\n }\r\n .flex{\r\n     display: flex;\r\n }\r\n"
+                },
+                {
+                    "date": 1658485612645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,11 +94,9 @@\n     color: white;\r\n }\r\n .header .header__content{\r\n \r\n-    position: absolute;\r\n-    top :80%;\r\n-    left: 4%;\r\n+    \r\n     justify-content: center;\r\n     align-items: center;\r\n }\r\n .header .header__content .menu{\r\n"
+                },
+                {
+                    "date": 1658485659423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,9 @@\n \r\n .main .header__img .header__img__icon{\r\n     max-height: 65px;\r\n     max-width: 160px;\r\n-    position: absolute;\r\n-    top: 50px;\r\n+   \r\n     \r\n     overflow: hidden;\r\n }\r\n .main .header__img .header__img__icon .img{\r\n"
+                },
+                {
+                    "date": 1658485758463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \r\n .main .header__img .header__img__icon{\r\n     max-height: 65px;\r\n     max-width: 160px;\r\n-   \r\n+   justify-content: space-around;\r\n     \r\n     overflow: hidden;\r\n }\r\n .main .header__img .header__img__icon .img{\r\n"
+                },
+                {
+                    "date": 1658485803224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n+    margin-top: 10px;\r\n     \r\n     \r\n }\r\n .flex{\r\n@@ -17,9 +18,9 @@\n \r\n .main .header__img .header__img__icon{\r\n     max-height: 65px;\r\n     max-width: 160px;\r\n-   justify-content: space-around;\r\n+   \r\n     \r\n     overflow: hidden;\r\n }\r\n .main .header__img .header__img__icon .img{\r\n"
+                },
+                {
+                    "date": 1658485859457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n-    margin-top: 10px;\r\n     \r\n     \r\n+    \r\n }\r\n .flex{\r\n     display: flex;\r\n }\r\n"
+                },
+                {
+                    "date": 1658485887216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n+    top: 10px;\r\n     \r\n     \r\n-    \r\n }\r\n .flex{\r\n     display: flex;\r\n }\r\n"
+                },
+                {
+                    "date": 1658485903353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     position: relative;\r\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n-    top: 10px;\r\n+    top: 20px;\r\n     \r\n     \r\n }\r\n .flex{\r\n"
+                },
+                {
+                    "date": 1658485969931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n }\r\n .main .header .header__img{\r\n     position: relative;\r\n     top: 20px;\r\n+    justify-content: space-between;\r\n     \r\n     \r\n }\r\n .flex{\r\n"
+                },
+                {
+                    "date": 1658486727375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,5 +115,23 @@\n     margin: 0 20px;\r\n }\r\n .header__content .menu .menu_menubar a:hover{\r\n     color:  #e9c02d;\r\n+}\r\n+.header .header__contact{\r\n+\r\n+}\r\n+.header .header__contact .contact__information{\r\n+\r\n+}\r\n+.header .header__contact .contactlink{\r\n+    \r\n+}\r\n+.header__contact .contactlink .contec__1{\r\n+\r\n+}\r\n+.header__contact .contactlink .iconcontact{\r\n+    \r\n+}\r\n+.header__contact .contactlink .conte__2{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658486899610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,9 @@\n .header__content .menu .menu_menubar a:hover{\r\n     color:  #e9c02d;\r\n }\r\n .header .header__contact{\r\n+    position: absolute;\r\n \r\n }\r\n .header .header__contact .contact__information{\r\n \r\n"
+                },
+                {
+                    "date": 1658486921627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,8 +118,9 @@\n     color:  #e9c02d;\r\n }\r\n .header .header__contact{\r\n     position: absolute;\r\n+    top:80%\r\n \r\n }\r\n .header .header__contact .contact__information{\r\n \r\n"
+                },
+                {
+                    "date": 1658486952156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,11 @@\n     color:  #e9c02d;\r\n }\r\n .header .header__contact{\r\n     position: absolute;\r\n-    top:80%\r\n+    top:80%;\r\n+    left: auto;\r\n+    right: auto;\r\n \r\n }\r\n .header .header__contact .contact__information{\r\n \r\n"
+                },
+                {
+                    "date": 1658486975215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,10 +119,10 @@\n }\r\n .header .header__contact{\r\n     position: absolute;\r\n     top:80%;\r\n-    left: auto;\r\n-    right: auto;\r\n+    left: 50%;\r\n+    \r\n \r\n }\r\n .header .header__contact .contact__information{\r\n \r\n"
+                },
+                {
+                    "date": 1658487036364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     \r\n \r\n }\r\n .header .header__contact .contact__information{\r\n-\r\n+margin-bottom: 10px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487098665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,8 +125,9 @@\n \r\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n+font-size: 1.4 rem;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487129873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n \r\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n-font-size: 1.4 rem;\r\n+font-size: 1.4 em;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487178731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n \r\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n-font-size: 1.4 em;\r\n+font-size: 20px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487210992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n \r\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n-font-size: 20px;\r\n+font-size: 25px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487222889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n \r\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n-font-size: 25px;\r\n+font-size: 30px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487250309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,9 @@\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n font-size: 30px;\r\n+margin-left: 1px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487259122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,9 +126,9 @@\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n font-size: 30px;\r\n-margin-left: 1px;\r\n+margin-left: -1px;\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487329221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,10 +118,10 @@\n     color:  #e9c02d;\r\n }\r\n .header .header__contact{\r\n     position: absolute;\r\n-    top:80%;\r\n-    left: 50%;\r\n+    top:70%;\r\n+    left: 40%;\r\n     \r\n \r\n }\r\n .header .header__contact .contact__information{\r\n"
+                },
+                {
+                    "date": 1658487337847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,9 +126,9 @@\n }\r\n .header .header__contact .contact__information{\r\n margin-bottom: 10px;\r\n font-size: 30px;\r\n-margin-left: -1px;\r\n+\r\n }\r\n .header .header__contact .contactlink{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658487421115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     \r\n \r\n }\r\n .header .header__contact .contact__information{\r\n-margin-bottom: 10px;\r\n+margin: 20px 0;\r\n font-size: 30px;\r\n \r\n }\r\n .header .header__contact .contactlink{\r\n"
+                },
+                {
+                    "date": 1658487484506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,9 @@\n font-size: 30px;\r\n \r\n }\r\n .header .header__contact .contactlink{\r\n-    \r\n+    padding-left: 5px;\r\n }\r\n .header__contact .contactlink .contec__1{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658487518751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,8 +120,9 @@\n .header .header__contact{\r\n     position: absolute;\r\n     top:70%;\r\n     left: 40%;\r\n+    color: white;\r\n     \r\n \r\n }\r\n .header .header__contact .contact__information{\r\n"
+                },
+                {
+                    "date": 1658487552973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,6 +139,6 @@\n .header__contact .contactlink .iconcontact{\r\n     \r\n }\r\n .header__contact .contactlink .conte__2{\r\n-    \r\n+    color:  #e9c02d;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1658487600683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,9 @@\n .header .header__contact .contactlink{\r\n     padding-left: 5px;\r\n }\r\n .header__contact .contactlink .contec__1{\r\n-\r\n+padding: 0 5px;\r\n }\r\n .header__contact .contactlink .iconcontact{\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658566102184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,5 +140,22 @@\n     \r\n }\r\n .header__contact .contactlink .conte__2{\r\n     color:  #e9c02d;\r\n-}\n\\ No newline at end of file\n+}\r\n+.main .club__List{\r\n+    width: 80%;\r\n+    margin-left: auto;\r\n+    margin-right: auto;\r\n+}\r\n+.club__List .club__club{\r\n+\r\n+}\r\n+.club__List .club__line{\r\n+\r\n+}\r\n+.club__line .clubline_1{\r\n+\r\n+}\r\n+.club__line .clubline__2{\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1658566142606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n     margin-left: auto;\r\n     margin-right: auto;\r\n }\r\n .club__List .club__club{\r\n-\r\n+font-size: 30px;\r\n }\r\n .club__List .club__line{\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658566328656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,13 @@\n .club__List .club__line{\r\n \r\n }\r\n .club__line .clubline_1{\r\n+    width: 100px;\r\n+    height: 2px;\r\n \r\n }\r\n .club__line .clubline__2{\r\n+    width: 100px;\r\n+    height: 2px;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658566439046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,11 +155,13 @@\n }\r\n .club__line .clubline_1{\r\n     width: 100px;\r\n     height: 2px;\r\n+    background-color: #fcd061;\r\n \r\n }\r\n .club__line .clubline__2{\r\n     width: 100px;\r\n     height: 2px;\r\n+    background-color: #5875ac;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1658566571700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,13 @@\n    margin-left: 10px;\r\n    \r\n }\r\n      \r\n-    \r\n+    .colorweb{\r\n+    color:  #e9c02d;\r\n \r\n+    }\r\n+\r\n .header__img__share .img__icon__internet {\r\n     /* width: 130px; */\r\n     margin-left: 15px;\r\n \r\n"
+                },
+                {
+                    "date": 1658566625346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,10 +65,9 @@\n    \r\n }\r\n      \r\n     .colorweb{\r\n-    color:  #e9c02d;\r\n-\r\n+        color:  #e9c02d;\r\n     }\r\n \r\n .header__img__share .img__icon__internet {\r\n     /* width: 130px; */\r\n"
+                },
+                {
+                    "date": 1658566709041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n    margin-left: 10px;\r\n    \r\n }\r\n      \r\n-    .colorweb{\r\n+   .menu .colorweb{\r\n         color:  #e9c02d;\r\n     }\r\n \r\n .header__img__share .img__icon__internet {\r\n"
+                },
+                {
+                    "date": 1658566748148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n    margin-left: 10px;\r\n    \r\n }\r\n      \r\n-   .menu .colorweb{\r\n+   .menu .color{\r\n         color:  #e9c02d;\r\n     }\r\n \r\n .header__img__share .img__icon__internet {\r\n"
+                },
+                {
+                    "date": 1658566921656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,11 @@\n    margin-left: 10px;\r\n    \r\n }\r\n      \r\n-   .menu .color{\r\n-        color:  #e9c02d;\r\n-    }\r\n+   .color{\r\n+    color:  #e9c02d !important;\r\n+   }\r\n \r\n .header__img__share .img__icon__internet {\r\n     /* width: 130px; */\r\n     margin-left: 15px;\r\n"
+                },
+                {
+                    "date": 1658567628255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,9 +152,9 @@\n .club__List .club__club{\r\n font-size: 30px;\r\n }\r\n .club__List .club__line{\r\n-\r\n+margin: 10px 0;\r\n }\r\n .club__line .clubline_1{\r\n     width: 100px;\r\n     height: 2px;\r\n"
+                },
+                {
+                    "date": 1658571088230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,4 +166,21 @@\n     height: 2px;\r\n     background-color: #5875ac;\r\n \r\n }\r\n+.club__List .clublist_box{\r\n+\r\n+}\r\n+.club__List .clublist_box .club_box{\r\n+    \r\n+}\r\n+.club__List .clublist_box .club_box img{\r\n+    \r\n+}\r\n+.club__List .clublist_box .club_box .cytyclub{\r\n+    \r\n+}\r\n+.club__List .clublist_box .club_box .languagecity{ \r\n+    \r\n+}\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1658571207711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,8 +170,10 @@\n .club__List .clublist_box{\r\n \r\n }\r\n .club__List .clublist_box .club_box{\r\n+    width: 190px;\r\n+    height: 180px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n     \r\n"
+                },
+                {
+                    "date": 1658571260342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,8 +175,10 @@\n     height: 180px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n+    width: 100px;\r\n+    height: 50px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     \r\n"
+                },
+                {
+                    "date": 1658571394963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,8 +172,9 @@\n }\r\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n+    justify-content: center;\r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n     width: 100px;\r\n"
+                },
+                {
+                    "date": 1658571409939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,8 +173,9 @@\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n     justify-content: center;\r\n+    align-items: center;\r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n     width: 100px;\r\n"
+                },
+                {
+                    "date": 1658571430078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,9 @@\n }\r\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n-    justify-content: center;\r\n+   \r\n     align-items: center;\r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n"
+                },
+                {
+                    "date": 1658571455782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,9 +173,9 @@\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n    \r\n-    align-items: center;\r\n+   \r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n     width: 100px;\r\n"
+                },
+                {
+                    "date": 1658571548005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,10 +172,10 @@\n }\r\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n+    background: #f2f2f2\r\n    \r\n-   \r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n     width: 100px;\r\n"
+                },
+                {
+                    "date": 1658571588608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,10 @@\n }\r\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n-    background: #f2f2f2\r\n+    background: #f2f2f2;\r\n+    text-align: center;\r\n    \r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n"
+                },
+                {
+                    "date": 1658571655249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,8 +185,11 @@\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     \r\n }\r\n+.club__List .clublist_box .club_box .cytyclub:hover{\r\n+    color:  #e9c02d;\r\n+}\r\n .club__List .clublist_box .club_box .languagecity{ \r\n     \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1658571701603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,9 +183,9 @@\n     height: 50px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n-    \r\n+    font-size: 14px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n }\r\n"
+                },
+                {
+                    "date": 1658571715877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,9 +183,9 @@\n     height: 50px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n-    font-size: 14px;\r\n+    font-size: 30px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n }\r\n"
+                },
+                {
+                    "date": 1658571781779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,9 @@\n }\r\n .club__List .clublist_box .club_box img{\r\n     width: 100px;\r\n     height: 50px;\r\n+    padding-top: 30px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     font-size: 30px;\r\n"
+                },
+                {
+                    "date": 1658571804553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,13 +185,14 @@\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     font-size: 30px;\r\n+    padding-top: 30px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n }\r\n .club__List .clublist_box .club_box .languagecity{ \r\n-    \r\n+    padding-top: 30px;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1658571845164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n    \r\n     \r\n }\r\n .club__List .clublist_box .club_box img{\r\n-    width: 100px;\r\n+    width: 80px;\r\n     height: 50px;\r\n     padding-top: 30px;\r\n     \r\n }\r\n"
+                },
+                {
+                    "date": 1658571870577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,14 +185,14 @@\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     font-size: 30px;\r\n-    padding-top: 30px;\r\n+    padding-top: 5px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n }\r\n .club__List .clublist_box .club_box .languagecity{ \r\n-    padding-top: 30px;\r\n+    padding-top: 5px;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1658571901236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,9 +184,9 @@\n     padding-top: 30px;\r\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n-    font-size: 30px;\r\n+    font-size: 20px;\r\n     padding-top: 5px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n"
+                },
+                {
+                    "date": 1658572052046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,13 +172,19 @@\n }\r\n .club__List .clublist_box .club_box{\r\n     width: 190px;\r\n     height: 180px;\r\n-    background: #f2f2f2;\r\n+   \r\n     text-align: center;\r\n    \r\n     \r\n }\r\n+.background__xamtrang{\r\n+    background: #f2f2f2;\r\n+}\r\n+.background__xamden{\r\n+    background: #eaeaea ;\r\n+}\r\n .club__List .clublist_box .club_box img{\r\n     width: 80px;\r\n     height: 50px;\r\n     padding-top: 30px;\r\n"
+                },
+                {
+                    "date": 1658572178777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,14 +191,14 @@\n     \r\n }\r\n .club__List .clublist_box .club_box .cytyclub{\r\n     font-size: 20px;\r\n-    padding-top: 5px;\r\n+    padding-top: 10px;\r\n }\r\n .club__List .clublist_box .club_box .cytyclub:hover{\r\n     color:  #e9c02d;\r\n }\r\n .club__List .clublist_box .club_box .languagecity{ \r\n-    padding-top: 5px;\r\n+    padding-top: 10px;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1658573436052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,9 @@\n .main .club__List{\r\n     width: 80%;\r\n     margin-left: auto;\r\n     margin-right: auto;\r\n+    height: 470px;\r\n }\r\n .club__List .club__club{\r\n font-size: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1658573623416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,8 +148,9 @@\n     width: 80%;\r\n     margin-left: auto;\r\n     margin-right: auto;\r\n     height: 470px;\r\n+    margin-top: 100px;\r\n }\r\n .club__List .club__club{\r\n font-size: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1658573666736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,12 +148,13 @@\n     width: 80%;\r\n     margin-left: auto;\r\n     margin-right: auto;\r\n     height: 470px;\r\n-    margin-top: 100px;\r\n+   \r\n }\r\n .club__List .club__club{\r\n font-size: 30px;\r\n+margin-top: 100px;\r\n }\r\n .club__List .club__line{\r\n margin: 10px 0;\r\n }\r\n"
+                },
+                {
+                    "date": 1658573745795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n font-size: 30px;\r\n margin-top: 100px;\r\n }\r\n .club__List .club__line{\r\n-margin: 10px 0;\r\n+margin: 50px 0;\r\n }\r\n .club__line .clubline_1{\r\n     width: 100px;\r\n     height: 2px;\r\n"
+                }
+            ],
+            "date": 1658484460095,
+            "name": "Commit-0",
+            "content": ".main {\r\n\r\n}\r\n.main .header{\r\n    height: 160px;\r\n    background-color: #222934;\r\n    position: relative;\r\n}\r\n.main .header .header__img{\r\n    position: relative;\r\n    \r\n}\r\n.flex{\r\n    display: flex;\r\n}\r\n\r\n.main .header__img .header__img__icon{\r\n    max-height: 65px;\r\n    max-width: 160px;\r\n    position: absolute;\r\n    top: 50px;\r\n    \r\n    overflow: hidden;\r\n}\r\n.main .header__img .header__img__icon .img{\r\n    width: 100%;\r\n    height: 100%;\r\n  \r\n}\r\n.main .header__img .header__img__icon{\r\n    margin-left: 35px;\r\n}\r\n\r\n.header .header__img .header__img__share{\r\n    position: absolute;\r\n    top: 60px;\r\n    right: 0%;\r\n    align-items: center ;\r\n    justify-content: space-around;\r\n    width: 360px;\r\n\r\n}\r\n.header__img .header__img__share .imgshare{\r\n    \r\n   \r\n}\r\n.header__img .header__img__share .imgshare i{\r\n    margin-right: 5px;\r\n    background: #313a47;\r\n    width: 35px;\r\n    height: 35px;\r\n    font-size: 14px;\r\n    line-height: 35px;\r\n    border-radius: 50%;\r\n    text-align: center;\r\n    margin-left: 5px;\r\n}\r\n.header__img .header__img__share .imgshare .img__calendare{\r\n    color: white;\r\n   margin-top: 10px;\r\n   font-size: 14px;\r\n   margin-left: 10px;\r\n   \r\n}\r\n     \r\n    \r\n\r\n.header__img__share .img__icon__internet {\r\n    /* width: 130px; */\r\n    margin-left: 15px;\r\n\r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover {\r\n    \r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover i {\r\n    margin-right: 5px;\r\n    /* background: #313a47; */\r\n    width: 35px;\r\n    height: 35px;\r\n    font-size: 14px;\r\n    line-height: 35px;\r\n    text-align: center;\r\n    color: white;\r\n}\r\n.header__img__share .img__icon__internet .img__icon__cover .hover__icon:hover{\r\n   color:  #e9c02d;\r\n}\r\n.header .header__content{\r\n    width: 1200px;\r\n    height: 65px;\r\n    background-color: #313a47;\r\n    color: white;\r\n}\r\n.header .header__content{\r\n\r\n    position: absolute;\r\n    top :80%;\r\n    left: 4%;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.header .header__content .menu{\r\n    width: 80%;\r\n\r\n}\r\n.header__content .menu .menu_menubar{\r\ndisplay: inline-block;\r\n}\r\n.header__content .menu .menu_menubar a{\r\n    text-decoration: none;\r\n    color: white;\r\n    display: block;\r\n    font-size: 14px;\r\n    margin: 0 20px;\r\n}\r\n.header__content .menu .menu_menubar a:hover{\r\n    color:  #e9c02d;\r\n}"
+        }
+    ]
+}
