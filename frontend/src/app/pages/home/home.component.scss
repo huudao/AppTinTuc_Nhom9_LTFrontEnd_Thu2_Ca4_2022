@@ -354,14 +354,20 @@ li {
                     span {
                         color: #555555;
                     }
-                    h3 {
-                        color: black;
-                        padding: 18px 0;
-                        transition: all .8s ease;
-                        line-height: 32px !important;
-                        font-size: 24px;
-                        font-weight: 500 !important;
+                    a {
+                        h3 {
+                            color: black;
+                            padding: 18px 0;
+                            transition: all .8s ease;
+                            line-height: 32px !important;
+                            font-size: 24px;
+                            font-weight: 500 !important;
+                        }
+                        &:hover h3 {
+                            color: $secondary-color;
+                        }
                     }
+                    
                 }
                 .featured-content-item.pdr30 {
                     padding: 30px 30px 30px 0 !important;
@@ -403,6 +409,9 @@ li {
                 margin: 25px 0;
                 a {
                     color: black;
+                }
+                &:hover a {
+                    color: $secondary-color;
                 }
             }
         }
