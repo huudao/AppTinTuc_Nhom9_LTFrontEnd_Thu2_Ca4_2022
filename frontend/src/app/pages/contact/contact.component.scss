@@ -1,25 +1,12 @@
-$color_1: white;
-$color_2: #e9c02d;
-$color_3: black;
-$background-color_1: #222934;
-$background-color_2: #313a47;
-$background-color_3: #05196f;
-$background-color_4: #fbc02d;
-$background-color_5: #eff4fd;
-$background-color_6: #e9c02d;
-$background-color_7: #5472ab;
-$background-color_8: white;
-
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
-  
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -32,58 +19,52 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
-
 body {
-  line-height: 1;
+	line-height: 1;
 }
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
-  display: block;
+	display: block;
 }
-
-nav ul {
-  list-style :none;
+nav {
+	ul {
+		list-style: none;
+	}
 }
-
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
-
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
-
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
 input, select {
-  vertical-align :middle;
+	vertical-align: middle;
 }
 .main {
 	.header {
 		height: 420px;
-		background-color: $background-color_1;
+		background-color: #222934;
 		position: relative;
 		.header__img {
 			position: relative;
@@ -111,22 +92,25 @@ input, select {
 		margin-top: 100px;
 	}
 	.touchuform {
-		background-color: $background-color_5;
+		background-color: #eff4fd;
 		height: 600px;
 		margin-top: 100px;
 		.getinrouch {
 			font-size: 20px;
+			padding-left: 60px;
+			padding-top: 20px;
 		}
 		.gachchan {
+			margin-left: 60px;
 			.gachchan1 {
 				width: 60px;
 				height: 2px;
-				background-color: $background-color_6;
+				background-color: #e9c02d;
 			}
 			.gachchan2 {
 				width: 60px;
 				height: 2px;
-				background-color: $background-color_7;
+				background-color: #5472ab;
 			}
 		}
 		.inputnamenademail {
@@ -141,7 +125,7 @@ input, select {
 			}
 		}
 		input {
-			background-color: $background-color_8;
+			background-color: white;
 		}
 		.formnumberandsubuject {
 			justify-content: space-around;
@@ -156,18 +140,18 @@ input, select {
 		}
 		.yourmesseageheare {
 			#mess__input {
-				width: 80%;
+				width: 90%;
 				height: 100px;
 				margin-left: 60px;
 			}
 		}
 		.buttonsenndsubmid {
-			background-color: $background-color_4;
+			background-color: #fbc02d;
 			width: 100px;
 			height: 50px;
 			margin-left: 5%;
 			.button {
-				color: $color_3;
+				color: black;
 			}
 		}
 	}
@@ -189,16 +173,18 @@ input, select {
 	.header__content {
 		width: 1000px;
 		height: 65px;
-		background-color: $background-color_2;
-		color: $color_1;
+		background-color: #313a47;
+		color: white;
 		justify-content: center;
 		align-items: center;
+		.menu {
+		}
 	}
 	.header__contact {
 		position: absolute;
 		top: 70%;
 		left: 40%;
-		color: $color_1;
+		color: white;
 		.contact__information {
 			margin: 20px 0;
 			font-size: 30px;
@@ -223,7 +209,7 @@ input, select {
 				margin-left: 5px;
 			}
 			.img__calendare {
-				color: $color_1;
+				color: white;
 				margin-top: 10px;
 				font-size: 14px;
 				margin-left: 10px;
@@ -232,7 +218,7 @@ input, select {
 	}
 }
 .color {
-	color: $color_2 !important;
+	color: #e9c02d !important;
 }
 .header__img__share {
 	.img__icon__internet {
@@ -245,11 +231,11 @@ input, select {
 				font-size: 14px;
 				line-height: 35px;
 				text-align: center;
-				color: $color_1;
+				color: white;
 			}
 			.hover__icon {
 				&:hover {
-					color: $color_2;
+					color: #e9c02d;
 				}
 			}
 		}
@@ -261,12 +247,12 @@ input, select {
 			display: inline-block;
 			a {
 				text-decoration: none;
-				color: $color_1;
+				color: white;
 				display: block;
 				font-size: 14px;
 				margin: 0 20px;
 				&:hover {
-					color: $color_2;
+					color: #e9c02d;
 				}
 			}
 		}
@@ -277,8 +263,10 @@ input, select {
 		.contec__1 {
 			padding: 0 5px;
 		}
+		.iconcontact {
+		}
 		.conte__2 {
-			color: $color_2;
+			color: #e9c02d;
 		}
 	}
 }
@@ -286,13 +274,13 @@ input, select {
 	.imformationfact {
 		width: 250px;
 		height: 230px;
-		background-color: $background-color_3;
+		background-color: #05196f;
 		text-align: center;
 	}
 }
 .imformationfact {
 	.icon_imfomation {
-		background-color: $background-color_4;
+		background-color: #fbc02d;
 		width: 60px;
 		height: 60px;
 		border-radius: 28px;
@@ -300,14 +288,18 @@ input, select {
 		margin-left: auto;
 		margin-right: auto;
 		i {
-			color: $color_1;
+			color: white;
 			margin-top: 20px;
 		}
 	}
 	h2 {
-		color: $color_1;
+		color: white;
 		font-size: 24px;
 		margin-top: 40px;
+	}
+	.name__imformation {
+	}
+	.imformation__contact {
 	}
 }
 .magintop20px {
