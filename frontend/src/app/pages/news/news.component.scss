@@ -27,6 +27,9 @@
                                 position: relative;
                                 z-index: 15;
                                 font-size: 14px;
+                                i{
+                                    margin-right: 10px;
+                                }
                             }
 
                             .meta-date {
@@ -39,7 +42,7 @@
                                 line-height: 28px;
                                 font-weight: 500;
                                 margin: -40px 2px 0 39px;
-
+                                margin-right: 10px;
                                 span {
                                     display: block;
                                 }
