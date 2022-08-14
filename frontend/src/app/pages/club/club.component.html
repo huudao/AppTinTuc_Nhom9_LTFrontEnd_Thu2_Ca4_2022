@@ -1,0 +1,478 @@
+<link rel="stylesheet" href="/AppTinTuc_Nhom9_LTFrontEnd_Thu2_Ca4_2022/frontend/src/assets/fontawesome-free-6.1.1-web/css/all.min.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style :none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align :middle;
+}
+.main {
+
+}
+.main .header{
+    height: 420px;
+    background-color: #222934;
+    position: relative;
+}
+.main .header .header__img{
+    position: relative;
+    top: 20px;
+    justify-content: space-between;
+    
+    
+}
+.flex{
+    display: flex;
+}
+
+.main .header__img .header__img__icon{
+    max-height: 65px;
+    max-width: 160px;
+   
+    
+    overflow: hidden;
+}
+.main .header__img .header__img__icon .img{
+    width: 100%;
+    height: 100%;
+  
+}
+.main .header__img .header__img__icon{
+    margin-left: 35px;
+}
+
+.header .header__img .header__img__share{
+    position: absolute;
+    top: 60px;
+    right: 0%;
+    align-items: center ;
+    justify-content: space-around;
+    width: 360px;
+
+}
+.header__img .header__img__share .imgshare{
+    
+   
+}
+.header__img .header__img__share .imgshare i{
+    margin-right: 5px;
+    background: #313a47;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 5px;
+}
+.header__img .header__img__share .imgshare .img__calendare{
+    color: white;
+   margin-top: 10px;
+   font-size: 14px;
+   margin-left: 10px;
+   
+}
+     
+   .color{
+    color:  #e9c02d !important;
+   }
+
+.header__img__share .img__icon__internet {
+    /* width: 130px; */
+    margin-left: 15px;
+
+}
+.header__img__share .img__icon__internet .img__icon__cover {
+    
+}
+.header__img__share .img__icon__internet .img__icon__cover i {
+    margin-right: 5px;
+    /* background: #313a47; */
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+.header__img__share .img__icon__internet .img__icon__cover .hover__icon:hover{
+   color:  #e9c02d;
+}
+.header .header__content{
+    width: 1000px;
+    height: 65px;
+    background-color: #313a47;
+    color: white;
+}
+.header .header__content{
+
+    
+    justify-content: center;
+    align-items: center;
+}
+.header .header__content .menu{
+    
+
+}
+.header__content .menu .menu_menubar{
+display: inline-block;
+}
+.header__content .menu .menu_menubar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin: 0 20px;
+}
+.header__content .menu .menu_menubar a:hover{
+    color:  #e9c02d;
+}
+.header .header__contact{
+    position: absolute;
+    top:70%;
+    left: 40%;
+    color: white;
+    
+
+}
+.header .header__contact .contact__information{
+margin: 20px 0;
+font-size: 30px;
+
+}
+.header .header__contact .contactlink{
+    padding-left: 5px;
+}
+.header__contact .contactlink .contec__1{
+padding: 0 5px;
+}
+.header__contact .contactlink .iconcontact{
+    
+}
+.header__contact .contactlink .conte__2{
+    color:  #e9c02d;
+}
+.main .club__List{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 470px;
+   
+}
+.club__List .club__club{
+font-size: 30px;
+margin-top: 100px;
+}
+.club__List .club__line{
+margin: 50px 0;
+}
+.club__line .clubline_1{
+    width: 100px;
+    height: 2px;
+    background-color: #fcd061;
+
+}
+.club__line .clubline__2{
+    width: 100px;
+    height: 2px;
+    background-color: #5875ac;
+
+}
+.club__List .clublist_box{
+
+}
+.club__List .clublist_box .club_box{
+    width: 190px;
+    height: 180px;
+   
+    text-align: center;
+   
+    
+}
+.background__xamtrang{
+    background: #f2f2f2;
+}
+.background__xamden{
+    background: #eaeaea ;
+}
+.club__List .clublist_box .club_box img{
+    width: 80px;
+    height: 50px;
+    padding-top: 30px;
+    
+}
+.club__List .clublist_box .club_box .cytyclub{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.club__List .clublist_box .club_box .cytyclub:hover{
+    color:  #e9c02d;
+}
+.club__List .clublist_box .club_box .languagecity{ 
+    padding-top: 10px;
+}
+
+
+</style>
+<div class="main">
+    <div class="header">
+        <div class="header__img flex">
+            <div class="header__img__icon">
+                <img class="img" src="/AppTinTuc_Nhom9_LTFrontEnd_Thu2_Ca4_2022/frontend/src/assets/img/khelo-logo.png" alt="">
+            </div>
+            <div class="header__content flex">
+                <ul class="menu">
+                    <li class="menu_menubar"><a href="">HOME</a></li>
+                    <li class="menu_menubar "><a class="color" href=""> CLUB DIRECTORY</a></li>
+                    <li class="menu_menubar"><a href="">PAGES</a></li>
+                    <li class="menu_menubar"><a href="">RESULTS</a></li>
+                    <li class="menu_menubar"><a href="">POINT TABLE</a></li>
+                    <li class="menu_menubar"><a href="">NEWS</a></li>
+                    <li class="menu_menubar"><a href="">CONTACT</a></li>
+                    <li class="menu_menubar"><a href="">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </a></li>
+                    <li class="menu_menubar"><a href="">
+                        <i class="fa-solid fa-shop"></i>
+                       
+                      
+                    </a></li>
+                    <li class="menu_menubar"><a href="">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </a></li>
+                   
+                   
+                  
+                </ul>
+                
+            </div>
+        </div>
+        <div class="header__contact">
+            <h1 class="contact__information">CLUB DIRECTORY</h1>
+            <p class="contactlink">
+                <span class="contec__1">Home</span>
+                <i class="fa-solid fa-link iconcontact"></i>
+                <span class="conte__2"> Contact</span>
+            </p>
+        </div>
+        
+    </div>
+ <div class="club__List">
+    <h1 class="club__club">CLUB LIST</h1>
+    <div class="club__line flex">
+        <div class="clubline_1"></div>
+        <div class="clubline__2"></div>
+
+    </div>
+    <div class="clublist_box flex">
+        <div class="club_box background__xamtrang">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/5.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Barcelona</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/4.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man City</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/3.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Chelsea</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/2.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Arsenal</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/1.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Liverpool</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/10.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man.Untied</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+    </div>
+    <div class="clublist_box flex">
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/9.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Atletico Madrid</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/7.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Valencia</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="		https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/8.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Real Sociedad</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/6.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Real Madrid</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2020/10/1.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Savia</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2020/10/2.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Westhum</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+    </div>
+ </div>
+ <div class="club__List ">
+    <h1 class="club__club">ENGLISH PREMIER LEAGUE</h1>
+    <div class="club__line flex">
+        <div class="clubline_1"></div>
+        <div class="clubline__2"></div>
+
+    </div>
+    <div class="clublist_box flex">
+        <div class="club_box background__xamtrang">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/5.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Barcelona</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/4.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man City</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/3.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Chelsea</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/2.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Arsenal</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/1.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Liverpool</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/10.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man.Untied</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+    </div>
+   
+ </div>
+ <div class="club__List">
+    <h1 class="club__club">LA LIGA</h1>
+    <div class="club__line flex">
+        <div class="clubline_1"></div>
+        <div class="clubline__2"></div>
+
+    </div>
+    <div class="clublist_box flex">
+        <div class="club_box background__xamtrang">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/5.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Barcelona</h2>
+            <div class="languagecity">(ESP)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/4.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man City</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/3.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Chelsea</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/2.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Arsenal</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamtrang">
+            <img src="	https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/1.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Liverpool</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+        <div class="club_box background__xamden">
+            <img src="https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/04/10.png" alt="" class="imgbox">
+            <h2 class="cytyclub">Man.Untied</h2>
+            <div class="languagecity">(ENG)</div>
+        </div>
+    </div>
+   
+ </div>
+</div>
