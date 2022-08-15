@@ -1,8 +1,9 @@
+.rs-footer {
+    background-color: #222934;
+    height: 360px;
 
-    .rs-footer {
-        background-color: #222934;
-        height: 360px;
-
+    .newsletter-footer {
+        margin-top: 120px;
         .newsletter-inner {
             background-color: #2b333f;
             padding: 40px 40px 30px;
@@ -12,7 +13,7 @@
             .newsletter-title {
                 color: white;
 
-                
+
                 span {
                     font-size: 35px;
                     font-weight: bold;
@@ -35,7 +36,8 @@
                     border-radius: 0 5px 5px 0;
 
                 }
-                :hover{
+
+                :hover {
                     background-color: #f9b300;
                     transition: 0.5s;
                 }
@@ -48,69 +50,73 @@
 
             }
         }
+    }
 
-        .footer-sponsor {
-            margin: 50px 0;
+    .footer-sponsor {
+        margin: 50px 0;
 
-            img {
-                width: 70%;
-                height: auto;
-                max-width: 100%;
+        img {
+            width: 70%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+    .footer-bottom {
+
+        height: 60px;
+        background-color: #313a47;
+        line-height: 60px;
+
+        .copyright {
+
+            color: white;
+            margin-bottom: -20px;
+            a {
+                color: #FBC02D;
+                font-weight: 500;
+                text-decoration: none;
+
+                :hover {
+                    color: white;
+                }
             }
         }
 
-        .footer-bottom {
+        .footer-share {
+            
+            ul {
+                text-align: right;
+                list-style: none;
+                margin: 0;
+                padding: 0;
 
-            height: 60px;
-            background-color: #313a47;
-            line-height: 60px;
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
 
-            .copyright {
+                    a {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background-color: white;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 50%;
+                        margin-left: 5px;
+                        color: #214790;
 
-                color: white;
-
-                a {
-                    color: #FBC02D;
-                    font-weight: 500;
-                    text-decoration: none;
+                    }
 
                     :hover {
-                        color: white;
+                        background-color: #FBC02D;
+                        transition: 0.3s;
                     }
                 }
-            }
-
-            .footer-share {
-                ul {
-                    text-align: right;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-
-                    li {
-                        display: inline-block;
-
-                        a {
-                            display: inline-block;
-                            width: 30px;
-                            height: 30px;
-                            background-color: white;
-                            text-align: center;
-                            line-height: 30px;
-                            border-radius: 50%;
-                            margin-left: 5px;
-                            color: #214790;
-
-                        }
-                        :hover {
-                            background-color: #FBC02D;
-                            transition: 0.3s;
-                        }
-                    }
 
 
-                }
             }
         }
-
     }
+
+}
