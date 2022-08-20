@@ -1,0 +1,242 @@
+{
+    "sourceFile": "frontend/src/app/pages/tinchuyennhuong/tinchuyennhuong.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 56,
+            "patches": [
+                {
+                    "date": 1660989762112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661000787834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,708 @@\n $color_1: #bbb;\r\n $color_2: #fff;\r\n $color_3: #999;\r\n $font-family_1: robotolabB,Arial,Helvetica,sans-serif;\r\n+$background-color_1: white;\r\n \r\n+/* HTML5 display-role reset for older browsers */\r\n+* {\r\n+\tline-height: normal;\r\n+\tbox-sizing: border-box;\r\n+}\r\n+html {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+body {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tline-height: 1;\r\n+}\r\n+div {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+span {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+applet {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+object {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+iframe {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h1 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h2 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h3 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h4 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h5 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+h6 {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+p {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+blockquote {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tquotes: none;\r\n+\t&:before {\r\n+\t\tcontent: '';\r\n+\t\tcontent: none;\r\n+\t}\r\n+\t&:after {\r\n+\t\tcontent: '';\r\n+\t\tcontent: none;\r\n+\t}\r\n+}\r\n+pre {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+a {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+abbr {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+acronym {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+address {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+big {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+cite {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+code {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+del {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+dfn {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+em {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+img {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+ins {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+kbd {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+q {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tquotes: none;\r\n+\t&:before {\r\n+\t\tcontent: '';\r\n+\t\tcontent: none;\r\n+\t}\r\n+\t&:after {\r\n+\t\tcontent: '';\r\n+\t\tcontent: none;\r\n+\t}\r\n+}\r\n+s {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+samp {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+small {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+strike {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+strong {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+sub {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+sup {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+tt {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+var {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+b {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+u {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+i {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+center {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+dl {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+dt {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+dd {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+ol {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tlist-style: none;\r\n+}\r\n+ul {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tlist-style: none;\r\n+}\r\n+li {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+fieldset {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+form {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+label {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+legend {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+table {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tborder-collapse: collapse;\r\n+\tborder-spacing: 0;\r\n+}\r\n+caption {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+tbody {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+tfoot {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+thead {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+tr {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+th {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+td {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+article {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+aside {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+canvas {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+details {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+embed {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+figure {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+figcaption {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+footer {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+header {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+hgroup {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+menu {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+nav {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+output {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+ruby {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+section {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+\tdisplay: block;\r\n+}\r\n+summary {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+time {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+mark {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+audio {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+video {\r\n+\tmargin: 0;\r\n+\tpadding: 0;\r\n+\tborder: 0;\r\n+\tfont-size: 100%;\r\n+\tfont: inherit;\r\n+\tvertical-align: baseline;\r\n+}\r\n+.gird1190px {\r\n+\twidth: 1190px;\r\n+\tmargin-left: auto;\r\n+\tmargin-right: auto;\r\n+\tbackground-color: $background-color_1;\r\n+\t.pad20 {\r\n+\t\tpadding: 20px;\r\n+\t}\r\n+}\r\n+.containmain {\r\n+\t.trang_chu_tintuc {\r\n+\t\tdisplay: inline-block;\r\n+\t}\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1661000808620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -709,8 +709,8 @@\n \t}\r\n }\r\n .containmain {\r\n \t.trang_chu_tintuc {\r\n-\t\tdisplay: inline-block;\r\n+\t\tdisplay: flex;\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661001059695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -711,6 +711,9 @@\n .containmain {\r\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n \t}\r\n+       .tintucmoi{\r\n+        color: red;\r\n+       }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661001167489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -711,8 +711,11 @@\n .containmain {\r\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n \t}\r\n+       i{\r\n+        margin: 0ch;\r\n+       }\r\n        .tintucmoi{\r\n         color: red;\r\n        }\r\n }\r\n"
+                },
+                {
+                    "date": 1661001184121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,9 +712,9 @@\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n \t}\r\n        i{\r\n-        margin: 0ch;\r\n+        margin: 0;\r\n        }\r\n        .tintucmoi{\r\n         color: red;\r\n        }\r\n"
+                },
+                {
+                    "date": 1661001217577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,9 +712,9 @@\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n \t}\r\n        i{\r\n-        margin: 0;\r\n+        margin: 5px;\r\n        }\r\n        .tintucmoi{\r\n         color: red;\r\n        }\r\n"
+                },
+                {
+                    "date": 1661001331421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -710,9 +710,12 @@\n }\r\n .containmain {\r\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n-\t}\r\n+\t}  \r\n+    .trangchu:hover{\r\n+        color: red;\r\n+    }\r\n        i{\r\n         margin: 5px;\r\n        }\r\n        .tintucmoi{\r\n"
+                },
+                {
+                    "date": 1661001638841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -720,6 +720,9 @@\n        }\r\n        .tintucmoi{\r\n         color: red;\r\n        }\r\n+    .columleft{\r\n+        width: 700px;\r\n+    }   \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661001939724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -723,6 +723,7 @@\n        }\r\n     .columleft{\r\n         width: 700px;\r\n     }   \r\n+      .co    \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661001973044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -723,7 +723,9 @@\n        }\r\n     .columleft{\r\n         width: 700px;\r\n     }   \r\n-      .co    \r\n+      .columleft__1{\r\n+        width: 170px;\r\n+      }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002342496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -726,6 +726,13 @@\n     }   \r\n       .columleft__1{\r\n         width: 170px;\r\n       }\r\n+        .head_news{\r\n+            border-top: 3px solid #ea0000;\r\n+            font-size: 20px;\r\n+            padding-top: 0;\r\n+            margin-bottom: 10px;\r\n+            font-family: UTMhel;\r\n+        }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002445618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -733,6 +733,10 @@\n             padding-top: 0;\r\n             margin-bottom: 10px;\r\n             font-family: UTMhel;\r\n         }\r\n+         a{\r\n+            font-size: 16px;\r\n+            color: #ea0000;\r\n+         }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002494945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -734,9 +734,9 @@\n             margin-bottom: 10px;\r\n             font-family: UTMhel;\r\n         }\r\n          a{\r\n-            font-size: 16px;\r\n+            font-size: 1.6rem;\r\n             color: #ea0000;\r\n          }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002808521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -734,9 +734,9 @@\n             margin-bottom: 10px;\r\n             font-family: UTMhel;\r\n         }\r\n          a{\r\n-            font-size: 1.6rem;\r\n+            font-size: 1.1rem;\r\n             color: #ea0000;\r\n          }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002887135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -726,8 +726,12 @@\n     }   \r\n       .columleft__1{\r\n         width: 170px;\r\n       }\r\n+      li::after{\r\n+        width: 100%;\r\n+        border: 1px;\r\n+      }\r\n         .head_news{\r\n             border-top: 3px solid #ea0000;\r\n             font-size: 20px;\r\n             padding-top: 0;\r\n"
+                },
+                {
+                    "date": 1661002914739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -729,8 +729,9 @@\n       }\r\n       li::after{\r\n         width: 100%;\r\n         border: 1px;\r\n+        border-color: #bbb;\r\n       }\r\n         .head_news{\r\n             border-top: 3px solid #ea0000;\r\n             font-size: 20px;\r\n"
+                },
+                {
+                    "date": 1661002986721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -726,13 +726,9 @@\n     }   \r\n       .columleft__1{\r\n         width: 170px;\r\n       }\r\n-      li::after{\r\n-        width: 100%;\r\n-        border: 1px;\r\n-        border-color: #bbb;\r\n-      }\r\n+      \r\n         .head_news{\r\n             border-top: 3px solid #ea0000;\r\n             font-size: 20px;\r\n             padding-top: 0;\r\n@@ -741,7 +737,11 @@\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n-         }\r\n+         } li::after{\r\n+            width: 100%;\r\n+            border: 1px;\r\n+            border-color: #bbb;\r\n+          }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661002999866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -739,9 +739,9 @@\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n          } li::after{\r\n             width: 100%;\r\n-            border: 1px;\r\n+            border: 10px;\r\n             border-color: #bbb;\r\n           }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003030168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -739,9 +739,9 @@\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n          } li::after{\r\n             width: 100%;\r\n-            border: 10px;\r\n+            height: 2px;\r\n             border-color: #bbb;\r\n           }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003043298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -740,8 +740,8 @@\n             color: #ea0000;\r\n          } li::after{\r\n             width: 100%;\r\n             height: 2px;\r\n-            border-color: #bbb;\r\n+            background: #999;\r\n           }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003103515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -737,9 +737,9 @@\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n-         } li::after{\r\n+         } .li{\r\n             width: 100%;\r\n             height: 2px;\r\n             background: #999;\r\n           }\r\n"
+                },
+                {
+                    "date": 1661003618231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -737,11 +737,13 @@\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n-         } .li{\r\n-            width: 100%;\r\n-            height: 2px;\r\n-            background: #999;\r\n-          }\r\n+         } \r\n+         .list_news_160{\r\n+\r\n+         }\r\n+           li{\r\n+            border-bottom-width: 4px;\r\n+           }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003682745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -738,12 +738,12 @@\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n          } \r\n-         .list_news_160{\r\n-\r\n-         }\r\n-           li{\r\n-            border-bottom-width: 4px;\r\n-           }\r\n+        \r\n }\r\n+.list_news_160{\r\n+    li{\r\n+        border-bottom: #ea0000;\r\n+    }\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1661003740253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -741,9 +741,9 @@\n          } \r\n         \r\n }\r\n .list_news_160{\r\n-    li{\r\n-        border-bottom: #ea0000;\r\n+    h2{\r\n+        border-bottom-width: 4px;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003770509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -741,8 +741,11 @@\n          } \r\n         \r\n }\r\n .list_news_160{\r\n+    li{\r\n+        margin-top: 5px;\r\n+    }\r\n     h2{\r\n         border-bottom-width: 4px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1661003808638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -746,7 +746,8 @@\n         margin-top: 5px;\r\n     }\r\n     h2{\r\n         border-bottom-width: 4px;\r\n+        border: 10px;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003831868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -747,7 +747,8 @@\n     }\r\n     h2{\r\n         border-bottom-width: 4px;\r\n         border: 10px;\r\n+        border-color: #ea0000;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003853127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,8 +743,9 @@\n }\r\n .list_news_160{\r\n     li{\r\n         margin-top: 5px;\r\n+        display: block;\r\n     }\r\n     h2{\r\n         border-bottom-width: 4px;\r\n         border: 10px;\r\n"
+                },
+                {
+                    "date": 1661003864995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -744,12 +744,12 @@\n .list_news_160{\r\n     li{\r\n         margin-top: 5px;\r\n         display: block;\r\n+        border-bottom-width: 4px;\r\n     }\r\n     h2{\r\n-        border-bottom-width: 4px;\r\n-        border: 10px;\r\n-        border-color: #ea0000;\r\n+        \r\n+       \r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661003997353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -744,9 +744,9 @@\n .list_news_160{\r\n     li{\r\n         margin-top: 5px;\r\n         display: block;\r\n-        border-bottom-width: 4px;\r\n+        border-bottom-width: thick;\r\n     }\r\n     h2{\r\n         \r\n        \r\n"
+                },
+                {
+                    "date": 1661004024958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,9 +743,10 @@\n }\r\n .list_news_160{\r\n     li{\r\n         margin-top: 5px;\r\n-        display: block;\r\n+        border: 10px;\r\n+        border-style: solid;\r\n         border-bottom-width: thick;\r\n     }\r\n     h2{\r\n         \r\n"
+                },
+                {
+                    "date": 1661004055476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,9 +743,9 @@\n }\r\n .list_news_160{\r\n     li{\r\n         margin-top: 5px;\r\n-        border: 10px;\r\n+        \r\n         border-style: solid;\r\n         border-bottom-width: thick;\r\n     }\r\n     h2{\r\n"
+                },
+                {
+                    "date": 1661004094881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -745,9 +745,9 @@\n     li{\r\n         margin-top: 5px;\r\n         \r\n         border-style: solid;\r\n-        border-bottom-width: thick;\r\n+        border-bottom-width: 1px;\r\n     }\r\n     h2{\r\n         \r\n        \r\n"
+                },
+                {
+                    "date": 1661004247909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -741,8 +741,10 @@\n          } \r\n         \r\n }\r\n .list_news_160{\r\n+    border-style: solid;\r\n+    border-right-width: 1px;\r\n     li{\r\n         margin-top: 5px;\r\n         \r\n         border-style: solid;\r\n"
+                },
+                {
+                    "date": 1661004362932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,8 +743,12 @@\n }\r\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n+    a{\r\n+        color: black;\r\n+        font-size: 11.1rem;\r\n+    }\r\n     li{\r\n         margin-top: 5px;\r\n         \r\n         border-style: solid;\r\n"
+                },
+                {
+                    "date": 1661004388248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -745,9 +745,9 @@\n     border-style: solid;\r\n     border-right-width: 1px;\r\n     a{\r\n         color: black;\r\n-        font-size: 11.1rem;\r\n+        font-size: 1.1rem;\r\n     }\r\n     li{\r\n         margin-top: 5px;\r\n         \r\n"
+                },
+                {
+                    "date": 1661004478762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,8 +743,9 @@\n }\r\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n+    height: 760px;\r\n     a{\r\n         color: black;\r\n         font-size: 1.1rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661004656846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -744,8 +744,9 @@\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n     height: 760px;\r\n+    overflow: hidden;\r\n     a{\r\n         color: black;\r\n         font-size: 1.1rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661004716615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -743,10 +743,10 @@\n }\r\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n-    height: 760px;\r\n-    overflow: hidden;\r\n+    \r\n+    \r\n     a{\r\n         color: black;\r\n         font-size: 1.1rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661004797535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -724,9 +724,9 @@\n     .columleft{\r\n         width: 700px;\r\n     }   \r\n       .columleft__1{\r\n-        width: 170px;\r\n+        width: 160px;\r\n       }\r\n       \r\n         .head_news{\r\n             border-top: 3px solid #ea0000;\r\n"
+                },
+                {
+                    "date": 1661004884080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -733,8 +733,9 @@\n             font-size: 20px;\r\n             padding-top: 0;\r\n             margin-bottom: 10px;\r\n             font-family: UTMhel;\r\n+            height: 900px;\r\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661004959119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -733,9 +733,9 @@\n             font-size: 20px;\r\n             padding-top: 0;\r\n             margin-bottom: 10px;\r\n             font-family: UTMhel;\r\n-            height: 900px;\r\n+           \r\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n@@ -744,10 +744,10 @@\n }\r\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n+    height: 900px;\r\n     \r\n-    \r\n     a{\r\n         color: black;\r\n         font-size: 1.1rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661004985183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -748,9 +748,9 @@\n     height: 900px;\r\n     \r\n     a{\r\n         color: black;\r\n-        font-size: 1.1rem;\r\n+        font-size: 0.7rem;\r\n     }\r\n     li{\r\n         margin-top: 5px;\r\n         \r\n"
+                },
+                {
+                    "date": 1661005009286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -748,9 +748,9 @@\n     height: 900px;\r\n     \r\n     a{\r\n         color: black;\r\n-        font-size: 0.7rem;\r\n+        font-size: 0.9rem;\r\n     }\r\n     li{\r\n         margin-top: 5px;\r\n         \r\n"
+                },
+                {
+                    "date": 1661005278093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -745,9 +745,14 @@\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n     height: 900px;\r\n-    \r\n+    .mar_bottom20 {\r\n+        margin-bottom: 20px;\r\n+    }\r\n+    .box160 {\r\n+        width: 160px;\r\n+    }\r\n     a{\r\n         color: black;\r\n         font-size: 0.9rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661005338016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -750,8 +750,9 @@\n         margin-bottom: 20px;\r\n     }\r\n     .box160 {\r\n         width: 160px;\r\n+        overflow: hidden;\r\n     }\r\n     a{\r\n         color: black;\r\n         font-size: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1661005401747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -745,15 +745,9 @@\n .list_news_160{\r\n     border-style: solid;\r\n     border-right-width: 1px;\r\n     height: 900px;\r\n-    .mar_bottom20 {\r\n-        margin-bottom: 20px;\r\n-    }\r\n-    .box160 {\r\n-        width: 160px;\r\n-        overflow: hidden;\r\n-    }\r\n+  \r\n     a{\r\n         color: black;\r\n         font-size: 0.9rem;\r\n     }\r\n"
+                },
+                {
+                    "date": 1661005670092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -742,11 +742,10 @@\n          } \r\n         \r\n }\r\n .list_news_160{\r\n-    border-style: solid;\r\n-    border-right-width: 1px;\r\n-    height: 900px;\r\n+    \r\n+   \r\n   \r\n     a{\r\n         color: black;\r\n         font-size: 0.9rem;\r\n@@ -761,5 +760,11 @@\n         \r\n        \r\n     }\r\n }\r\n+.columhedernew{\r\n \r\n+}\r\n+.columleft__1{\r\n+border-style: solid;\r\n+border-right-color: 1px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1661005747323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -742,9 +742,11 @@\n          } \r\n         \r\n }\r\n .list_news_160{\r\n-    \r\n+     \r\n+    border-style: solid;\r\n+    border-right-width: 1px;\r\n    \r\n   \r\n     a{\r\n         color: black;\r\n@@ -763,8 +765,5 @@\n }\r\n .columhedernew{\r\n \r\n }\r\n-.columleft__1{\r\n-border-style: solid;\r\n-border-right-color: 1px;\r\n-}\r\n+\r\n"
+                },
+                {
+                    "date": 1661005898816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -762,8 +762,5 @@\n         \r\n        \r\n     }\r\n }\r\n-.columhedernew{\r\n \r\n-}\r\n-\r\n"
+                },
+                {
+                    "date": 1661006444200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -722,8 +722,9 @@\n         color: red;\r\n        }\r\n     .columleft{\r\n         width: 700px;\r\n+        display: flex;\r\n     }   \r\n       .columleft__1{\r\n         width: 160px;\r\n       }\r\n"
+                },
+                {
+                    "date": 1661006655831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -763,5 +763,8 @@\n         \r\n        \r\n     }\r\n }\r\n+.columleft__2{\r\n+    width: 530px;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1661006751771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -764,7 +764,8 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    width: 530px;\r\n+    width: 510px;\r\n+    padding-left: 20px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661006817379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -766,6 +766,8 @@\n }\r\n .columleft__2{\r\n     width: 510px;\r\n     padding-left: 20px;\r\n+    border-style: solid;\r\n+    border-left-width: 1px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661006857309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -765,9 +765,9 @@\n     }\r\n }\r\n .columleft__2{\r\n     width: 510px;\r\n-    padding-left: 20px;\r\n+    margin-left: 20px;\r\n     border-style: solid;\r\n     border-left-width: 1px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661006931103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -767,7 +767,7 @@\n .columleft__2{\r\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n-    border-left-width: 1px;\r\n+    border-width: 1px;\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1660989762112,
+            "name": "Commit-0",
+            "content": "// Font Awesome\r\n@import \"~@fortawesome/fontawesome-free/scss/fontawesome.scss\";\r\n@import \"~@fortawesome/fontawesome-free/scss/solid.scss\";\r\n@import \"~@fortawesome/fontawesome-free/scss/regular.scss\";\r\n@import \"~@fortawesome/fontawesome-free/scss/brands.scss\";\r\n\r\n// MDB SCSS\r\n@import \"~mdb-angular-ui-kit/assets/scss/mdb.scss\";\r\n$color_1: #bbb;\r\n$color_2: #fff;\r\n$color_3: #999;\r\n$font-family_1: robotolabB,Arial,Helvetica,sans-serif;\r\n\r\n"
+        }
+    ]
+}
