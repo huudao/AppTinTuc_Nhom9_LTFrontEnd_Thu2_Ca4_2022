@@ -9,22 +9,24 @@ import { NewsComponent } from './pages/news/news.component';
 import { NewDetailsComponent } from './pages/new-details/new-details.component';
 
 import { HomeComponent } from './pages/home/home.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
     AppComponent,
-
     FooterComponent,
     NewsComponent,
     NewDetailsComponent,
-
     HomeComponent
-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
