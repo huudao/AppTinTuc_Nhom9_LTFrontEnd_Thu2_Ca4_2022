@@ -9,6 +9,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { NewDetailsComponent } from './pages/new-details/new-details.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { HeaderComponent } from './sharepages/header/header.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
     NewsComponent,
     NewDetailsComponent,
 
-    HomeComponent
+    HomeComponent,
+      HeaderComponent
 
   ],
   imports: [
