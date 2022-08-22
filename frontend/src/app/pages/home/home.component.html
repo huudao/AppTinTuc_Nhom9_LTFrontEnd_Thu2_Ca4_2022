@@ -31,122 +31,144 @@
            <div id="lastest-news">
                 <div class="title-type-news"><a href="#">Tin mới nhất</a></div>
                 <ul class="list-lastest-news">
-                    <li>
+                    <li *ngFor="let news of tinMoiResult.slice(0,10)">
                         <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
+                            <img src="{{news.image}}" alt="">
                         </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/21/5-diem-nhan-leeds--chelsea-de-gea-20-tan-binh-hit-khoi-225251.jpg" alt="">
-                        </a>
-                        <a href="">5 điểm nhấn Leeds - Chelsea: 'De Gea 2.0'; Ngã mũ trước sát thủ</a>
+                        <a href="">{{news.title}}</a>
                     </li>
                 </ul>
            </div>
            <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Tin chuyển nhượng'" [arrData]="trangChuResult"></app-box-news-home>
            </div>
            <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Bóng đá anh'" [arrData]="englandResult"></app-box-news-home>
            </div>
             <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Bóng đá tây ban nha'" [arrData]="spainResult"></app-box-news-home>
             </div>
             <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Bóng đá việt nam'" [arrData]="vietNamResult"></app-box-news-home>
             </div>
             <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Hậu trường'" [arrData]="btsResult"></app-box-news-home>
             </div>
             <div class="box-left-home">
-                <app-box-news-home></app-box-news-home>
+                <app-box-news-home [title]="'Champions league'" [arrData]="championsLeagueResult"></app-box-news-home>
             </div>
             <div class="pkg">
                 <div>
-                    <div class="title-type-news"><a href="#">europa league</a></div>
-                    <div>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/343x220/files/phi.do/2022/08/03/ten-hag-1215.jpeg" alt="">
-                        </a>
-                        <a href="">Hành trình chinh phục Europa League của Man Utd được ấn định</a>
+                    <div class="title-type-news"><a href="#">V-League</a></div>
+                    <div class="pkg-content">
+                        <ng-container *ngFor="let news of vLeagueResult.slice(0,1)">
+                            <a href="">
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                            <a href="">{{news.title}}</a>    
+                        </ng-container>
+                        <hr>
                         <ul>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
+                            <li *ngFor="let news of vLeagueResult.slice(1,5)">
+                                <a href="">{{news.title}}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <div class="title-type-news"><a href="#">Tin nóng</a></div>
-                    <div>
-                        <a href="">
-                            <img src="https://media.bongda.com.vn/resize/343x220/files/phi.do/2022/08/03/ten-hag-1215.jpeg" alt="">
-                        </a>
-                        <a href="">Hành trình chinh phục Europa League của Man Utd được ấn định</a>
+                    <div class="title-type-news"><a href="#">Bóng đá ý</a></div>
+                    <div class="pkg-content">
+                        <ng-container *ngFor="let news of italyResult.slice(0,1)">
+                            <a href="">
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                            <a href="">{{news.title}}</a>    
+                        </ng-container>
+                        <hr>
                         <ul>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
-                            <li><a href="">Eintracht Frankfurt tái lập kỳ tích của Chelsea khi vô địch Europa League</a></li>
+                            <li *ngFor="let news of italyResult.slice(1,5)">
+                                <a href="">{{news.title}}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-           
+            <div class="pkg">
+                <div>
+                    <div class="title-type-news"><a href="#">Bóng đá đức</a></div>
+                    <div class="pkg-content">
+                        <ng-container *ngFor="let news of germanyResult.slice(0,1)">
+                            <a href="">
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                            <a href="">{{news.title}}</a>    
+                        </ng-container>
+                        <hr>
+                        <ul>
+                            <li *ngFor="let news of germanyResult.slice(1,5)">
+                                <a href="">{{news.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="title-type-news"><a href="#">Bóng đá Pháp</a></div>
+                    <div class="pkg-content">
+                        <ng-container *ngFor="let news of franceResult.slice(0,1)">
+                            <a href="">
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                            <a href="">{{news.title}}</a>
+                        </ng-container>
+                        <hr>
+                        <ul>
+                            <li *ngFor="let news of franceResult.slice(1,5)">
+                                <a href="">{{news.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="videos">
+                <div class="title-type-news"><a href="#">Video</a></div>
+                <div class="videos-content">
+                    <ng-container *ngFor="let news of franceResult.slice(0,1)">
+                        <a href="">
+                            <h2>{{news.title}}</h2>
+                            <img src="{{news.image}}" alt="">
+                        </a>
+                    </ng-container>
+                    <ul>
+                        <li *ngFor="let news of franceResult.slice(1,5)">
+                            <a href="">
+                                <h3>{{news.title}}</h3>
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="home-main-right">
-            
+            <div class="list-most-news-read">
+                <div class="title-type-news"><a href="#">TIN ĐỌC NHIỀU NHẤT</a></div>
+                <div class="most-read-content">
+                    <ng-container *ngFor="let news of tinDocNhieuResult.slice(0,1)">
+                        <a href="">
+                            <img src="{{news.image}}" alt="">
+                        </a>
+                        <a href="">{{news.title}}</a>
+                    </ng-container>
+                    <ul>
+                        <li *ngFor="let news of tinDocNhieuResult.slice(1,5)">
+                            <a href="">
+                                <img src="{{news.image}}" alt="">
+                            </a>
+                            <a href="">{{news.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
