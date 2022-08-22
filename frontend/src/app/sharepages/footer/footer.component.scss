@@ -12,6 +12,11 @@ $color_3: #999;
 $font-family_1: robotolabB,Arial,Helvetica,sans-serif;
 
 /* HTML5 display-role reset for older browsers */
+@media screen and (max-width: 1366px){
+	.footer {
+		width: 1263.33px;
+		margin: 0 auto;
+	}}
 * {
 	line-height: normal;
 	box-sizing: border-box;
@@ -736,11 +741,7 @@ hr {
 		margin: 0 37px;
 	}
 }
-@media screen and (max-width: 1366px){
-.footer {
-    width: 1263.33px;
-	margin: 0px auto;
-}}
+
 .foooterall {
 	.footerleft {
 		width: 30%;
