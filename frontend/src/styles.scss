@@ -7,3 +7,8 @@
 
 // MDB SCSS
 @import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+@font-face {
+    font-family: "UTMhel";
+    src: local("UTMhel"), url(./assets/fonts/UTLhel/UTMHelve.ttf) format("truetype");
+}
