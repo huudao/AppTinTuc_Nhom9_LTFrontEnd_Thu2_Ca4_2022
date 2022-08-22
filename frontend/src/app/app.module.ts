@@ -10,6 +10,9 @@ import { NewDetailsComponent } from './pages/new-details/new-details.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './sharepages/header/header.component';
+import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
+import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
+import { ItalyComponent } from './pages/italy/italy.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { HeaderComponent } from './sharepages/header/header.component';
     NewDetailsComponent,
 
     HomeComponent,
-      HeaderComponent
+      HeaderComponent,
+      LeftMenuComponent,
+      RightMenuComponent,
+      ItalyComponent
 
   ],
   imports: [

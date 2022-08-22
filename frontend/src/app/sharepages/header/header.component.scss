@@ -200,7 +200,7 @@ header{
     }
 
     .grid1190 {
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
         position: relative;
     }
@@ -335,29 +335,6 @@ header{
                 }
 
             }
-
-            .last {
-                position: inherit;
-
-                .sub_menu_other {
-                    text-align: center;
-                }
-
-                .sub_menu_main.sub_menu_other {
-                    right: 0;
-                    left: auto;
-                    width: 100%;
-
-                    li {
-                        float: none;
-                        border-bottom: 0;
-                        display: inline-block;
-                        padding: 0 3px;
-                    }
-                }
-            }
-
-
 
         }
     }
