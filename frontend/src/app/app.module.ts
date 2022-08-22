@@ -10,6 +10,7 @@ import { NewDetailsComponent } from './pages/new-details/new-details.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuong.component';
+import { ScrollToTopComponent } from './pages/scroll-to-top/scroll-to-top.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuon
     NewDetailsComponent,
 
     HomeComponent,
-      TinchuyennhuongComponent
+      TinchuyennhuongComponent,
+      ScrollToTopComponent
 
   ],
   imports: [

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "frontend/src/app/pages/scroll-to-top/scroll-to-top.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1661151034671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661151228487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,1 @@\n-<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop()\" class=\"scroll-to-top\">\n-</button>\n \n"
+                },
+                {
+                    "date": 1661151316896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop()\" class=\"scroll-to-top\">\n+</button>\n \n"
+                }
+            ],
+            "date": 1661151034671,
+            "name": "Commit-0",
+            "content": "<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop()\" class=\"scroll-to-top\">\n</button>\n\n"
+        }
+    ]
+}

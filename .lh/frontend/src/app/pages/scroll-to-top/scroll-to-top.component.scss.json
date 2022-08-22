@@ -1,0 +1,18 @@
+{
+    "sourceFile": "frontend/src/app/pages/scroll-to-top/scroll-to-top.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1661151091404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1661151091404,
+            "name": "Commit-0",
+            "content": ".scroll-to-top {\r\n    background: url(https://static.mediacdn.vn/nld/web_images/scrollTotop.png) -6px -3px no-repeat;\r\n    width: 50px;\r\n    height: 50px;\r\n    position: fixed;\r\n    bottom: 33%;\r\n    right: 15px;\r\n    opacity: 0;\r\n    display: none;\r\n    transition: all .2s ease-in-out;\r\n  }\r\n  .scroll-to-top:hover {\r\n    opacity: 1;\r\n    cursor: pointer;\r\n  }\r\n  .show-scroll {\r\n    opacity: 0.7;\r\n    display: block;\r\n  }\r\n  @media (max-width:1023px) {\r\n  \r\n  }\r\n  /* Tablet */\r\n  @media (min-width:740px)and (max-width:1023px) {\r\n  \r\n  \r\n  }\r\n  /* Mobile */\r\n  @media (max-width:739px) {\r\n  .searchQueryInput{\r\n    width: 80% !important;\r\n  }\r\n  }\r\n  "
+        }
+    ]
+}
