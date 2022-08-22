@@ -12,15 +12,15 @@ $color_3: #999;
 $font-family_1: robotolabB,Arial,Helvetica,sans-serif;
 
 /* HTML5 display-role reset for older browsers */
-@media screen and (max-width: 1366px){
-	.footer {
-		width: 1263.33px;
-		margin: 0 auto;
-	}}
-* {
-	line-height: normal;
-	box-sizing: border-box;
-}
+// @media screen and (max-width: 1366px){
+// 	.footer {
+// 		width: 1263.33px;
+// 		margin: 0 auto;
+// 	}}
+// * {
+// 	line-height: normal;
+// 	box-sizing: border-box;
+// }
 html {
 	margin: 0;
 	padding: 0;
@@ -38,6 +38,37 @@ body {
 	vertical-align: baseline;
 	line-height: 1;
 }
+
+.container {
+	padding: 40px 0;
+	width: 1190px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1366px){
+    .container {
+        width: 1060px;
+    }
+}
+
+@media screen and (max-width: 1336px){
+    .container {
+        width: 1190px;
+    }  
+}
+
+@media screen and (max-width: 1190px){
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .container {
+        width: 768px;
+    }
+}
+
 div {
 	margin: 0;
 	padding: 0;
@@ -714,11 +745,6 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
-.bg_footer {
-	border-top: 5px solid #ea0000;
-	background: #333;
-	padding: 40px 0;
-}
 .pkg {
 	&:after {
 		content: " ";
@@ -734,12 +760,9 @@ hr {
 	display: block;
 }
 .footer {
-	width: 1263.33px;
-	height: 370px;
+	border-top: 5px solid #ea0000;
+	width: 100%;
 	background: #333;
-	.foooterall {
-		margin: 0 37px;
-	}
 }
 
 .foooterall {
