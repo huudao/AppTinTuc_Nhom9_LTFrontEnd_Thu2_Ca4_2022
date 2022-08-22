@@ -9,23 +9,23 @@ export class NewsApiService {
 
   constructor(private http: HttpClient) { }
   trangChuURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/feed.rss';
-  chuyenNhuongURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Ftin-chuyen-nhuong.rss';
-  englandURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-anh.rss';
-  spainURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-tbn.rss';
-  italyURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-y.rss';
-  germanyURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-duc.rss';
-  franceURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-phap.rss';
-  championsLeagueURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fchampions-league.rss';
-  vietNamURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fviet-nam.rss';
-  vietNamClubsURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fdoi-tuyen-quoc-gia.rss';
-  vLeagueURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fv-league.rss';
-  nationalCupURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fcup-quoc-gia-vn.rss';
-  hangNhatURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fhang-nhat-vn.rss';
-  giaiTreVietNamURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fgiai-tre-vn.rss';
-  bongDaNuURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fbong-da-nu.rss';
-  vffURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fvff.rss';
-  btsURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fhau-truong-san-co.rss';
-  videoNewsURL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bongda.com.vn%2Fvideo.rss';
+  chuyenNhuongURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/tin-chuyen-nhuong.rss';
+  englandURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-anh.rss';
+  spainURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-tbn.rss';
+  italyURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-y.rss';
+  germanyURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-duc.rss';
+  franceURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-phap.rss';
+  championsLeagueURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/champions-league.rss';
+  vietNamURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/viet-nam.rss';
+  vietNamClubsURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/doi-tuyen-quoc-gia.rss';
+  vLeagueURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/v-league.rss';
+  nationalCupURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/cup-quoc-gia-vn.rss';
+  hangNhatURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/hang-nhat-vn.rss';
+  giaiTreVietNamURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/giai-tre-vn.rss';
+  bongDaNuURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/bong-da-nu.rss';
+  vffURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/vff.rss';
+  btsURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/hau-truong-san-co.rss';
+  videoNewsURL = 'https://v1.nocodeapi.com/huudao/xml_to_json/HTsUfoRRPVpjSngg?url=https://www.bongda.com.vn/video.rss';
 
   trangChu() : Observable<any> {
     return this.http.get(this.trangChuURL);

@@ -31,11 +31,8 @@ export class HomeComponent implements OnInit {
       console.log(result);
       this.trangChuResult = result.rss.channel.item;
 
-      this.trangChuResultMix = this.trangChuResult.sort(() => Math.random() - 0.5);
-      console.log(this.trangChuResultMix);
+      // this.trangChuResultMix = this.trangChuResult.sort(() => Math.random() - 0.5);
     })
-
-   
   }
-
+  
 }

@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from "ngx-pagination";
+import { BoxNewsHomeComponent } from './sharepages/box-news-home/box-news-home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgxPaginationModule} from "ngx-pagination";
     FooterComponent,
     NewsComponent,
     NewDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    BoxNewsHomeComponent
   ],
   imports: [
     BrowserModule,
