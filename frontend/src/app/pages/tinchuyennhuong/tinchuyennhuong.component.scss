@@ -746,6 +746,7 @@ video {
 .flex{
 	display: flex;
 }
+
 .containmain {
 	.trang_chu_tintuc {
 		display: flex;
@@ -875,7 +876,7 @@ video {
 			height: 26px;
 			background: #ddd;
 			
-			width:630px;
+			width:100%;
 			.timedate{
 				font-size:0.7rem ;
 				float: right;
@@ -895,8 +896,11 @@ video {
 		 }
 		 .fontbold{
 			font-weight: 700;
-			  span{background-color: #ea0000;
+			  .bongda_com{background-color: #ea0000;
 				   padding: 2px 5px;
+			}   .noichoitimkiem{
+				 color: #333;
+				 padding-left: 11px;
 			}
 		 }
 		 
@@ -908,6 +912,7 @@ video {
 	  .left_body_info{
 		display: block;
 		margin-bottom: 20px;
+		word-break: break-word;;
 	}
 	.expEdit{
 		text-align: center;
@@ -972,8 +977,15 @@ video {
 	width: 100%;
 	margin-top: 20px;
 	  .chiase{
-      font-size: 15px;
-	  text-transform: uppercase;
+		display: inline-block;
+		padding: 0 10px 0 0;
+		background: #fff;
+		margin-top: -12px;
+		font-size: 15px!important;
+		font-family: UTMhel;
+		text-transform: uppercase;
+		color: #444;
+
 	  }
 	  .gacjhchan___{
 		position: absolute;
@@ -997,21 +1009,39 @@ video {
 	 }
 }
 .columleft__2{
+	padding: 0;
+	iframe{
+		width: 100%;
+
+	 }
 	 .listtintucmoi{
 		.title_gach_chinh{
 			margin-top: 20px;
 			color: #444;
+			margin-bottom: 20px;
 			.gachchanlis1{
             height: 1px;
 			background: black;
-			width: 30px;
+			width: 10%;
 			margin-top: 12px;
 			}
 			.gachchanlist2{
 				height: 1px;
 				background: black;
-				width:80%;
+				width:60%;
 				margin-top: 12px;
+			}
+			.tinmoinhat{
+				display: inline-block;
+    background: #fff;
+    
+    font-size: 16px!important;
+    text-transform: uppercase;
+    color: #555;
+    width: 30%;
+	text-align: center;
+    font-family: UTMhel!important;
+    height: 10px;
 			}
 		}
 
@@ -1022,9 +1052,10 @@ video {
 		margin: 10px 0;
 		 li{
 			margin-left: 15px;
-			a{
+			.linkttle{
 			font-size: 14px;	
 			color: #333;
+			cursor: pointer;
 			}
 		 }
 	 }
@@ -1046,11 +1077,24 @@ video {
 
 			    height: 1px;
 				background: black;
-				width: 73%;
+				width: 58%;
 				margin-top: 11px;
 
 				
 		}
+		.tintuccungchuyenmuc{
+			height: 10px;
+			
+           background: #fff;
+    
+          font-size: 16px!important;
+           text-transform: uppercase;
+           color: #555;
+    
+          font-family: UTMhel!important;
+    
+		}
+
 	}
 	.ttlefft{
 		list-style: circle;
@@ -1069,7 +1113,7 @@ video {
 		justify-content: space-between;
 
 		.cayhinhanh1{
-			width: 115px;
+			width: 24%;
 			
 			img{
 				width: 100%;
@@ -1095,14 +1139,13 @@ video {
 
 	}
      .baotrumganh_dvnoibat{
-		border-style: solid;
-			border-bottom-width: 1px;
+		justify-content: space-between;
 		.anhden1{
-			width: 33.33%;
+			width: 30%;
 			border-style: solid;
-			border-right-width: 1px;
-			img{
-		
+			
+			.imganhden{
+				width: 100%;
 			}
 			h2{
 		
@@ -1110,20 +1153,24 @@ video {
 		 }	
 	 }
 }
-.listtt_tt__{
-	width: 50%;
-	
-	float: left;
-	.li_ul_list{
-		border-style: solid;
-		border-bottom-width: 1px;
-		border-width: 1px;
-	}
-	    a{
-		font-size: 0.9rem;
+.ul_tt_div{
+	.listtt_tt__{
+		width: 50%;
+		
+		float: left;
+		.li_ul_list{
+			border-style: solid;
+			border-top-width: 1px;
+			
 		}
+			a{
+			font-size: 0.9rem;
+			}
+	
+	}
 
 }
+
 .div_photonoi_{
 	
 		.photo__one_noi{
@@ -1149,7 +1196,7 @@ video {
 		.pho_to_two_noi{
 			justify-content: space-between;
 			.phototw_1{
-				width: 48%;
+				width: 49%;
 				position: relative;
 				img{
 					width: 100%;
