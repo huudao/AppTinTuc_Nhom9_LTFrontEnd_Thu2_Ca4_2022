@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 56,
+            "activePatchIndex": 391,
             "patches": [
                 {
                     "date": 1660989762112,
@@ -232,6 +232,1346 @@
                 {
                     "date": 1661006931103,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -767,7 +767,7 @@\n .columleft__2{\r\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n-    border-left-width: 1px;\r\n+    border-width: 1px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661044044563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -768,6 +768,26 @@\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n+\t.expthumb {\r\n+\t\tbackground: url(/lib/explus/bg-img.jpg) center no-repeat #f6f6f6;\r\n+\t\tbackground-size: contain;\r\n+\t}\r\n+\t@media screen and (max-width: 1366px){\r\n+\t.thumb630x330 {\r\n+\t\theight: 350px;\r\n+\t}}\r\n+\t.mar_bottom15 {\r\n+\t\tmargin-bottom: 15px;\r\n+\t}\r\n+\t.thumbblock {\r\n+\t\tposition: relative;\r\n+\t\tdisplay: block;\r\n+\t\toverflow: hidden;\r\n+\t}\r\n+\t\r\n+\ta {\r\n+\t\tcolor: #333;\r\n+\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661044207205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -788,6 +788,14 @@\n \t\r\n \ta {\r\n \t\tcolor: #333;\r\n \t}\r\n+\t.content_shadow {\r\n+\t\tleft: 20px;\r\n+\t\tright: 20px;\r\n+\t\r\n+\t    position: absolute;\r\n+\t\tz-index: 3;\r\n+\t\ttext-shadow: 0 1px 3px #444;\r\n+\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661044226657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -795,7 +795,8 @@\n \t\r\n \t    position: absolute;\r\n \t\tz-index: 3;\r\n \t\ttext-shadow: 0 1px 3px #444;\r\n+\t\tbottom: 20px;\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661044279139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -786,9 +786,9 @@\n \t\toverflow: hidden;\r\n \t}\r\n \t\r\n \ta {\r\n-\t\tcolor: #333;\r\n+\t\tcolor:white;\r\n \t}\r\n \t.content_shadow {\r\n \t\tleft: 20px;\r\n \t\tright: 20px;\r\n"
+                },
+                {
+                    "date": 1661044686762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -707,8 +707,11 @@\n \t.pad20 {\r\n \t\tpadding: 20px;\r\n \t}\r\n }\r\n+.flex{\r\n+\tdisplay: flex;\r\n+}\r\n .containmain {\r\n \t.trang_chu_tintuc {\r\n \t\tdisplay: flex;\r\n \t}  \r\n"
+                },
+                {
+                    "date": 1661044748667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -742,8 +742,9 @@\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n             color: #ea0000;\r\n+\t\t\tdisplay: block;\r\n          } \r\n         \r\n }\r\n .list_news_160{\r\n"
+                },
+                {
+                    "date": 1661045032957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -801,6 +801,10 @@\n \t\tz-index: 3;\r\n \t\ttext-shadow: 0 1px 3px #444;\r\n \t\tbottom: 20px;\r\n \t}\r\n-}\r\n+\t.paging {\r\n+\t\tmargin-top: 20px;\r\n+\t\ttext-align: center;\r\n+\t}\r\n+}  \r\n \r\n"
+                },
+                {
+                    "date": 1661045130224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -772,39 +772,7 @@\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n-\t.expthumb {\r\n-\t\tbackground: url(/lib/explus/bg-img.jpg) center no-repeat #f6f6f6;\r\n-\t\tbackground-size: contain;\r\n-\t}\r\n-\t@media screen and (max-width: 1366px){\r\n-\t.thumb630x330 {\r\n-\t\theight: 350px;\r\n-\t}}\r\n-\t.mar_bottom15 {\r\n-\t\tmargin-bottom: 15px;\r\n-\t}\r\n-\t.thumbblock {\r\n-\t\tposition: relative;\r\n-\t\tdisplay: block;\r\n-\t\toverflow: hidden;\r\n-\t}\r\n \t\r\n-\ta {\r\n-\t\tcolor:white;\r\n-\t}\r\n-\t.content_shadow {\r\n-\t\tleft: 20px;\r\n-\t\tright: 20px;\r\n-\t\r\n-\t    position: absolute;\r\n-\t\tz-index: 3;\r\n-\t\ttext-shadow: 0 1px 3px #444;\r\n-\t\tbottom: 20px;\r\n-\t}\r\n-\t.paging {\r\n-\t\tmargin-top: 20px;\r\n-\t\ttext-align: center;\r\n-\t}\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661045492389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -772,7 +772,11 @@\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n+\t.img_516_350{\r\n+\t\theight: 350px;\r\n+\t\twidth: 516px;\r\n+\t}\r\n \t\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661045569554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,8 +775,12 @@\n     border-width: 1px;\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n+\t\tbackground-image: url('\thttps://media.bongda.com.vn/resize/515x350/files/n…022/08/21/cham-diem-arsenal-hai-diem-8-074845.png');\r\n+\t\tbackground-repeat: no-repeat;\r\n+\t\tbackground-attachment: fixed;\r\n+\t\tbackground-size: cover;\r\n \t}\r\n \t\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661045608180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,9 +775,9 @@\n     border-width: 1px;\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n-\t\tbackground-image: url('\thttps://media.bongda.com.vn/resize/515x350/files/n…022/08/21/cham-diem-arsenal-hai-diem-8-074845.png');\r\n+\t\tbackground-image: url('https://media.bongda.com.vn/resize/515x350/files/n…022/08/21/cham-diem-arsenal-hai-diem-8-074845.png');\r\n \t\tbackground-repeat: no-repeat;\r\n \t\tbackground-attachment: fixed;\r\n \t\tbackground-size: cover;\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661045749153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,11 +775,11 @@\n     border-width: 1px;\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n+\t\t\r\n+\t\tbackground-repeat: no-repeat;\r\n \t\tbackground-image: url('https://media.bongda.com.vn/resize/515x350/files/n…022/08/21/cham-diem-arsenal-hai-diem-8-074845.png');\r\n-\t\tbackground-repeat: no-repeat;\r\n-\t\tbackground-attachment: fixed;\r\n \t\tbackground-size: cover;\r\n \t}\r\n \t\r\n }  \r\n"
+                },
+                {
+                    "date": 1661045885110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,12 +775,13 @@\n     border-width: 1px;\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n+\t\tbackground-image: url('img_girl.jpg');\r\n+  background-repeat: no-repeat;\r\n+  background-attachment: fixed;\r\n+  background-size: 100% 100%;\r\n \t\t\r\n-\t\tbackground-repeat: no-repeat;\r\n-\t\tbackground-image: url('https://media.bongda.com.vn/resize/515x350/files/n…022/08/21/cham-diem-arsenal-hai-diem-8-074845.png');\r\n-\t\tbackground-size: cover;\r\n \t}\r\n \t\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661045954622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,9 +775,9 @@\n     border-width: 1px;\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n-\t\tbackground-image: url('img_girl.jpg');\r\n+\t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n   background-repeat: no-repeat;\r\n   background-attachment: fixed;\r\n   background-size: 100% 100%;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661045985216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -776,11 +776,9 @@\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n-  background-repeat: no-repeat;\r\n-  background-attachment: fixed;\r\n-  background-size: 100% 100%;\r\n+ \r\n \t\t\r\n \t}\r\n \t\r\n }  \r\n"
+                },
+                {
+                    "date": 1661046016221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -776,9 +776,10 @@\n \t.img_516_350{\r\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n- \r\n+        background-repeat: no-repeat;\r\n+        background-attachment: fixed;\r\n \t\t\r\n \t}\r\n \t\r\n }  \r\n"
+                },
+                {
+                    "date": 1661046048077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -778,9 +778,9 @@\n \t\twidth: 516px;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n         background-attachment: fixed;\r\n-\t\t\r\n+\t\tbackground-size: cover;\r\n \t}\r\n \t\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661046073271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -777,9 +777,9 @@\n \t\theight: 350px;\r\n \t\twidth: 516px;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n-        background-attachment: fixed;\r\n+        \r\n \t\tbackground-size: cover;\r\n \t}\r\n \t\r\n }  \r\n"
+                },
+                {
+                    "date": 1661046118151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -772,11 +772,12 @@\n     width: 510px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n+\r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n-\t\twidth: 516px;\r\n+\t\t\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n         \r\n \t\tbackground-size: cover;\r\n"
+                },
+                {
+                    "date": 1661046143800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -775,9 +775,9 @@\n     border-width: 1px;\r\n \r\n \t.img_516_350{\r\n \t\theight: 350px;\r\n-\t\t\r\n+\t\tposition: relative;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n         \r\n \t\tbackground-size: cover;\r\n"
+                },
+                {
+                    "date": 1661046600880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -781,7 +781,23 @@\n         background-repeat: no-repeat;\r\n         \r\n \t\tbackground-size: cover;\r\n \t}\r\n-\t\r\n+\t  .noidungimg{\r\n+       position: absolute;\r\n+\t   left: 20px;\r\n+       right: 20px;\r\n+       z-index: 3;\r\n+       text-shadow: 0 1px 3px #444;\r\n+\t   bottom: 20px;\r\n+\t  }\r\n+\t     .tamdiem{\r\n+\r\n+\t\t }\r\n+\t\t .timetamdiem{\r\n+\r\n+\t\t }\r\n+\t\t .noidungtamdiem{\r\n+\r\n+\t\t }\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661046625068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -786,9 +786,9 @@\n        position: absolute;\r\n \t   left: 20px;\r\n        right: 20px;\r\n        z-index: 3;\r\n-       text-shadow: 0 1px 3px #444;\r\n+       text-shadow: 0 1px 3px white;\r\n \t   bottom: 20px;\r\n \t  }\r\n \t     .tamdiem{\r\n \r\n"
+                },
+                {
+                    "date": 1661046653001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -786,9 +786,9 @@\n        position: absolute;\r\n \t   left: 20px;\r\n        right: 20px;\r\n        z-index: 3;\r\n-       text-shadow: 0 1px 3px white;\r\n+       color: white;\r\n \t   bottom: 20px;\r\n \t  }\r\n \t     .tamdiem{\r\n \r\n"
+                },
+                {
+                    "date": 1661046676567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -786,9 +786,9 @@\n        position: absolute;\r\n \t   left: 20px;\r\n        right: 20px;\r\n        z-index: 3;\r\n-       color: white;\r\n+       color: black;\r\n \t   bottom: 20px;\r\n \t  }\r\n \t     .tamdiem{\r\n \r\n"
+                },
+                {
+                    "date": 1661046715399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -786,9 +786,9 @@\n        position: absolute;\r\n \t   left: 20px;\r\n        right: 20px;\r\n        z-index: 3;\r\n-       color: black;\r\n+       text-shadow: 0 1px 3px #444;\r\n \t   bottom: 20px;\r\n \t  }\r\n \t     .tamdiem{\r\n \r\n"
+                },
+                {
+                    "date": 1661046770169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -790,9 +790,12 @@\n        text-shadow: 0 1px 3px #444;\r\n \t   bottom: 20px;\r\n \t  }\r\n \t     .tamdiem{\r\n-\r\n+\t\t\tfont-size: 24px;\r\n+\t\t\tline-height: 28px;\r\n+\t\t\tcolor: #fff;\r\n+\t\t\tmargin-bottom: 10px;\r\n \t\t }\r\n \t\t .timetamdiem{\r\n \r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661046807966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -794,8 +794,11 @@\n \t\t\tfont-size: 24px;\r\n \t\t\tline-height: 28px;\r\n \t\t\tcolor: #fff;\r\n \t\t\tmargin-bottom: 10px;\r\n+\t\t\tfont-family: robotolabB,Arial,Helvetica,sans-serif;\r\n+            font-weight: 400;\r\n+}\r\n \t\t }\r\n \t\t .timetamdiem{\r\n \r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661046859463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -796,9 +796,8 @@\n \t\t\tcolor: #fff;\r\n \t\t\tmargin-bottom: 10px;\r\n \t\t\tfont-family: robotolabB,Arial,Helvetica,sans-serif;\r\n             font-weight: 400;\r\n-}\r\n \t\t }\r\n \t\t .timetamdiem{\r\n \r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661046959943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -798,8 +798,12 @@\n \t\t\tfont-family: robotolabB,Arial,Helvetica,sans-serif;\r\n             font-weight: 400;\r\n \t\t }\r\n \t\t .timetamdiem{\r\n+\t\t\tcolor: #fff;\r\n+\t\t\tmargin-bottom: 7px;\r\n+\t\t\ttext-align: left;\r\n+\t\t\tfont-size: 11px;\r\n \r\n \t\t }\r\n \t\t .noidungtamdiem{\r\n \r\n"
+                },
+                {
+                    "date": 1661047032800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -805,8 +805,12 @@\n \t\t\tfont-size: 11px;\r\n \r\n \t\t }\r\n \t\t .noidungtamdiem{\r\n+\t\t\tfont-size: 15px;\r\n+\t\t\tline-height: 18px;\r\n+\t\t\tmargin-top: 12px;\r\n+\t\t\tcolor: #fff;\r\n \r\n \t\t }\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661047178290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -779,9 +779,9 @@\n \t\tposition: relative;\r\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n         \r\n-\t\tbackground-size: cover;\r\n+\t\tbackground-size: contain;\r\n \t}\r\n \t  .noidungimg{\r\n        position: absolute;\r\n \t   left: 20px;\r\n"
+                },
+                {
+                    "date": 1661047186641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -780,8 +780,9 @@\n \t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n         background-repeat: no-repeat;\r\n         \r\n \t\tbackground-size: contain;\r\n+\t\tmargin-bottom: 10px;\r\n \t}\r\n \t  .noidungimg{\r\n        position: absolute;\r\n \t   left: 20px;\r\n"
+                },
+                {
+                    "date": 1661047876957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -811,7 +811,16 @@\n \t\t\tline-height: 18px;\r\n \t\t\tmargin-top: 12px;\r\n \t\t\tcolor: #fff;\r\n \r\n-\t\t }\r\n+\t\r\n+\t\t}\r\n+\t.imfomationbongda{\r\n+\r\n+\r\n+\t}\t.imgthongtinbongda_left{\r\n+\t\twidth: 190px;\r\n+\t\theight: 120px;\r\n+\t\toverflow: hidden;\r\n+\t}\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661047972744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -820,7 +820,11 @@\n \t}\t.imgthongtinbongda_left{\r\n \t\twidth: 190px;\r\n \t\theight: 120px;\r\n \t\toverflow: hidden;\r\n-\t}\r\n+    \t}\r\n+\t\t  img{\r\n+\t\t\twidth: 100%;\r\n+\t\t\theight: 100%;\r\n+\t\t  }\r\n }  \r\n \r\n"
+                },
+                {
+                    "date": 1661048327241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -825,6 +825,14 @@\n \t\t  img{\r\n \t\t\twidth: 100%;\r\n \t\t\theight: 100%;\r\n \t\t  }\r\n-}  \r\n+\t\t.leftinformation_title{\r\n \r\n+\t\t}  .left_information{\r\n+\r\n+\t\t}\r\n+\t\t   .leftitle_infromtitle{\r\n+\t\t\t\r\n+\t\t   }\r\n+}       \r\n+\r\n"
+                },
+                {
+                    "date": 1661048471132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -831,8 +831,10 @@\n \t\t}  .left_information{\r\n \r\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n-\t\t\t\r\n+\t\t\tmargin-bottom: 5px;\r\n+\t\t\tfont-size: 11px;\r\n+            color: #999;\r\n \t\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661048528774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -820,14 +820,16 @@\n \t}\t.imgthongtinbongda_left{\r\n \t\twidth: 190px;\r\n \t\theight: 120px;\r\n \t\toverflow: hidden;\r\n+\t\tflex: 1;\r\n     \t}\r\n \t\t  img{\r\n \t\t\twidth: 100%;\r\n \t\t\theight: 100%;\r\n \t\t  }\r\n \t\t.leftinformation_title{\r\n+\t\t\tflex: 1;\r\n \r\n \t\t}  .left_information{\r\n \r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661048555688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -827,9 +827,9 @@\n \t\t\twidth: 100%;\r\n \t\t\theight: 100%;\r\n \t\t  }\r\n \t\t.leftinformation_title{\r\n-\t\t\tflex: 1;\r\n+\t\t\tflex: 0.7;\r\n \r\n \t\t}  .left_information{\r\n \r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661048564187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -835,8 +835,8 @@\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n \t\t\tfont-size: 11px;\r\n-            color: #999;\r\n+            \r\n \t\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661048594530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -827,9 +827,9 @@\n \t\t\twidth: 100%;\r\n \t\t\theight: 100%;\r\n \t\t  }\r\n \t\t.leftinformation_title{\r\n-\t\t\tflex: 0.7;\r\n+\t\t\tflex: 2;\r\n \r\n \t\t}  .left_information{\r\n \r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661048614969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -834,9 +834,9 @@\n \r\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n-\t\t\tfont-size: 11px;\r\n+\t\t\tfont-size: 15px;\r\n             \r\n \t\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661048667285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -834,9 +834,9 @@\n \r\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n-\t\t\tfont-size: 15px;\r\n+\t\t\tfont-size: 24px;\r\n             \r\n \t\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661048718244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -837,6 +837,10 @@\n \t\t\tmargin-bottom: 5px;\r\n \t\t\tfont-size: 24px;\r\n             \r\n \t\t   }\r\n+\t\t   .leftitle_infromtitle:hover{\r\n+\t\t\tcolor: #ea0000;\r\n+            \r\n+\t\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661048734850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -834,9 +834,9 @@\n \r\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n-\t\t\tfont-size: 24px;\r\n+\t\t\tfont-size: 15px;\r\n             \r\n \t\t   }\r\n \t\t   .leftitle_infromtitle:hover{\r\n \t\t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661048758455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -835,8 +835,9 @@\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n \t\t\tfont-size: 15px;\r\n+\t\t\tcolor: black;\r\n             \r\n \t\t   }\r\n \t\t   .leftitle_infromtitle:hover{\r\n \t\t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661048776241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -834,9 +834,9 @@\n \r\n \t\t}\r\n \t\t   .leftitle_infromtitle{\r\n \t\t\tmargin-bottom: 5px;\r\n-\t\t\tfont-size: 15px;\r\n+\t\t\tfont-size: 18px;\r\n \t\t\tcolor: black;\r\n             \r\n \t\t   }\r\n \t\t   .leftitle_infromtitle:hover{\r\n"
+                },
+                {
+                    "date": 1661048802189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -828,8 +828,9 @@\n \t\t\theight: 100%;\r\n \t\t  }\r\n \t\t.leftinformation_title{\r\n \t\t\tflex: 2;\r\n+\t\t\tmargin-left: 5px;\r\n \r\n \t\t}  .left_information{\r\n \r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661048946289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -843,6 +843,10 @@\n \t\t   .leftitle_infromtitle:hover{\r\n \t\t\tcolor: #ea0000;\r\n             \r\n \t\t   }\r\n+\t.thongtinbongdali{\r\n+\t\tborder-style: solid;\r\n+\t\tborder-bottom-width: 1px;\r\n+\t}\t   \r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049016549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -846,7 +846,8 @@\n \t\t   }\r\n \t.thongtinbongdali{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n+\t\tmargin-bottom: 5px;\r\n \t}\t   \r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049330359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -846,8 +846,8 @@\n \t\t   }\r\n \t.thongtinbongdali{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n-\t\tmargin-bottom: 5px;\r\n+\t\tmargin-bottom: 10px;\r\n \t}\t   \r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049624006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -847,7 +847,10 @@\n \t.thongtinbongdali{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n \t\tmargin-bottom: 10px;\r\n-\t}\t   \r\n+\t}\t\r\n+\t   .paging{\r\n+\t\tmargin-top: 10px;\r\n+\t   }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049697531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -850,7 +850,14 @@\n \t\tmargin-bottom: 10px;\r\n \t}\t\r\n \t   .paging{\r\n \t\tmargin-top: 10px;\r\n+\t\tjustify-content: space-around;\r\n \t   }\r\n+\t     .active{\r\n+\r\n+\t\t }\r\n+\t\t a{\r\n+\r\n+\t\t }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049722184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -856,8 +856,8 @@\n \t     .active{\r\n \r\n \t\t }\r\n \t\t a{\r\n-\r\n+          color: black;\r\n \t\t }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049731613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -853,9 +853,9 @@\n \t\tmargin-top: 10px;\r\n \t\tjustify-content: space-around;\r\n \t   }\r\n \t     .active{\r\n-\r\n+         color: red;\r\n \t\t }\r\n \t\t a{\r\n           color: black;\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661049772394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -858,6 +858,9 @@\n \t\t }\r\n \t\t a{\r\n           color: black;\r\n \t\t }\r\n+\t\t a:hover{\r\n+\t\t\tcolor: #ea0000;\r\n+\t\t }\r\n }       \r\n \r\n"
+                },
+                {
+                    "date": 1661049855121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -854,11 +854,16 @@\n \t\tjustify-content: space-around;\r\n \t   }\r\n \t     .active{\r\n          color: red;\r\n+\t\t background: #fff;\r\n+\t\t \r\n+\t\t border: 1px solid #ea0000;\r\n \t\t }\r\n \t\t a{\r\n-          color: black;\r\n+\t\t\tbackground: #fff;\r\n+\t\t\tcolor: black;\r\n+\t\t\tborder: 1px solid black;\r\n \t\t }\r\n \t\t a:hover{\r\n \t\t\tcolor: #ea0000;\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661049899323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -859,11 +859,15 @@\n \t\t \r\n \t\t border: 1px solid #ea0000;\r\n \t\t }\r\n \t\t a{\r\n-\t\t\tbackground: #fff;\r\n-\t\t\tcolor: black;\r\n-\t\t\tborder: 1px solid black;\r\n+\t\t\tbackground: #f3f3f3;\r\n+\t\t\tborder: 1px solid #d9d9d9;\r\n+\t\t\tpadding: 5px 15px;\r\n+\t\t\tdisplay: inline-block;\r\n+\t\t\tcolor: #777;\r\n+\t\t\tfont-size: 15px;\r\n+\t\t\tmargin: 0 5px;\r\n \t\t }\r\n \t\t a:hover{\r\n \t\t\tcolor: #ea0000;\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661050066475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -865,9 +865,9 @@\n \t\t\tpadding: 5px 15px;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\tcolor: #777;\r\n \t\t\tfont-size: 15px;\r\n-\t\t\tmargin: 0 5px;\r\n+\t\t\tmargin: 10 5px;\r\n \t\t }\r\n \t\t a:hover{\r\n \t\t\tcolor: #ea0000;\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661050082825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -865,9 +865,9 @@\n \t\t\tpadding: 5px 15px;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\tcolor: #777;\r\n \t\t\tfont-size: 15px;\r\n-\t\t\tmargin: 10 5px;\r\n+\t\t\tmargin: 0 5px;\r\n \t\t }\r\n \t\t a:hover{\r\n \t\t\tcolor: #ea0000;\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661050724192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -870,6 +870,10 @@\n \t\t }\r\n \t\t a:hover{\r\n \t\t\tcolor: #ea0000;\r\n \t\t }\r\n-}       \r\n+}   \r\n+.containmain{\r\n \r\n+\t.columnright\r\n+}    \r\n+\r\n"
+                },
+                {
+                    "date": 1661050732061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -873,7 +873,9 @@\n \t\t }\r\n }   \r\n .containmain{\r\n \r\n-\t.columnright\r\n+\t.columnright{\r\n+\t\t\r\n+\t}\r\n }    \r\n \r\n"
+                },
+                {
+                    "date": 1661051094755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -874,8 +874,8 @@\n }   \r\n .containmain{\r\n \r\n \t.columnright{\r\n-\t\t\r\n+\t\twidth: 300px;\r\n \t}\r\n }    \r\n \r\n"
+                },
+                {
+                    "date": 1661052263150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -876,6 +876,8 @@\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n \t}\r\n-}    \r\n+}      .video_right{\r\n+\t     margin-bottom: 20px;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1661052453100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -878,6 +878,8 @@\n \t\twidth: 300px;\r\n \t}\r\n }      .video_right{\r\n \t     margin-bottom: 20px;\r\n+}       .box_right{\r\n+\t     margin-bottom: 20px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661052608678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -876,10 +876,16 @@\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n \t}\r\n-}      .video_right{\r\n-\t     margin-bottom: 20px;\r\n+\t.video_right{\r\n+\t\tmargin-bottom: 20px;\r\n }       .box_right{\r\n-\t     margin-bottom: 20px;\r\n+\t\tmargin-bottom: 20px;\r\n+}           .head_news{\r\n+\tborder-top: 3px solid #ea0000;\r\n+    font-size: 20px;\r\n+    padding-top: 0;\r\n+    margin-bottom: 10px;\r\n+}      \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661053097383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -885,7 +885,14 @@\n \tborder-top: 3px solid #ea0000;\r\n     font-size: 20px;\r\n     padding-top: 0;\r\n     margin-bottom: 10px;\r\n-}      \r\n+}            \r\n+            .list_fooobal_iterm_right{\r\n+\t\t\t\twidth: 300px;\r\n+\t\t\t\theight: 250px;\r\n+\t\t\t}\r\n+\t\t\t     .first_iterm_right{\r\n+\r\n+\t\t\t\t }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661053371822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -888,9 +888,10 @@\n     margin-bottom: 10px;\r\n }            \r\n             .list_fooobal_iterm_right{\r\n \t\t\t\twidth: 300px;\r\n-\t\t\t\theight: 250px;\r\n+\t\t\t\t\r\n+\t\t\t\tbackground: #f4f4f4\r\n \t\t\t}\r\n \t\t\t     .first_iterm_right{\r\n \r\n \t\t\t\t }\r\n"
+                },
+                {
+                    "date": 1661053452535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,8 +162,11 @@\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n+.red:hover{\r\n+\tcolor: red;\r\n+}\r\n abbr {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n \tborder: 0;\r\n"
+                },
+                {
+                    "date": 1661053917794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -897,6 +897,9 @@\n \t\t\t}\r\n \t\t\t     .first_iterm_right{\r\n \r\n \t\t\t\t }\r\n+\t\t\t\t.two_right{\r\n+\t\t\t\t\twidth: 100%;\r\n+\t\t\t\t} \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661053927932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,7 +899,8 @@\n \r\n \t\t\t\t }\r\n \t\t\t\t.two_right{\r\n \t\t\t\t\twidth: 100%;\r\n+\t\t\t\t\toverflow: hidden;\r\n \t\t\t\t} \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661053971524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,8 +899,10 @@\n \r\n \t\t\t\t }\r\n \t\t\t\t.two_right{\r\n \t\t\t\t\twidth: 100%;\r\n-\t\t\t\t\toverflow: hidden;\r\n-\t\t\t\t} \r\n+\t\t\t\t\t\r\n+\t\t\t\t} .left_right_iterm{\r\n+\t\t\t\t\twidth: 40%;\r\n+\t\t\t\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054000676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -901,8 +901,9 @@\n \t\t\t\t.two_right{\r\n \t\t\t\t\twidth: 100%;\r\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n+\t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 40%;\r\n \t\t\t\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054032998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,8 +902,8 @@\n \t\t\t\t\twidth: 100%;\r\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n-\t\t\t\t\twidth: 40%;\r\n+\t\t\t\t\twidth: 50%;\r\n \t\t\t\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054048964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -903,7 +903,8 @@\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 50%;\r\n+\t\t\t\t\tmargin-right: 10px;\r\n \t\t\t\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054168167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -904,7 +904,10 @@\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 50%;\r\n \t\t\t\t\tmargin-right: 10px;\r\n+\t\t\t\t} img{\r\n+\t\t\t\t\twidth: 140px;\r\n+\t\t\t\t\theight: 90px;\r\n \t\t\t\t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054202712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -904,9 +904,9 @@\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 50%;\r\n \t\t\t\t\tmargin-right: 10px;\r\n-\t\t\t\t} img{\r\n+\t\t\t\t}     img{\r\n \t\t\t\t\twidth: 140px;\r\n \t\t\t\t\theight: 90px;\r\n \t\t\t\t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661054252568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -904,10 +904,11 @@\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 50%;\r\n \t\t\t\t\tmargin-right: 10px;\r\n-\t\t\t\t}     img{\r\n-\t\t\t\t\twidth: 140px;\r\n-\t\t\t\t\theight: 90px;\r\n-\t\t\t\t}\r\n+\t\t\t\t\timg{\r\n+\t\t\t\t\t\twidth: 140px;\r\n+\t\t\t\t\t\theight: 90px;\r\n+\t\t\t\t\t}\r\n+\t\t\t\t}     \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054330899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -908,7 +908,11 @@\n \t\t\t\t\timg{\r\n \t\t\t\t\t\twidth: 140px;\r\n \t\t\t\t\t\theight: 90px;\r\n \t\t\t\t\t}\r\n+\t\t\t\t\th2{\r\n+\t\t\t\t\t\tfont-size: 14px;\r\n+\t\t\t\t\t\tfont-weight: 18px;\r\n+\t\t\t\t\t}\r\n \t\t\t\t}     \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661054397925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,8 +899,9 @@\n \r\n \t\t\t\t }\r\n \t\t\t\t.two_right{\r\n \t\t\t\t\twidth: 100%;\r\n+\t\t\t\t\tmargin-top: 10px;\r\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 50%;\r\n"
+                },
+                {
+                    "date": 1661054532254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -903,9 +903,10 @@\n \t\t\t\t\tmargin-top: 10px;\r\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n-\t\t\t\t\twidth: 50%;\r\n+\t\t\t\t\twidth: 150px;\r\n+\t\t\t\t\theight: 180px;\r\n \t\t\t\t\tmargin-right: 10px;\r\n \t\t\t\t\timg{\r\n \t\t\t\t\t\twidth: 140px;\r\n \t\t\t\t\t\theight: 90px;\r\n"
+                },
+                {
+                    "date": 1661054787984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,9 +899,9 @@\n \r\n \t\t\t\t }\r\n \t\t\t\t.two_right{\r\n \t\t\t\t\twidth: 100%;\r\n-\t\t\t\t\tmargin-top: 10px;\r\n+\t\t\t\t\tmargin-top: 20px;\r\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 150px;\r\n"
+                },
+                {
+                    "date": 1661054814380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -904,9 +904,9 @@\n \t\t\t\t\t\r\n \t\t\t\t} .left_right_iterm{\r\n \t\t\t\t\toverflow: hidden;\r\n \t\t\t\t\twidth: 150px;\r\n-\t\t\t\t\theight: 180px;\r\n+\t\t\t\t\theight: 200px;\r\n \t\t\t\t\tmargin-right: 10px;\r\n \t\t\t\t\timg{\r\n \t\t\t\t\t\twidth: 140px;\r\n \t\t\t\t\t\theight: 90px;\r\n"
+                },
+                {
+                    "date": 1661054931660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -881,8 +881,9 @@\n \t\twidth: 300px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n+\t\tmargin-top: 20px;\r\n }       .box_right{\r\n \t\tmargin-bottom: 20px;\r\n }           .head_news{\r\n \tborder-top: 3px solid #ea0000;\r\n"
+                },
+                {
+                    "date": 1661055006519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -482,8 +482,11 @@\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n+.magintop20px{\r\n+\tmargin-top: 20px;\r\n+}\r\n tbody {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n \tborder: 0;\r\n@@ -881,9 +884,9 @@\n \t\twidth: 300px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n-\t\tmargin-top: 20px;\r\n+\t\t\r\n }       .box_right{\r\n \t\tmargin-bottom: 20px;\r\n }           .head_news{\r\n \tborder-top: 3px solid #ea0000;\r\n"
+                },
+                {
+                    "date": 1661055411032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -896,29 +896,30 @@\n }            \r\n             .list_fooobal_iterm_right{\r\n \t\t\t\twidth: 300px;\r\n \t\t\t\t\r\n-\t\t\t\tbackground: #f4f4f4\r\n+\t\t\t\tbackground: #f4f4f4;\r\n+\t\t\t\t.first_iterm_right{\r\n+\r\n+\t\t\t\t}\r\n+\t\t\t   .two_right{\r\n+\t\t\t\t   width: 100%;\r\n+\t\t\t\t   margin-top: 20px;\r\n+\t\t\t\t   \r\n+\t\t\t   } .left_right_iterm{\r\n+\t\t\t\t   overflow: hidden;\r\n+\t\t\t\t   width: 150px;\r\n+\t\t\t\t   height: 200px;\r\n+\t\t\t\t   margin-right: 10px;\r\n+\t\t\t\t   img{\r\n+\t\t\t\t\t   width: 140px;\r\n+\t\t\t\t\t   height: 90px;\r\n+\t\t\t\t   }\r\n+\t\t\t\t   h2{\r\n+\t\t\t\t\t   font-size: 14px;\r\n+\t\t\t\t\t   font-weight: 18px;\r\n+\t\t\t\t   }\r\n+\t\t\t   }   \r\n \t\t\t}\r\n-\t\t\t     .first_iterm_right{\r\n-\r\n-\t\t\t\t }\r\n-\t\t\t\t.two_right{\r\n-\t\t\t\t\twidth: 100%;\r\n-\t\t\t\t\tmargin-top: 20px;\r\n-\t\t\t\t\t\r\n-\t\t\t\t} .left_right_iterm{\r\n-\t\t\t\t\toverflow: hidden;\r\n-\t\t\t\t\twidth: 150px;\r\n-\t\t\t\t\theight: 200px;\r\n-\t\t\t\t\tmargin-right: 10px;\r\n-\t\t\t\t\timg{\r\n-\t\t\t\t\t\twidth: 140px;\r\n-\t\t\t\t\t\theight: 90px;\r\n-\t\t\t\t\t}\r\n-\t\t\t\t\th2{\r\n-\t\t\t\t\t\tfont-size: 14px;\r\n-\t\t\t\t\t\tfont-weight: 18px;\r\n-\t\t\t\t\t}\r\n-\t\t\t\t}     \r\n+\t\t\t      \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661055625917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -897,8 +897,12 @@\n             .list_fooobal_iterm_right{\r\n \t\t\t\twidth: 300px;\r\n \t\t\t\t\r\n \t\t\t\tbackground: #f4f4f4;\r\n+\t\t\t\tli{\r\n+\t\t\t\t\tborder-style: solid;\r\n+\t\t\t\t\tborder-width: 1px;\r\n+\t\t\t\t}\r\n \t\t\t\t.first_iterm_right{\r\n \r\n \t\t\t\t}\r\n \t\t\t   .two_right{\r\n"
+                },
+                {
+                    "date": 1661055931790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -708,9 +708,9 @@\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n \tmargin-right: auto;\r\n-\tbackground-color: $background-color_1;\r\n+\tbackground-color: red;\r\n \t.pad20 {\r\n \t\tpadding: 20px;\r\n \t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661055961070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -708,9 +708,9 @@\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n \tmargin-right: auto;\r\n-\tbackground-color: red;\r\n+\tbackground-color: #ccc;\r\n \t.pad20 {\r\n \t\tpadding: 20px;\r\n \t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661056063388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -708,9 +708,9 @@\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n \tmargin-right: auto;\r\n-\tbackground-color: #ccc;\r\n+\tbackground-color: $background-color_1;\r\n \t.pad20 {\r\n \t\tpadding: 20px;\r\n \t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661056089501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -704,8 +704,11 @@\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n+.overgird{\r\n+\tbackground-color: #777;\r\n+}\r\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n \tmargin-right: auto;\r\n"
+                },
+                {
+                    "date": 1661056190929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -705,9 +705,9 @@\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n .overgird{\r\n-\tbackground-color: #777;\r\n+\tbackground-color: #f2f2f2;\r\n }\r\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n"
+                },
+                {
+                    "date": 1661056260413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -884,8 +884,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n+\t\tmargin-left: 50px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661056279306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -884,9 +884,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n-\t\tmargin-left: 50px;\r\n+\t\tmargin-left: 100px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661056291738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -884,9 +884,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n-\t\tmargin-left: 100px;\r\n+\t\tmargin-left: 300px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661056312770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -884,9 +884,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n-\t\tmargin-left: 300px;\r\n+\t\tmargin-left: 200px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661056337310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -884,9 +884,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n-\t\tmargin-left: 200px;\r\n+\t\tmargin-left: 180px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661056711782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -707,8 +707,15 @@\n }\r\n .overgird{\r\n \tbackground-color: #f2f2f2;\r\n }\r\n+@media screen and (max-width: 1366px){\r\n+\t.overgird{\r\n+\t\tbackground-color: #f2f2f2;\r\n+\t\tmargin: 0 auto!important;\r\n+\t}\r\n+\r\n+}\r\n .gird1190px {\r\n \twidth: 1190px;\r\n \tmargin-left: auto;\r\n \tmargin-right: auto;\r\n@@ -777,9 +784,9 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    width: 510px;\r\n+    width: 70%;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n \r\n"
+                },
+                {
+                    "date": 1661056737663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -784,9 +784,9 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    width: 70%;\r\n+    width: 150%;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n \r\n"
+                },
+                {
+                    "date": 1661056759418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -784,9 +784,9 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    width: 150%;\r\n+    width: 700px;\r\n     margin-left: 20px;\r\n     border-style: solid;\r\n     border-width: 1px;\r\n \r\n"
+                },
+                {
+                    "date": 1661056819450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -891,9 +891,9 @@\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n-\t\tmargin-left: 180px;\r\n+\t\tmargin-left: 160px;\r\n \t}\r\n \t.video_right{\r\n \t\tmargin-bottom: 20px;\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661061751031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -784,110 +784,9 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    width: 700px;\r\n-    margin-left: 20px;\r\n-    border-style: solid;\r\n-    border-width: 1px;\r\n-\r\n-\t.img_516_350{\r\n-\t\theight: 350px;\r\n-\t\tposition: relative;\r\n-\t\tbackground-image: url('https://tse2.mm.bing.net/th?id=OIP.CAST3pl3uiRXII85fAJ_OwHaE7&pid=Api&P=0');\r\n-        background-repeat: no-repeat;\r\n-        \r\n-\t\tbackground-size: contain;\r\n-\t\tmargin-bottom: 10px;\r\n-\t}\r\n-\t  .noidungimg{\r\n-       position: absolute;\r\n-\t   left: 20px;\r\n-       right: 20px;\r\n-       z-index: 3;\r\n-       text-shadow: 0 1px 3px #444;\r\n-\t   bottom: 20px;\r\n-\t  }\r\n-\t     .tamdiem{\r\n-\t\t\tfont-size: 24px;\r\n-\t\t\tline-height: 28px;\r\n-\t\t\tcolor: #fff;\r\n-\t\t\tmargin-bottom: 10px;\r\n-\t\t\tfont-family: robotolabB,Arial,Helvetica,sans-serif;\r\n-            font-weight: 400;\r\n-\t\t }\r\n-\t\t .timetamdiem{\r\n-\t\t\tcolor: #fff;\r\n-\t\t\tmargin-bottom: 7px;\r\n-\t\t\ttext-align: left;\r\n-\t\t\tfont-size: 11px;\r\n-\r\n-\t\t }\r\n-\t\t .noidungtamdiem{\r\n-\t\t\tfont-size: 15px;\r\n-\t\t\tline-height: 18px;\r\n-\t\t\tmargin-top: 12px;\r\n-\t\t\tcolor: #fff;\r\n-\r\n-\t\r\n-\t\t}\r\n-\t.imfomationbongda{\r\n-\r\n-\r\n-\t}\t.imgthongtinbongda_left{\r\n-\t\twidth: 190px;\r\n-\t\theight: 120px;\r\n-\t\toverflow: hidden;\r\n-\t\tflex: 1;\r\n-    \t}\r\n-\t\t  img{\r\n-\t\t\twidth: 100%;\r\n-\t\t\theight: 100%;\r\n-\t\t  }\r\n-\t\t.leftinformation_title{\r\n-\t\t\tflex: 2;\r\n-\t\t\tmargin-left: 5px;\r\n-\r\n-\t\t}  .left_information{\r\n-\r\n-\t\t}\r\n-\t\t   .leftitle_infromtitle{\r\n-\t\t\tmargin-bottom: 5px;\r\n-\t\t\tfont-size: 18px;\r\n-\t\t\tcolor: black;\r\n-            \r\n-\t\t   }\r\n-\t\t   .leftitle_infromtitle:hover{\r\n-\t\t\tcolor: #ea0000;\r\n-            \r\n-\t\t   }\r\n-\t.thongtinbongdali{\r\n-\t\tborder-style: solid;\r\n-\t\tborder-bottom-width: 1px;\r\n-\t\tmargin-bottom: 10px;\r\n-\t}\t\r\n-\t   .paging{\r\n-\t\tmargin-top: 10px;\r\n-\t\tjustify-content: space-around;\r\n-\t   }\r\n-\t     .active{\r\n-         color: red;\r\n-\t\t background: #fff;\r\n-\t\t \r\n-\t\t border: 1px solid #ea0000;\r\n-\t\t }\r\n-\t\t a{\r\n-\t\t\tbackground: #f3f3f3;\r\n-\t\t\tborder: 1px solid #d9d9d9;\r\n-\t\t\tpadding: 5px 15px;\r\n-\t\t\tdisplay: inline-block;\r\n-\t\t\tcolor: #777;\r\n-\t\t\tfont-size: 15px;\r\n-\t\t\tmargin: 0 5px;\r\n-\t\t }\r\n-\t\t a:hover{\r\n-\t\t\tcolor: #ea0000;\r\n-\t\t }\r\n+    \r\n }   \r\n .containmain{\r\n \r\n \t.columnright{\r\n"
+                },
+                {
+                    "date": 1661062126128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -784,9 +784,9 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-    \r\n+\twidth: 630px;   \r\n }   \r\n .containmain{\r\n \r\n \t.columnright{\r\n"
+                },
+                {
+                    "date": 1661062342080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -784,9 +784,17 @@\n        \r\n     }\r\n }\r\n .columleft__2{\r\n-\twidth: 630px;   \r\n+\twidth: 630px; \r\n+\t  .time_detail_news{\r\n+\tmargin: 15px 0;\r\n+    font-size: 28px;\r\n+    font-family: Utmhel;\r\n+    line-height: 30px;\r\n+    display: block;\r\n+\t\r\n+\t  }\r\n }   \r\n .containmain{\r\n \r\n \t.columnright{\r\n"
+                },
+                {
+                    "date": 1661062499130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -783,19 +783,9 @@\n         \r\n        \r\n     }\r\n }\r\n-.columleft__2{\r\n-\twidth: 630px; \r\n-\t  .time_detail_news{\r\n-\tmargin: 15px 0;\r\n-    font-size: 28px;\r\n-    font-family: Utmhel;\r\n-    line-height: 30px;\r\n-    display: block;\r\n-\t\r\n-\t  }\r\n-}   \r\n+  \r\n .containmain{\r\n \r\n \t.columnright{\r\n \t\twidth: 300px;\r\n@@ -843,5 +833,17 @@\n \t\t\t   }   \r\n \t\t\t}\r\n \t\t\t      \r\n }\r\n+.columleft__2{\r\n+\twidth: 630px; \r\n+\t  .time_detail_news{\r\n+\tmargin: 15px 0;\r\n+    font-size: 28px;\r\n+    font-family: Utmhel;\r\n+    line-height: 30px;\r\n+    display: block;\r\n+\tcolor: black;\r\n+\t\r\n+\t  }\r\n+} \r\n \r\n"
+                },
+                {
+                    "date": 1661062557995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -844,6 +844,9 @@\n     display: block;\r\n \tcolor: black;\r\n \t\r\n \t  }\r\n+\t  .time_detail_news:hover{\r\n+\t\tcolor: #ea0000;\r\n+\t  }\r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661062594532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -835,8 +835,9 @@\n \t\t\t      \r\n }\r\n .columleft__2{\r\n \twidth: 630px; \r\n+\tmargin-left: 10px;\r\n \t  .time_detail_news{\r\n \tmargin: 15px 0;\r\n     font-size: 28px;\r\n     font-family: Utmhel;\r\n"
+                },
+                {
+                    "date": 1661062694383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -843,8 +843,9 @@\n     font-family: Utmhel;\r\n     line-height: 30px;\r\n     display: block;\r\n \tcolor: black;\r\n+\tfont-weight: 400;\r\n \t\r\n \t  }\r\n \t  .time_detail_news:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661063058939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -836,8 +836,10 @@\n }\r\n .columleft__2{\r\n \twidth: 630px; \r\n \tmargin-left: 10px;\r\n+\tborder-style: solid;\r\n+\tborder-top-width: 1px;\r\n \t  .time_detail_news{\r\n \tmargin: 15px 0;\r\n     font-size: 28px;\r\n     font-family: Utmhel;\r\n"
+                },
+                {
+                    "date": 1661063258917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -846,8 +846,14 @@\n     line-height: 30px;\r\n     display: block;\r\n \tcolor: black;\r\n \tfont-weight: 400;\r\n+\t     .info_detail{\r\n+\t\t\tborder: 1px solid #ddd;\r\n+\t\t\tborder-width: 1px 0;\r\n+\t\t\tmargin-top: 10px;\r\n+\t\t\tmargin-bottom: 10px;\r\n+\t\t }\r\n \t\r\n \t  }\r\n \t  .time_detail_news:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661063307677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -851,8 +851,9 @@\n \t\t\tborder: 1px solid #ddd;\r\n \t\t\tborder-width: 1px 0;\r\n \t\t\tmargin-top: 10px;\r\n \t\t\tmargin-bottom: 10px;\r\n+\t\t\theight: 26px;\r\n \t\t }\r\n \t\r\n \t  }\r\n \t  .time_detail_news:hover{\r\n"
+                },
+                {
+                    "date": 1661063340886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -852,8 +852,9 @@\n \t\t\tborder-width: 1px 0;\r\n \t\t\tmargin-top: 10px;\r\n \t\t\tmargin-bottom: 10px;\r\n \t\t\theight: 26px;\r\n+\t\t\tbackground: #ddd;\r\n \t\t }\r\n \t\r\n \t  }\r\n \t  .time_detail_news:hover{\r\n"
+                },
+                {
+                    "date": 1661063468949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -853,8 +853,13 @@\n \t\t\tmargin-top: 10px;\r\n \t\t\tmargin-bottom: 10px;\r\n \t\t\theight: 26px;\r\n \t\t\tbackground: #ddd;\r\n+\t\t\tposition: absolute;\r\n+\t\t\t.timedate{\r\n+\t\t\t\tposition: absolute;\r\n+\t\t\t\tright: 0;\r\n+\t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n \t  .time_detail_news:hover{\r\n"
+                },
+                {
+                    "date": 1661063501581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -856,9 +856,9 @@\n \t\t\tbackground: #ddd;\r\n \t\t\tposition: absolute;\r\n \t\t\t.timedate{\r\n \t\t\t\tposition: absolute;\r\n-\t\t\t\tright: 0;\r\n+\t\t\t\tleft: 0;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063511662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -857,8 +857,9 @@\n \t\t\tposition: absolute;\r\n \t\t\t.timedate{\r\n \t\t\t\tposition: absolute;\r\n \t\t\t\tleft: 0;\r\n+\t\t\t\tfont-size: 0.8rem;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063543289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -855,11 +855,9 @@\n \t\t\theight: 26px;\r\n \t\t\tbackground: #ddd;\r\n \t\t\tposition: absolute;\r\n \t\t\t.timedate{\r\n-\t\t\t\tposition: absolute;\r\n-\t\t\t\tleft: 0;\r\n-\t\t\t\tfont-size: 0.8rem;\r\n+\t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063567183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -854,8 +854,9 @@\n \t\t\tmargin-bottom: 10px;\r\n \t\t\theight: 26px;\r\n \t\t\tbackground: #ddd;\r\n \t\t\tposition: absolute;\r\n+\t\t\twidth: 100%;\r\n \t\t\t.timedate{\r\n \t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661063606729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -854,9 +854,9 @@\n \t\t\tmargin-bottom: 10px;\r\n \t\t\theight: 26px;\r\n \t\t\tbackground: #ddd;\r\n \t\t\tposition: absolute;\r\n-\t\t\twidth: 100%;\r\n+\t\t\twidth:630px;\r\n \t\t\t.timedate{\r\n \t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661063628018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -853,12 +853,12 @@\n \t\t\tmargin-top: 10px;\r\n \t\t\tmargin-bottom: 10px;\r\n \t\t\theight: 26px;\r\n \t\t\tbackground: #ddd;\r\n-\t\t\tposition: absolute;\r\n+\t\t\t\r\n \t\t\twidth:630px;\r\n \t\t\t.timedate{\r\n-\t\t\t\t\r\n+\t\t\t\tfont-size:0.7rem ;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063675468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -857,8 +857,9 @@\n \t\t\t\r\n \t\t\twidth:630px;\r\n \t\t\t.timedate{\r\n \t\t\t\tfont-size:0.7rem ;\r\n+\t\t\t\tfloat: right;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063758665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -858,8 +858,9 @@\n \t\t\twidth:630px;\r\n \t\t\t.timedate{\r\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n+\t\t\t\tline-height: 26px;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063866736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -859,8 +859,9 @@\n \t\t\t.timedate{\r\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n+\t\t\t\tfont-weight: 0.1;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661063931613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -864,9 +864,9 @@\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n-\t  .time_detail_news:hover{\r\n+\t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n \t  }\r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661063977495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -859,9 +859,9 @@\n \t\t\t.timedate{\r\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n-\t\t\t\tfont-weight: 0.1;\r\n+\t\t\t\tfont-weight: 100;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661064063687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -859,9 +859,9 @@\n \t\t\t.timedate{\r\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n-\t\t\t\tfont-weight: 100;\r\n+\t\t\t\tfont-weight: 700;\r\n \t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661064313318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -862,8 +862,19 @@\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n \t\t\t}\r\n \t\t }\r\n+\t\t .sapo_detail{\r\n+\t\t\t\r\n+\t\t\tdisplay: block;\r\n+\t\t\tline-height: 23px;\r\n+            color: #444;\r\n+\t\t\tfont-family: robotoslab-regular;\r\n+            font-size: 15px;\r\n+\t\t }\r\n+\t\t .fontbold{\r\n+\t\t\tfont-weight: 700;\r\n+\t\t }\r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661064402660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -860,8 +860,9 @@\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n+\t\t\t\tbackground: red;\r\n \t\t\t}\r\n \t\t }\r\n \t\t .sapo_detail{\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661064437189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -861,8 +861,9 @@\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n \t\t\t\tbackground: red;\r\n+\t\t\t\tpadding: 2px 5px;\r\n \t\t\t}\r\n \t\t }\r\n \t\t .sapo_detail{\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661064509322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -860,10 +860,9 @@\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n-\t\t\t\tbackground: red;\r\n-\t\t\t\tpadding: 2px 5px;\r\n+\t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n \t\t .sapo_detail{\r\n \t\t\t\r\n@@ -874,8 +873,11 @@\n             font-size: 15px;\r\n \t\t }\r\n \t\t .fontbold{\r\n \t\t\tfont-weight: 700;\r\n+\t\t\t  span{background-color: #ea0000;\r\n+\t\t\t\t   padding: 2px 5px;\r\n+\t\t\t}\r\n \t\t }\r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n"
+                },
+                {
+                    "date": 1661064587168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -860,8 +860,9 @@\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n+\t\t\t\tpadding-top: 2px;\r\n \t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n \t\t .sapo_detail{\r\n"
+                },
+                {
+                    "date": 1661064606363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -860,10 +860,10 @@\n \t\t\t\tfont-size:0.7rem ;\r\n \t\t\t\tfloat: right;\r\n \t\t\t\tline-height: 26px;\r\n \t\t\t\tfont-weight: 700;\r\n-\t\t\t\tpadding-top: 2px;\r\n \t\t\t\t\r\n+\t\t\t\t\r\n \t\t\t}\r\n \t\t }\r\n \t\t .sapo_detail{\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661065497501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -878,8 +878,9 @@\n \t\t\t  span{background-color: #ea0000;\r\n \t\t\t\t   padding: 2px 5px;\r\n \t\t\t}\r\n \t\t }\r\n+\t\t \r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661065539460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -878,9 +878,11 @@\n \t\t\t  span{background-color: #ea0000;\r\n \t\t\t\t   padding: 2px 5px;\r\n \t\t\t}\r\n \t\t }\r\n-\t\t \r\n+\t\t .left_body_info{\r\n+\t\t\tmargin-bottom: 20px;\r\n+\t\t }\r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661065706996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -879,9 +879,9 @@\n \t\t\t\t   padding: 2px 5px;\r\n \t\t\t}\r\n \t\t }\r\n \t\t .left_body_info{\r\n-\t\t\tmargin-bottom: 20px;\r\n+\t\t\tmargin-bottom: 40px;\r\n \t\t }\r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n"
+                },
+                {
+                    "date": 1661065753989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -846,8 +846,11 @@\n     line-height: 30px;\r\n     display: block;\r\n \tcolor: black;\r\n \tfont-weight: 400;\r\n+\t.left_body_info{\r\n+\t\tmargin-bottom: 40px;\r\n+\t }\r\n \t     .info_detail{\r\n \t\t\tborder: 1px solid #ddd;\r\n \t\t\tborder-width: 1px 0;\r\n \t\t\tmargin-top: 10px;\r\n@@ -878,11 +881,9 @@\n \t\t\t  span{background-color: #ea0000;\r\n \t\t\t\t   padding: 2px 5px;\r\n \t\t\t}\r\n \t\t }\r\n-\t\t .left_body_info{\r\n-\t\t\tmargin-bottom: 40px;\r\n-\t\t }\r\n+\t\t \r\n \t\r\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n"
+                },
+                {
+                    "date": 1661065777415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -846,11 +846,9 @@\n     line-height: 30px;\r\n     display: block;\r\n \tcolor: black;\r\n \tfont-weight: 400;\r\n-\t.left_body_info{\r\n-\t\tmargin-bottom: 40px;\r\n-\t }\r\n+\t\r\n \t     .info_detail{\r\n \t\t\tborder: 1px solid #ddd;\r\n \t\t\tborder-width: 1px 0;\r\n \t\t\tmargin-top: 10px;\r\n"
+                },
+                {
+                    "date": 1661065919492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -885,6 +885,11 @@\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n \t  }\r\n+\r\n } \r\n+.left_body_info{\r\n+\tdisplay: block;\r\n+\tmargin-bottom: 20px;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1661065946766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -885,11 +885,12 @@\n \t  }\r\n \t  .hover_new:hover{\r\n \t\tcolor: #ea0000;\r\n \t  }\r\n+\t  .left_body_info{\r\n+\t\tdisplay: block;\r\n+\t\tmargin-bottom: 20px;\r\n+\t}\r\n \r\n } \r\n-.left_body_info{\r\n-\tdisplay: block;\r\n-\tmargin-bottom: 20px;\r\n-}\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1661066371964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -889,8 +889,14 @@\n \t  .left_body_info{\r\n \t\tdisplay: block;\r\n \t\tmargin-bottom: 20px;\r\n \t}\r\n+\t.expEdit{\r\n+\t\ttext-align: center;\r\n+\t\tfont-family: 'Noto Serif',serif !important;\r\n+        font-size: 1.1rem !important;\r\n+\t\tline-height: 24px;\r\n+\t}\r\n \r\n } \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661066393190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -892,9 +892,9 @@\n \t}\r\n \t.expEdit{\r\n \t\ttext-align: center;\r\n \t\tfont-family: 'Noto Serif',serif !important;\r\n-        font-size: 1.1rem !important;\r\n+        \r\n \t\tline-height: 24px;\r\n \t}\r\n \r\n } \r\n"
+                },
+                {
+                    "date": 1661066678944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -422,9 +422,9 @@\n \tborder: 0;\r\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n-\tlist-style: none;\r\n+\t// list-style: none;\r\n }\r\n li {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n"
+                },
+                {
+                    "date": 1661066709019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -422,9 +422,9 @@\n \tborder: 0;\r\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n-\t// list-style: none;\r\n+\t list-style: none;\r\n }\r\n li {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n"
+                },
+                {
+                    "date": 1661066764896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -895,8 +895,11 @@\n \t\tfont-family: 'Noto Serif',serif !important;\r\n         \r\n \t\tline-height: 24px;\r\n \t}\r\n+\t.listinfor_tintucleft2{\r\n+\t\tlist-style: georgian;\r\n+\t}\r\n \r\n } \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661066784410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -896,9 +896,9 @@\n         \r\n \t\tline-height: 24px;\r\n \t}\r\n \t.listinfor_tintucleft2{\r\n-\t\tlist-style: georgian;\r\n+\t\tlist-style: circle;\r\n \t}\r\n \r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661066801272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -897,8 +897,9 @@\n \t\tline-height: 24px;\r\n \t}\r\n \t.listinfor_tintucleft2{\r\n \t\tlist-style: circle;\r\n+\t\tmargin-left: 0;\r\n \t}\r\n \r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661066808857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -897,9 +897,9 @@\n \t\tline-height: 24px;\r\n \t}\r\n \t.listinfor_tintucleft2{\r\n \t\tlist-style: circle;\r\n-\t\tmargin-left: 0;\r\n+\t\tmargin-left: 10px;\r\n \t}\r\n \r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661066897211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -757,9 +757,9 @@\n            \r\n         }\r\n          a{\r\n             font-size: 1.1rem;\r\n-            color: #ea0000;\r\n+            \r\n \t\t\tdisplay: block;\r\n          } \r\n         \r\n }\r\n"
+                },
+                {
+                    "date": 1661067366470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,8 +899,13 @@\n \t.listinfor_tintucleft2{\r\n \t\tlist-style: circle;\r\n \t\tmargin-left: 10px;\r\n \t}\r\n+\t.italic{\r\n+\t\tfont-style: italic;\r\n+\t\tdisplay: block;\r\n+\t\tmargin-top: 10px;\r\n+\t}\r\n \r\n } \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661067619311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -904,8 +904,12 @@\n \t\tfont-style: italic;\r\n \t\tdisplay: block;\r\n \t\tmargin-top: 10px;\r\n \t}\r\n+\t.tacgia{\r\n+\t\tdisplay: block;\r\n+\t\tfloat: right;\r\n+\t}\r\n \r\n } \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661067640425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -907,8 +907,9 @@\n \t}\r\n \t.tacgia{\r\n \t\tdisplay: block;\r\n \t\tfloat: right;\r\n+\t\tmargin-top: 10px;\r\n \t}\r\n \r\n } \r\n \r\n"
+                },
+                {
+                    "date": 1661068083709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -910,7 +910,9 @@\n \t\tfloat: right;\r\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n-} \r\n+}   .listutkhoa{\r\n+\tmargin-top: 20px;\r\n+}\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661068188403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -912,7 +912,14 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tmargin-top: 20px;\r\n+\t.head_tag_detail {\r\n+\t\tmargin-top: -1px;\r\n+\t\tcolor: #bd1616;\r\n+\t\tmargin-right: 10px;\r\n+\t\tdisplay: inline-block;\r\n+\t\tfloat: left;\r\n+\t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661068213385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,9 +913,9 @@\n \r\n }   .listutkhoa{\r\n \tmargin-top: 20px;\r\n \t.head_tag_detail {\r\n-\t\tmargin-top: -1px;\r\n+\t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n \t\tdisplay: inline-block;\r\n \t\tfloat: left;\r\n"
+                },
+                {
+                    "date": 1661068235086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -911,9 +911,9 @@\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n }   .listutkhoa{\r\n-\tmargin-top: 20px;\r\n+\tmargin-top: 30px;\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661068835013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -919,7 +919,10 @@\n \t\tmargin-right: 10px;\r\n \t\tdisplay: inline-block;\r\n \t\tfloat: left;\r\n \t}\r\n+\t.list_key{\r\n+\t\tdisplay: inline-block;\r\n+\t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661069035736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,8 +921,12 @@\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n \t\tdisplay: inline-block;\r\n+\t\t.key{\r\n+\t\t\tdisplay: block;\r\n+\t\t\tbackground: #999;\r\n+\t\t}\r\n \t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661069056699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -916,9 +916,9 @@\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n-\t\tdisplay: inline-block;\r\n+\t\tdisplay: block;\r\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n \t\tdisplay: inline-block;\r\n"
+                },
+                {
+                    "date": 1661069077744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -924,8 +924,9 @@\n \t\tdisplay: inline-block;\r\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n+\t\t\tdisplay: inline-flex;\r\n \t\t}\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661069119441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -924,9 +924,9 @@\n \t\tdisplay: inline-block;\r\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n-\t\t\tdisplay: inline-flex;\r\n+\t\t\tdisplay: inline-block;\r\n \t\t}\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661069163509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -925,8 +925,9 @@\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n \t\t\tdisplay: inline-block;\r\n+\t\t\theight: 17px;\r\n \t\t}\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661069198426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,8 +926,11 @@\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\theight: 17px;\r\n+\t\t\t a{\r\n+\t\t\t\tcolor: black;\r\n+\t\t\t }\r\n \t\t}\r\n \t}\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661069220245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -920,13 +920,13 @@\n \t\tdisplay: block;\r\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n-\t\tdisplay: inline-block;\r\n+\t\tdisplay: flex;\r\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n-\t\t\tdisplay: inline-block;\r\n+\t\t\t\r\n \t\t\theight: 17px;\r\n \t\t\t a{\r\n \t\t\t\tcolor: black;\r\n \t\t\t }\r\n"
+                },
+                {
+                    "date": 1661069239000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,8 +921,9 @@\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n \t\tdisplay: flex;\r\n+\t\tjustify-content: space-evenly;\r\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661069256611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -920,10 +920,9 @@\n \t\tdisplay: block;\r\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n-\t\tdisplay: flex;\r\n-\t\tjustify-content: space-evenly;\r\n+\t\t\r\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661069341127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -928,8 +928,9 @@\n \t\t\t\r\n \t\t\theight: 17px;\r\n \t\t\t a{\r\n \t\t\t\tcolor: black;\r\n+\t\t\t\tdisplay: block;\r\n \t\t\t }\r\n \t\t}\r\n \t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661069361914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -925,9 +925,9 @@\n \t\t.key{\r\n \t\t\tdisplay: block;\r\n \t\t\tbackground: #999;\r\n \t\t\t\r\n-\t\t\theight: 17px;\r\n+\t\t\t\r\n \t\t\t a{\r\n \t\t\t\tcolor: black;\r\n \t\t\t\tdisplay: block;\r\n \t\t\t }\r\n"
+                },
+                {
+                    "date": 1661069444765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,18 +921,9 @@\n \t\tfloat: left;\r\n \t}\r\n \t.list_key{\r\n \t\t\r\n-\t\t.key{\r\n-\t\t\tdisplay: block;\r\n-\t\t\tbackground: #999;\r\n-\t\t\t\r\n-\t\t\t\r\n-\t\t\t a{\r\n-\t\t\t\tcolor: black;\r\n-\t\t\t\tdisplay: block;\r\n-\t\t\t }\r\n-\t\t}\r\n+\t\t\r\n \t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661069523876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -917,9 +917,9 @@\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n \t\tdisplay: block;\r\n-\t\tfloat: left;\r\n+\t\t\r\n \t}\r\n \t.list_key{\r\n \t\t\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661069666617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -920,10 +920,15 @@\n \t\tdisplay: block;\r\n \t\t\r\n \t}\r\n \t.list_key{\r\n+\t\t .key{\r\n+\t\t\t a{\r\n+\t\t\t\tfont-size: 1.1rem;\r\n+\t\t\t\tcolor: black;\r\n+\t\t\t }\r\n+\t\t }\r\n \t\t\r\n-\t\t\r\n \t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661069724993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,8 +921,9 @@\n \t\t\r\n \t}\r\n \t.list_key{\r\n \t\t .key{\r\n+\t\t\tbackground: red;\r\n \t\t\t a{\r\n \t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\tcolor: black;\r\n \t\t\t }\r\n"
+                },
+                {
+                    "date": 1661069766946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -917,8 +917,9 @@\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n \t\tdisplay: block;\r\n+\t\twidth: 630px;\r\n \t\t\r\n \t}\r\n \t.list_key{\r\n \t\t .key{\r\n"
+                },
+                {
+                    "date": 1661069794028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,8 +926,9 @@\n \t\t\tbackground: red;\r\n \t\t\t a{\r\n \t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\tcolor: black;\r\n+\t\t\t\tdisplay: block;\r\n \t\t\t }\r\n \t\t }\r\n \t\t\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661069817407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -923,8 +923,9 @@\n \t}\r\n \t.list_key{\r\n \t\t .key{\r\n \t\t\tbackground: red;\r\n+\t\t\tdisplay: inline-block;\r\n \t\t\t a{\r\n \t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\tcolor: black;\r\n \t\t\t\tdisplay: block;\r\n"
+                },
+                {
+                    "date": 1661069908146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,8 +921,9 @@\n \t\twidth: 630px;\r\n \t\t\r\n \t}\r\n \t.list_key{\r\n+\t\tjustify-content: space-evenly;\r\n \t\t .key{\r\n \t\t\tbackground: red;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\t a{\r\n"
+                },
+                {
+                    "date": 1661069936618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,9 +926,9 @@\n \t\t .key{\r\n \t\t\tbackground: red;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\t a{\r\n-\t\t\t\tfont-size: 1.1rem;\r\n+\t\t\t\t\r\n \t\t\t\tcolor: black;\r\n \t\t\t\tdisplay: block;\r\n \t\t\t }\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661069996939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,9 +926,9 @@\n \t\t .key{\r\n \t\t\tbackground: red;\r\n \t\t\tdisplay: inline-block;\r\n \t\t\t a{\r\n-\t\t\t\t\r\n+\t\t\t\tfont-size: 0.5rem;\r\n \t\t\t\tcolor: black;\r\n \t\t\t\tdisplay: block;\r\n \t\t\t }\r\n \t\t }\r\n"
+                },
+                {
+                    "date": 1661070039605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -924,9 +924,10 @@\n \t.list_key{\r\n \t\tjustify-content: space-evenly;\r\n \t\t .key{\r\n \t\t\tbackground: red;\r\n-\t\t\tdisplay: inline-block;\r\n+\t\t\theight: 30px;\r\n+\t\t\twidth: 50px;\r\n \t\t\t a{\r\n \t\t\t\tfont-size: 0.5rem;\r\n \t\t\t\tcolor: black;\r\n \t\t\t\tdisplay: block;\r\n"
+                },
+                {
+                    "date": 1661070114752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -922,8 +922,9 @@\n \t\t\r\n \t}\r\n \t.list_key{\r\n \t\tjustify-content: space-evenly;\r\n+\t\twidth: inherit;\r\n \t\t .key{\r\n \t\t\tbackground: red;\r\n \t\t\theight: 30px;\r\n \t\t\twidth: 50px;\r\n"
+                },
+                {
+                    "date": 1661070140213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,21 +921,10 @@\n \t\twidth: 630px;\r\n \t\t\r\n \t}\r\n \t.list_key{\r\n-\t\tjustify-content: space-evenly;\r\n-\t\twidth: inherit;\r\n-\t\t .key{\r\n-\t\t\tbackground: red;\r\n-\t\t\theight: 30px;\r\n-\t\t\twidth: 50px;\r\n-\t\t\t a{\r\n-\t\t\t\tfont-size: 0.5rem;\r\n-\t\t\t\tcolor: black;\r\n-\t\t\t\tdisplay: block;\r\n-\t\t\t }\r\n-\t\t }\r\n \t\t\r\n+\t\t\r\n \t}\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661070448278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -920,11 +920,8 @@\n \t\tdisplay: block;\r\n \t\twidth: 630px;\r\n \t\t\r\n \t}\r\n-\t.list_key{\r\n-\t\t\r\n-\t\t\r\n-\t}\r\n+\t\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661070467752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,8 +161,9 @@\n \tborder: 0;\r\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n+\tcolor: black;\r\n }\r\n .red:hover{\r\n \tcolor: red;\r\n }\r\n"
+                },
+                {
+                    "date": 1661070575390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -921,8 +921,18 @@\n \t\tdisplay: block;\r\n \t\twidth: 630px;\r\n \t\t\r\n \t}\r\n+\t.boder_list__a{\r\n+\t\tmargin-left: 0;\r\n+    margin-bottom: 5px;\r\n+    border: 1px solid #ddd;\r\n+    padding: 2px 8px;\r\n+    font-size: 12px !important;\r\n+    background: #f2f2f2;\r\n+    line-height: 17px !important;\r\n+    text-transform: capitalize;\r\n+\t}\r\n \t\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661070609846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -930,8 +930,9 @@\n     font-size: 12px !important;\r\n     background: #f2f2f2;\r\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n+\twidth: 100px;\r\n \t}\r\n \t\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661070632573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,9 +926,9 @@\n \t\tmargin-left: 0;\r\n     margin-bottom: 5px;\r\n     border: 1px solid #ddd;\r\n     padding: 2px 8px;\r\n-    font-size: 12px !important;\r\n+    font-size: 7px !important;\r\n     background: #f2f2f2;\r\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n \twidth: 100px;\r\n"
+                },
+                {
+                    "date": 1661070683336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -926,13 +926,16 @@\n \t\tmargin-left: 0;\r\n     margin-bottom: 5px;\r\n     border: 1px solid #ddd;\r\n     padding: 2px 8px;\r\n-    font-size: 7px !important;\r\n+    font-size: 7px ;\r\n     background: #f2f2f2;\r\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n \twidth: 100px;\r\n+\t   a{\r\n+\t\tfont-size: 0.5rem;\r\n+\t   }\r\n \t}\r\n \t\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661070700722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -932,9 +932,9 @@\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n \twidth: 100px;\r\n \t   a{\r\n-\t\tfont-size: 0.5rem;\r\n+\t\tfont-size: 0.9rem;\r\n \t   }\r\n \t}\r\n \t\r\n }\r\n"
+                },
+                {
+                    "date": 1661070734354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -932,9 +932,9 @@\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n \twidth: 100px;\r\n \t   a{\r\n-\t\tfont-size: 0.9rem;\r\n+\t\tfont-size: 0.7rem;\r\n \t   }\r\n \t}\r\n \t\r\n }\r\n"
+                },
+                {
+                    "date": 1661070761239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -931,8 +931,9 @@\n     background: #f2f2f2;\r\n     line-height: 17px !important;\r\n     text-transform: capitalize;\r\n \twidth: 100px;\r\n+\ttext-align: center;\r\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n \t   }\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661070822625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,8 +936,11 @@\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n \t   }\r\n \t}\r\n+\t.boder_list__a:hover{\r\n+\t\tcolor: red;\r\n+\t}\r\n \t\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661070846159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,9 +936,9 @@\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n \t   }\r\n \t}\r\n-\t.boder_list__a:hover{\r\n+\t.boder_list__a a:hover{\r\n \t\tcolor: red;\r\n \t}\r\n \t\r\n }\r\n"
+                },
+                {
+                    "date": 1661070886800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,8 +913,9 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tmargin-top: 30px;\r\n+\tjustify-content: space-around;\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661070941773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,9 +913,9 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tmargin-top: 30px;\r\n-\tjustify-content: space-around;\r\n+\t\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661071012710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,9 +913,10 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tmargin-top: 30px;\r\n-\t\r\n+\tdisplay: flex;\r\n+\tjustify-content: space-around;\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661071043061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,8 +936,9 @@\n \twidth: 100px;\r\n \ttext-align: center;\r\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n+\t\tdisplay: block;\r\n \t   }\r\n \t}\r\n \t.boder_list__a a:hover{\r\n \t\tcolor: red;\r\n"
+                },
+                {
+                    "date": 1661071049381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,9 +936,9 @@\n \twidth: 100px;\r\n \ttext-align: center;\r\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n-\t\tdisplay: block;\r\n+\t\tdisplay: inline;\r\n \t   }\r\n \t}\r\n \t.boder_list__a a:hover{\r\n \t\tcolor: red;\r\n"
+                },
+                {
+                    "date": 1661071065581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -930,10 +930,10 @@\n     border: 1px solid #ddd;\r\n     padding: 2px 8px;\r\n     font-size: 7px ;\r\n     background: #f2f2f2;\r\n-    line-height: 17px !important;\r\n-    text-transform: capitalize;\r\n+   \r\n+    \r\n \twidth: 100px;\r\n \ttext-align: center;\r\n \t   a{\r\n \t\tfont-size: 0.7rem;\r\n"
+                },
+                {
+                    "date": 1661071119604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -915,8 +915,9 @@\n }   .listutkhoa{\r\n \tmargin-top: 30px;\r\n \tdisplay: flex;\r\n \tjustify-content: space-around;\r\n+\talign-items: center;\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661071138173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,11 +913,9 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tmargin-top: 30px;\r\n-\tdisplay: flex;\r\n-\tjustify-content: space-around;\r\n-\talign-items: center;\r\n+\t\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n"
+                },
+                {
+                    "date": 1661071251127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -944,5 +944,7 @@\n \t}\r\n \t\r\n }\r\n \r\n-\r\n+.listutkhoa{\r\n+\tdisplay: flex;\r\n+}\r\n"
+                },
+                {
+                    "date": 1661071282927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -929,8 +929,9 @@\n     border: 1px solid #ddd;\r\n     padding: 2px 8px;\r\n     font-size: 7px ;\r\n     background: #f2f2f2;\r\n+\tmargin: 0 10px;\r\n    \r\n     \r\n \twidth: 100px;\r\n \ttext-align: center;\r\n"
+                },
+                {
+                    "date": 1661071311486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -947,5 +947,6 @@\n }\r\n \r\n .listutkhoa{\r\n \tdisplay: flex;\r\n+\tjustify-content: space-between;\r\n }\r\n"
+                },
+                {
+                    "date": 1661071343582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -946,7 +946,6 @@\n \t\r\n }\r\n \r\n .listutkhoa{\r\n-\tdisplay: flex;\r\n-\tjustify-content: space-between;\r\n+\t\r\n }\r\n"
+                },
+                {
+                    "date": 1661071434923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -935,9 +935,9 @@\n     \r\n \twidth: 100px;\r\n \ttext-align: center;\r\n \t   a{\r\n-\t\tfont-size: 0.7rem;\r\n+\t\tfont-size: 0.5rem;\r\n \t\tdisplay: inline;\r\n \t   }\r\n \t}\r\n \t.boder_list__a a:hover{\r\n"
+                },
+                {
+                    "date": 1661071458693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -934,8 +934,9 @@\n    \r\n     \r\n \twidth: 100px;\r\n \ttext-align: center;\r\n+\tline-height: 17px;\r\n \t   a{\r\n \t\tfont-size: 0.5rem;\r\n \t\tdisplay: inline;\r\n \t   }\r\n"
+                },
+                {
+                    "date": 1661071473550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,9 +936,9 @@\n \twidth: 100px;\r\n \ttext-align: center;\r\n \tline-height: 17px;\r\n \t   a{\r\n-\t\tfont-size: 0.5rem;\r\n+\t\tfont-size: 1rem;\r\n \t\tdisplay: inline;\r\n \t   }\r\n \t}\r\n \t.boder_list__a a:hover{\r\n"
+                },
+                {
+                    "date": 1661071488639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -918,9 +918,9 @@\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n \t\tmargin-right: 10px;\r\n-\t\tdisplay: block;\r\n+\t\t\r\n \t\twidth: 630px;\r\n \t\t\r\n \t}\r\n \t.boder_list__a{\r\n"
+                },
+                {
+                    "date": 1661071519043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -947,6 +947,6 @@\n \t\r\n }\r\n \r\n .listutkhoa{\r\n-\t\r\n+\twidth: 100%;\r\n }\r\n"
+                },
+                {
+                    "date": 1661071549910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -936,9 +936,9 @@\n \twidth: 100px;\r\n \ttext-align: center;\r\n \tline-height: 17px;\r\n \t   a{\r\n-\t\tfont-size: 1rem;\r\n+\t\tfont-size: 0.7rem;\r\n \t\tdisplay: inline;\r\n \t   }\r\n \t}\r\n \t.boder_list__a a:hover{\r\n"
+                },
+                {
+                    "date": 1661071580831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -948,5 +948,6 @@\n }\r\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n+\tjustify-content: space-evenly;\r\n }\r\n"
+                },
+                {
+                    "date": 1661071596877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -948,6 +948,6 @@\n }\r\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n-\tjustify-content: space-evenly;\r\n+\tjustify-content: space-around;\r\n }\r\n"
+                },
+                {
+                    "date": 1661071713353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,5 +949,8 @@\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n+\t    .flexbodera{\r\n+\t\t\tmargin-left: 20px;\r\n+\t\t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661071734842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -950,7 +950,7 @@\n .listutkhoa{\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n \t    .flexbodera{\r\n-\t\t\tmargin-left: 20px;\r\n+\t\t\tmargin-left: 30px;\r\n \t\t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661071794124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,8 +949,6 @@\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n-\t    .flexbodera{\r\n-\t\t\tmargin-left: 30px;\r\n-\t\t}\r\n+\t   \r\n }\r\n"
+                },
+                {
+                    "date": 1661071839052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,6 +949,7 @@\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n+\tmargin-top: 20px;\r\n \t   \r\n }\r\n"
+                },
+                {
+                    "date": 1661071882702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -912,9 +912,9 @@\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n }   .listutkhoa{\r\n-\tmargin-top: 30px;\r\n+\tpadding-top: 50px;\r\n \t\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n@@ -949,7 +949,6 @@\n \r\n .listutkhoa{\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n-\tmargin-top: 20px;\r\n-\t   \r\n+\t\r\n }\r\n"
+                },
+                {
+                    "date": 1661071899659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -912,9 +912,9 @@\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n }   .listutkhoa{\r\n-\tpadding-top: 50px;\r\n+\tpadding-top: 30px;\r\n \t\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n"
+                },
+                {
+                    "date": 1661072812937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -913,8 +913,10 @@\n \t}\r\n \r\n }   .listutkhoa{\r\n \tpadding-top: 30px;\r\n+\twidth: 100%;\r\n+\tjustify-content: space-around;\r\n \t\r\n \t.head_tag_detail {\r\n \t\t\r\n \t\tcolor: #bd1616;\r\n@@ -946,9 +948,5 @@\n \t}\r\n \t\r\n }\r\n \r\n-.listutkhoa{\r\n-\twidth: 100%;\r\n-\tjustify-content: space-around;\r\n-\t\r\n-}\r\n+\r\n"
+                },
+                {
+                    "date": 1661073112796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -947,6 +947,16 @@\n \t\tcolor: red;\r\n \t}\r\n \t\r\n }\r\n+.share__{\r\n+\tposition: absolute;\r\n+\t  .chiase{\r\n+      font-size: 15px;\r\n+\t  text-transform: uppercase;\r\n+\t  }\r\n+\t  .gachchan{\r\n+\t\t\r\n+\t  }\r\n+}\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073137081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -954,9 +954,10 @@\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gachchan{\r\n-\t\t\r\n+\t\twidth: 80%;\r\n+\t\theight: 1px;\r\n \t  }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073147815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,8 +956,9 @@\n \t  }\r\n \t  .gachchan{\r\n \t\twidth: 80%;\r\n \t\theight: 1px;\r\n+\t\tposition: absolute;\r\n \t  }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073154715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -957,8 +957,9 @@\n \t  .gachchan{\r\n \t\twidth: 80%;\r\n \t\theight: 1px;\r\n \t\tposition: absolute;\r\n+\t\ttop: 50%;\r\n \t  }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073196966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -955,9 +955,10 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gachchan{\r\n \t\twidth: 80%;\r\n-\t\theight: 1px;\r\n+\t\tborder: 1px;\r\n+\t\tborder-style: solid;\r\n \t\tposition: absolute;\r\n \t\ttop: 50%;\r\n \t  }\r\n }\r\n"
+                },
+                {
+                    "date": 1661073239551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -955,12 +955,10 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gachchan{\r\n \t\twidth: 80%;\r\n-\t\tborder: 1px;\r\n-\t\tborder-style: solid;\r\n-\t\tposition: absolute;\r\n-\t\ttop: 50%;\r\n+\t\theight: 2px;\r\n+\t\tbackground-color: black;\r\n \t  }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073333031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -953,9 +953,9 @@\n \t  .chiase{\r\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n \t  }\r\n-\t  .gachchan{\r\n+\t  .gacjhchan___{\r\n \t\twidth: 80%;\r\n \t\theight: 2px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661073344683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -955,9 +955,9 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\twidth: 80%;\r\n-\t\theight: 2px;\r\n+\t\theight: 10px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661073389885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -954,8 +954,9 @@\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n+\t\tposition: absolute;\r\n \t\twidth: 80%;\r\n \t\theight: 10px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661073442265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -955,9 +955,9 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n-\t\twidth: 80%;\r\n+\t\twidth: 90%;\r\n \t\theight: 10px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n"
+                },
+                {
+                    "date": 1661073456512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,9 +956,9 @@\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n \t\twidth: 90%;\r\n-\t\theight: 10px;\r\n+\t\theight: 1px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661073490454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,8 +949,9 @@\n \t\r\n }\r\n .share__{\r\n \tposition: absolute;\r\n+\twidth: 100%;\r\n \t  .chiase{\r\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661073543845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,9 +956,9 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n-\t\twidth: 90%;\r\n+\t\twidth: 80%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n"
+                },
+                {
+                    "date": 1661073570085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,9 +956,9 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n-\t\twidth: 80%;\r\n+\t\twidth: 60%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n"
+                },
+                {
+                    "date": 1661073586177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,9 +956,9 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n-\t\twidth: 60%;\r\n+\t\twidth: 40%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n \t  }\r\n }\r\n"
+                },
+                {
+                    "date": 1661073610131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -959,8 +959,9 @@\n \t\tposition: absolute;\r\n \t\twidth: 40%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n+\t\ttop: 10%;\r\n \t  }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661073694551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -948,9 +948,9 @@\n \t}\r\n \t\r\n }\r\n .share__{\r\n-\tposition: absolute;\r\n+\tposition: relative;\r\n \twidth: 100%;\r\n \t  .chiase{\r\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1661073834775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -956,12 +956,14 @@\n \t  text-transform: uppercase;\r\n \t  }\r\n \t  .gacjhchan___{\r\n \t\tposition: absolute;\r\n-\t\twidth: 40%;\r\n+\t\twidth: 90%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n-\t\ttop: 10%;\r\n+\t\ttop: 40%;\r\n+\t\tleft: 10%;\r\n+\t}\r\n \t  }\r\n-}\r\n \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1661073864134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -950,8 +950,9 @@\n }\r\n .share__{\r\n \tposition: relative;\r\n \twidth: 100%;\r\n+\tmargin-top: 20px;\r\n \t  .chiase{\r\n       font-size: 15px;\r\n \t  text-transform: uppercase;\r\n \t  }\r\n"
+                },
+                {
+                    "date": 1661073920648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -961,9 +961,9 @@\n \t\twidth: 90%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n \t\ttop: 40%;\r\n-\t\tleft: 10%;\r\n+\t\tleft:9%;\r\n \t}\r\n \t  }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661074449444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -449,8 +449,11 @@\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n+.colorxanh_dam{\r\n+\tbackground: #3c5898;\r\n+}\r\n label {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n \tborder: 0;\r\n"
+                },
+                {
+                    "date": 1661074587195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -452,8 +452,14 @@\n }\r\n .colorxanh_dam{\r\n \tbackground: #3c5898;\r\n }\r\n+.colorxanhnhat{\r\n+\tbackground: #6aadd1;\r\n+}\r\n+.color_đennau{\r\n+background: #cd3627;\r\n+}\r\n label {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n \tborder: 0;\r\n"
+                },
+                {
+                    "date": 1661074688235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -973,7 +973,12 @@\n \t\ttop: 40%;\r\n \t\tleft:9%;\r\n \t}\r\n \t  }\r\n+.share__link_word{\r\n+\t .facebook_link{\r\n+\t\twidth: 33%;\r\n+\t }\r\n+}\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661074713867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -976,8 +976,9 @@\n \t  }\r\n .share__link_word{\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n+\t\ttext-align: center;\r\n \t }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661074929047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -974,8 +974,9 @@\n \t\tleft:9%;\r\n \t}\r\n \t  }\r\n .share__link_word{\r\n+\tjustify-content: space-evenly;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n \t }\r\n"
+                },
+                {
+                    "date": 1661074963706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -975,8 +975,9 @@\n \t}\r\n \t  }\r\n .share__link_word{\r\n \tjustify-content: space-evenly;\r\n+\tmargin-top: 20px;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n \t }\r\n"
+                },
+                {
+                    "date": 1661074983603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -975,9 +975,9 @@\n \t}\r\n \t  }\r\n .share__link_word{\r\n \tjustify-content: space-evenly;\r\n-\tmargin-top: 20px;\r\n+\tmargin-top: 10px;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n \t }\r\n"
+                },
+                {
+                    "date": 1661075025960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -979,8 +979,11 @@\n \tmargin-top: 10px;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n+\t\ta{\r\n+\t\t\tcolor: white;\r\n+\t\t}\r\n \t }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661075752269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -984,7 +984,24 @@\n \t\t\tcolor: white;\r\n \t\t}\r\n \t }\r\n }\r\n+.columleft__2{\r\n+\t .listtintucmoi{\r\n+\t\t.title_gach_chinh{\r\n+\t\t\t.gachchanlis1{\r\n \r\n+\t\t\t}\r\n+\t\t\tspan{\r\n+   \r\n+\t\t\t}\r\n+\t\t\t.gachchanlist2{\r\n+   \r\n+\t\t\t}\r\n+\t\t}\r\n \r\n+\t\t\r\n+\t }\r\n+}\r\n \r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1661075807905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -987,15 +987,22 @@\n }\r\n .columleft__2{\r\n \t .listtintucmoi{\r\n \t\t.title_gach_chinh{\r\n+\t\t\tposition: relative;\r\n \t\t\t.gachchanlis1{\r\n+\t\t\t\tposition: absolute;\r\n+\t\t\t\twidth: 30px;\r\n+\t\t\t\theight: 1px;\r\n+\t\t\t\tbackground: black;\r\n \r\n \t\t\t}\r\n \t\t\tspan{\r\n    \r\n+\t\t\t\tposition: absolute;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n+\t\t\t\tposition: absolute;\r\n    \r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661075877476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1001,8 +1001,11 @@\n \t\t\t\tposition: absolute;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\tposition: absolute;\r\n+\t\t\t\twidth: 60%;\r\n+\t\t\t\theight: 1px;\r\n+\t\t\t\tbackground: black;\r\n    \r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076066333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -993,12 +993,14 @@\n \t\t\t\tposition: absolute;\r\n \t\t\t\twidth: 30px;\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n+\t\t\t\tbottom: 20px;\r\n \r\n \t\t\t}\r\n-\t\t\tspan{\r\n-   \r\n+\t\t\th1\r\n+\t\t\t{\r\n+\r\n \t\t\t\tposition: absolute;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\tposition: absolute;\r\n"
+                },
+                {
+                    "date": 1661076094946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -993,9 +993,9 @@\n \t\t\t\tposition: absolute;\r\n \t\t\t\twidth: 30px;\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\tbottom: 20px;\r\n+\t\t\t\tbottom: 40px;\r\n \r\n \t\t\t}\r\n \t\t\th1\r\n \t\t\t{\r\n"
+                },
+                {
+                    "date": 1661076307458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -987,29 +987,9 @@\n }\r\n .columleft__2{\r\n \t .listtintucmoi{\r\n \t\t.title_gach_chinh{\r\n-\t\t\tposition: relative;\r\n-\t\t\t.gachchanlis1{\r\n-\t\t\t\tposition: absolute;\r\n-\t\t\t\twidth: 30px;\r\n-\t\t\t\theight: 1px;\r\n-\t\t\t\tbackground: black;\r\n-\t\t\t\tbottom: 40px;\r\n-\r\n-\t\t\t}\r\n-\t\t\th1\r\n-\t\t\t{\r\n-\r\n-\t\t\t\tposition: absolute;\r\n-\t\t\t}\r\n-\t\t\t.gachchanlist2{\r\n-\t\t\t\tposition: absolute;\r\n-\t\t\t\twidth: 60%;\r\n-\t\t\t\theight: 1px;\r\n-\t\t\t\tbackground: black;\r\n-   \r\n-\t\t\t}\r\n+\t\t\t\r\n \t\t}\r\n \r\n \t\t\r\n \t }\r\n"
+                },
+                {
+                    "date": 1661076386171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -987,9 +987,16 @@\n }\r\n .columleft__2{\r\n \t .listtintucmoi{\r\n \t\t.title_gach_chinh{\r\n-\t\t\t\r\n+\t\t\t.gachchanlis1{\r\n+            height: 1px;\r\n+\t\t\tbackground: black;\r\n+\t\t\t}\r\n+\t\t\t.gachchanlist2{\r\n+\t\t\t\theight: 1px;\r\n+\t\t\t\tbackground: black;\r\n+\t\t\t}\r\n \t\t}\r\n \r\n \t\t\r\n \t }\r\n"
+                },
+                {
+                    "date": 1661076424754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -990,12 +990,14 @@\n \t\t.title_gach_chinh{\r\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n+\t\t\twidth: 30px;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n+\t\t\t\twidth: 50%;\r\n \t\t\t}\r\n \t\t}\r\n \r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661076473666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -991,8 +991,9 @@\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n \t\t\twidth: 30px;\r\n+\t\t\tmargin-top: 30px;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n"
+                },
+                {
+                    "date": 1661076517320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -991,14 +991,15 @@\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n \t\t\twidth: 30px;\r\n-\t\t\tmargin-top: 30px;\r\n+\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 50%;\r\n+\t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661076581004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -996,9 +996,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 50%;\r\n+\t\t\t\twidth: 70%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076599937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -996,9 +996,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 70%;\r\n+\t\t\t\twidth: 80%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076661411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -987,8 +987,9 @@\n }\r\n .columleft__2{\r\n \t .listtintucmoi{\r\n \t\t.title_gach_chinh{\r\n+\t\t\tcolor: #444;\r\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n \t\t\twidth: 30px;\r\n"
+                },
+                {
+                    "date": 1661076675661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -975,8 +975,9 @@\n \t}\r\n \t  }\r\n .share__link_word{\r\n \tjustify-content: space-evenly;\r\n+\tcolor: #444;\r\n \tmargin-top: 10px;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n"
+                },
+                {
+                    "date": 1661076682781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -975,9 +975,9 @@\n \t}\r\n \t  }\r\n .share__link_word{\r\n \tjustify-content: space-evenly;\r\n-\tcolor: #444;\r\n+\t\r\n \tmargin-top: 10px;\r\n \t .facebook_link{\r\n \t\twidth: 33%;\r\n \t\ttext-align: center;\r\n"
+                },
+                {
+                    "date": 1661076724844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -998,9 +998,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 80%;\r\n+\t\t\t\twidth: 86%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076777582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -998,9 +998,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 86%;\r\n+\t\t\t\twidth: 80%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076795442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -998,9 +998,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 80%;\r\n+\t\t\t\twidth: 70%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076821446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -988,8 +988,9 @@\n }\r\n .columleft__2{\r\n \t .listtintucmoi{\r\n \t\t.title_gach_chinh{\r\n+\t\t\tmargin-top: 20px;\r\n \t\t\tcolor: #444;\r\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n"
+                },
+                {
+                    "date": 1661076842511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -999,9 +999,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 70%;\r\n+\t\t\t\twidth: 75%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661076864613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -999,9 +999,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 75%;\r\n+\t\t\t\twidth: 79%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661077042120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1006,8 +1006,11 @@\n \t\t}\r\n \r\n \t\t\r\n \t }\r\n+\t .ttlefft{\r\n+\t\tlist-style: circle;\r\n+\t }\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661077140543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1008,8 +1008,14 @@\n \t\t\r\n \t }\r\n \t .ttlefft{\r\n \t\tlist-style: circle;\r\n+\t\t li{\r\n+\t\t\ta{\r\n+\t\t\tfont-size: 14px;\t\r\n+\t\t\tcolor: #333;\r\n+\t\t\t}\r\n+\t\t }\r\n \t }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661077167435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1009,8 +1009,9 @@\n \t }\r\n \t .ttlefft{\r\n \t\tlist-style: circle;\r\n \t\t li{\r\n+\t\t\tmargin-left: 5px;\r\n \t\t\ta{\r\n \t\t\tfont-size: 14px;\t\r\n \t\t\tcolor: #333;\r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661077198935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1009,9 +1009,9 @@\n \t }\r\n \t .ttlefft{\r\n \t\tlist-style: circle;\r\n \t\t li{\r\n-\t\t\tmargin-left: 5px;\r\n+\t\t\tmargin-left: 15px;\r\n \t\t\ta{\r\n \t\t\tfont-size: 14px;\t\r\n \t\t\tcolor: #333;\r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661077513944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1017,7 +1017,26 @@\n \t\t\t}\r\n \t\t }\r\n \t }\r\n }\r\n+.list_tt_lendoc{\r\n+\t.title_gach_chinh1{\r\n+\t\t.gachchanlis3{\r\n+\t\t\tmargin-top: 20px;\r\n+\t\t\tcolor: #444;\r\n+\t\t\t.gachchanlis1{\r\n+            height: 1px;\r\n+\t\t\tbackground: black;\r\n+\t\t\twidth: 30px;\r\n+\t\t\tmargin-top: 12px;\r\n+\t\t}\r\n+\t\t.gachchanlist4{\r\n \r\n+\t\t\theight: 1px;\r\n+\t\t\t\tbackground: black;\r\n+\t\t\t\twidth: 79%;\r\n+\t\t\t\tmargin-top: 12px;\r\n+\t\t}\r\n+\t}\r\n+}\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661077528299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1037,6 +1037,6 @@\n \t\t\t\tmargin-top: 12px;\r\n \t\t}\r\n \t}\r\n }\r\n+}\r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1661077570586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1030,9 +1030,9 @@\n \t\t\tmargin-top: 12px;\r\n \t\t}\r\n \t\t.gachchanlist4{\r\n \r\n-\t\t\theight: 1px;\r\n+\t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 79%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661077650128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1026,16 +1026,16 @@\n \t\t\t.gachchanlis1{\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n \t\t\twidth: 30px;\r\n-\t\t\tmargin-top: 12px;\r\n+\t\t\t\r\n \t\t}\r\n \t\t.gachchanlist4{\r\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 79%;\r\n-\t\t\t\tmargin-top: 12px;\r\n+\t\t\t\t\r\n \t\t}\r\n \t}\r\n }\r\n }\r\n"
+                },
+                {
+                    "date": 1661077742735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1022,9 +1022,9 @@\n \t.title_gach_chinh1{\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 20px;\r\n \t\t\tcolor: #444;\r\n-\t\t\t.gachchanlis1{\r\n+\t\t\t\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n \t\t\twidth: 30px;\r\n \t\t\t\r\n@@ -1037,6 +1037,6 @@\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n }\r\n-}\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1661077781816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1019,8 +1019,9 @@\n \t }\r\n }\r\n .list_tt_lendoc{\r\n \t.title_gach_chinh1{\r\n+\t\tfont-size: 0.8rem;\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 20px;\r\n \t\t\tcolor: #444;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661077803341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1019,9 +1019,9 @@\n \t }\r\n }\r\n .list_tt_lendoc{\r\n \t.title_gach_chinh1{\r\n-\t\tfont-size: 0.8rem;\r\n+\t\tfont-size: 1.1rem;\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 20px;\r\n \t\t\tcolor: #444;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661077869099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1021,9 +1021,9 @@\n .list_tt_lendoc{\r\n \t.title_gach_chinh1{\r\n \t\tfont-size: 1.1rem;\r\n \t\t.gachchanlis3{\r\n-\t\t\tmargin-top: 20px;\r\n+\t\t\tmargin-top: 12px;\r\n \t\t\tcolor: #444;\r\n \t\t\t\r\n             height: 1px;\r\n \t\t\tbackground: black;\r\n@@ -1034,8 +1034,9 @@\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 79%;\r\n+\r\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n }\r\n"
+                },
+                {
+                    "date": 1661077972159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1033,9 +1033,9 @@\n \t\t.gachchanlist4{\r\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 79%;\r\n+\t\t\t\twidth: 69%;\r\n \r\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661077996765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1019,9 +1019,9 @@\n \t }\r\n }\r\n .list_tt_lendoc{\r\n \t.title_gach_chinh1{\r\n-\t\tfont-size: 1.1rem;\r\n+\t\tfont-size: 0.9rem;\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 12px;\r\n \t\t\tcolor: #444;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661078133465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1019,9 +1019,9 @@\n \t }\r\n }\r\n .list_tt_lendoc{\r\n \t.title_gach_chinh1{\r\n-\t\tfont-size: 0.9rem;\r\n+\t\tfont-size: 0.7rem;\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 12px;\r\n \t\t\tcolor: #444;\r\n \t\t\t\r\n@@ -1034,8 +1034,9 @@\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 69%;\r\n+\t\t\t\tmargin-top: 17px;\r\n \r\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661078139195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1034,9 +1034,9 @@\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n \t\t\t\twidth: 69%;\r\n-\t\t\t\tmargin-top: 17px;\r\n+\t\t\t\tmargin-top: 11px;\r\n \r\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n"
+                },
+                {
+                    "date": 1661078171568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1018,8 +1018,9 @@\n \t\t }\r\n \t }\r\n }\r\n .list_tt_lendoc{\r\n+\tmargin-top: 20px;\r\n \t.title_gach_chinh1{\r\n \t\tfont-size: 0.7rem;\r\n \t\t.gachchanlis3{\r\n \t\t\tmargin-top: 12px;\r\n"
+                },
+                {
+                    "date": 1661078220864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1040,7 +1040,17 @@\n \r\n \t\t\t\t\r\n \t\t}\r\n \t}\r\n+\t.ttlefft{\r\n+\t\tlist-style: circle;\r\n+\t\t li{\r\n+\t\t\tmargin-left: 15px;\r\n+\t\t\ta{\r\n+\t\t\tfont-size: 14px;\t\r\n+\t\t\tcolor: #333;\r\n+\t\t\t}\r\n+\t\t }\r\n+\t }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661078367409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1034,9 +1034,9 @@\n \t\t.gachchanlist4{\r\n \r\n \t\t\t    height: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 69%;\r\n+\t\t\t\twidth: 73%;\r\n \t\t\t\tmargin-top: 11px;\r\n \r\n \t\t\t\t\r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661078884477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1052,5 +1052,14 @@\n \t\t }\r\n \t }\r\n }\r\n \r\n+.listtintucmoi{\r\n+\t.cayhinhanhtintuc{\r\n \r\n+\t\t.cayhinhanh1{\r\n+\t\t\twidth: 115px;\r\n+\t\t\theight: 90px;\r\n+\r\n+\t\t}\r\n+\t}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661079100777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1057,9 +1057,13 @@\n \t.cayhinhanhtintuc{\r\n \r\n \t\t.cayhinhanh1{\r\n \t\t\twidth: 115px;\r\n-\t\t\theight: 90px;\r\n+\t\t\t\r\n+\t\t\timg{\r\n+\t\t\t\twidth: 100%;\r\n+\t\t\t\theight: 90px;\r\n+\t\t\t}\r\n \r\n \t\t}\r\n \t}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661079398742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1054,8 +1054,9 @@\n }\r\n \r\n .listtintucmoi{\r\n \t.cayhinhanhtintuc{\r\n+\t\tjustify-content: space-between;\r\n \r\n \t\t.cayhinhanh1{\r\n \t\t\twidth: 115px;\r\n \t\t\t\r\n"
+                },
+                {
+                    "date": 1661079605122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -999,9 +999,9 @@\n \t\t\t}\r\n \t\t\t.gachchanlist2{\r\n \t\t\t\theight: 1px;\r\n \t\t\t\tbackground: black;\r\n-\t\t\t\twidth: 79%;\r\n+\t\t\t\twidth:80%;\r\n \t\t\t\tmargin-top: 12px;\r\n \t\t\t}\r\n \t\t}\r\n \r\n"
+                },
+                {
+                    "date": 1661079726015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1008,8 +1008,9 @@\n \t\t\r\n \t }\r\n \t .ttlefft{\r\n \t\tlist-style: circle;\r\n+\t\tmargin: 10px 0;\r\n \t\t li{\r\n \t\t\tmargin-left: 15px;\r\n \t\t\ta{\r\n \t\t\tfont-size: 14px;\t\r\n"
+                },
+                {
+                    "date": 1661080193233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1067,5 +1067,15 @@\n \t\t\t}\r\n \r\n \t\t}\r\n \t}\r\n+}\r\n+.divnoibat{\r\n+\t.gachchanoi{\r\n+\t\twidth: 100%;\r\n+\t\theight: 1px;\r\n+\t\tbackground: red;\r\n+\t}\r\n+\t.tieudenoitroi{\r\n+\r\n+\t}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661080223774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1069,13 +1069,15 @@\n \t\t}\r\n \t}\r\n }\r\n .divnoibat{\r\n+\tmargin-top: 20px;\r\n \t.gachchanoi{\r\n \t\twidth: 100%;\r\n \t\theight: 1px;\r\n \t\tbackground: red;\r\n \t}\r\n \t.tieudenoitroi{\r\n \r\n+\r\n \t}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661080343901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1076,8 +1076,9 @@\n \t\theight: 1px;\r\n \t\tbackground: red;\r\n \t}\r\n \t.tieudenoitroi{\r\n+\t\tfont-size: 16px;\r\n+\t\tcolor: #ea0000;\r\n \r\n-\r\n \t}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661080367605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1078,7 +1078,8 @@\n \t}\r\n \t.tieudenoitroi{\r\n \t\tfont-size: 16px;\r\n \t\tcolor: #ea0000;\r\n+\t\tmargin-top: 10px;\r\n \r\n \t}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661081828345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1081,5 +1081,8 @@\n \t\tcolor: #ea0000;\r\n \t\tmargin-top: 10px;\r\n \r\n \t}\r\n+ .anhden1{\r\n+\twidth: 30%;\r\n+ }\t\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661081903581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1083,6 +1083,14 @@\n \r\n \t}\r\n  .anhden1{\r\n \twidth: 30%;\r\n+\tborder-style: solid;\r\n+\tborder-right-width: 1px;\r\n+\timg{\r\n+\r\n+\t}\r\n+\th2{\r\n+\r\n+\t}\r\n  }\t\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661081960690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1070,8 +1070,9 @@\n \t}\r\n }\r\n .divnoibat{\r\n \tmargin-top: 20px;\r\n+\tjustify-content: space-evenly;\r\n \t.gachchanoi{\r\n \t\twidth: 100%;\r\n \t\theight: 1px;\r\n \t\tbackground: red;\r\n"
+                },
+                {
+                    "date": 1661082062087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1082,16 +1082,18 @@\n \t\tcolor: #ea0000;\r\n \t\tmargin-top: 10px;\r\n \r\n \t}\r\n- .anhden1{\r\n-\twidth: 30%;\r\n-\tborder-style: solid;\r\n-\tborder-right-width: 1px;\r\n-\timg{\r\n-\r\n-\t}\r\n-\th2{\r\n-\r\n-\t}\r\n- }\t\r\n+     .baotrumganh_dvnoibat{\r\n+\t\t.anhden1{\r\n+\t\t\twidth: 30%;\r\n+\t\t\tborder-style: solid;\r\n+\t\t\tborder-right-width: 1px;\r\n+\t\t\timg{\r\n+\t\t\r\n+\t\t\t}\r\n+\t\t\th2{\r\n+\t\t\r\n+\t\t\t}\r\n+\t\t }\t\r\n+\t }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661082110654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1083,8 +1083,10 @@\n \t\tmargin-top: 10px;\r\n \r\n \t}\r\n      .baotrumganh_dvnoibat{\r\n+\t\tborder-style: solid;\r\n+\t\t\tborder-bottom-width: 1px;\r\n \t\t.anhden1{\r\n \t\t\twidth: 30%;\r\n \t\t\tborder-style: solid;\r\n \t\t\tborder-right-width: 1px;\r\n"
+                },
+                {
+                    "date": 1661082143880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1086,9 +1086,9 @@\n      .baotrumganh_dvnoibat{\r\n \t\tborder-style: solid;\r\n \t\t\tborder-bottom-width: 1px;\r\n \t\t.anhden1{\r\n-\t\t\twidth: 30%;\r\n+\t\t\twidth: 33.33%;\r\n \t\t\tborder-style: solid;\r\n \t\t\tborder-right-width: 1px;\r\n \t\t\timg{\r\n \t\t\r\n"
+                },
+                {
+                    "date": 1661083244152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -920,9 +920,18 @@\n \t\tfloat: right;\r\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n-}   .listutkhoa{\r\n+} \r\n+@media screen and (max-width: 1190px){\r\n+.columleft__2 {\r\n+    width: 470px;\r\n+}}\r\n+@media screen and (max-width: 1366px){\r\n+.columleft__2 {\r\n+    width: 531px;\r\n+    padding-left: 15px;\r\n+} } .listutkhoa{\r\n \tpadding-top: 30px;\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n \t\r\n"
+                },
+                {
+                    "date": 1661083987266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1106,5 +1106,8 @@\n \t\t\r\n \t\t\t}\r\n \t\t }\t\r\n \t }\r\n-}\n\\ No newline at end of file\n+}\r\n+.listtt_tt__{\r\n+\twidth: 50%;\r\n+}\r\n"
+                },
+                {
+                    "date": 1661084074022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1109,5 +1109,7 @@\n \t }\r\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n+\tlist-style: circle;\r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1661084092100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1110,6 +1110,7 @@\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n \tlist-style: circle;\r\n+\tmargin-left: 10px;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1661084107640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1111,6 +1111,7 @@\n .listtt_tt__{\r\n \twidth: 50%;\r\n \tlist-style: circle;\r\n \tmargin-left: 10px;\r\n+\tfloat: left;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1661084138898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1112,6 +1112,9 @@\n \twidth: 50%;\r\n \tlist-style: circle;\r\n \tmargin-left: 10px;\r\n \tfloat: left;\r\n+\t    a{\r\n+\t\tfont-size: 0.7rem;\r\n+\t\t}\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1661084162506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1113,8 +1113,8 @@\n \tlist-style: circle;\r\n \tmargin-left: 10px;\r\n \tfloat: left;\r\n \t    a{\r\n-\t\tfont-size: 0.7rem;\r\n+\t\tfont-size: 0.9rem;\r\n \t\t}\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1661084299988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1117,4 +1117,14 @@\n \t\tfont-size: 0.9rem;\r\n \t\t}\r\n \r\n }\r\n+.listtt_tt__2{\r\n+\twidth: 50%;\r\n+\tlist-style: circle;\r\n+\tmargin-left: 10px;\r\n+\tfloat: right;\r\n+\t    a{\r\n+\t\tfont-size: 0.9rem;\r\n+\t\t}\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1661084465773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1112,19 +1112,14 @@\n \twidth: 50%;\r\n \tlist-style: circle;\r\n \tmargin-left: 10px;\r\n \tfloat: left;\r\n+\t.li_ul_list{\r\n+\t\tborder-style: solid;\r\n+\t\tborder-bottom-width: 1px;\r\n+\t}\r\n \t    a{\r\n \t\tfont-size: 0.9rem;\r\n \t\t}\r\n \r\n }\r\n-.listtt_tt__2{\r\n-\twidth: 50%;\r\n-\tlist-style: circle;\r\n-\tmargin-left: 10px;\r\n-\tfloat: right;\r\n-\t    a{\r\n-\t\tfont-size: 0.9rem;\r\n-\t\t}\r\n \r\n-}\r\n"
+                },
+                {
+                    "date": 1661084687396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1115,8 +1115,9 @@\n \tfloat: left;\r\n \t.li_ul_list{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n+\t\tborder-width: 1px;\r\n \t}\r\n \t    a{\r\n \t\tfont-size: 0.9rem;\r\n \t\t}\r\n"
+                },
+                {
+                    "date": 1661084726165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1109,9 +1109,9 @@\n \t }\r\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n-\tlist-style: circle;\r\n+\t// list-style: circle;\r\n \tmargin-left: 10px;\r\n \tfloat: left;\r\n \t.li_ul_list{\r\n \t\tborder-style: solid;\r\n"
+                },
+                {
+                    "date": 1661084745659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1110,9 +1110,9 @@\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n \t// list-style: circle;\r\n-\tmargin-left: 10px;\r\n+\t\r\n \tfloat: left;\r\n \t.li_ul_list{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n"
+                },
+                {
+                    "date": 1661084851342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1109,10 +1109,10 @@\n \t }\r\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n-\t// list-style: circle;\r\n-\t\r\n+\tlist-style: circle;\r\n+\tmargin-left: 10px;\r\n \tfloat: left;\r\n \t.li_ul_list{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n"
+                },
+                {
+                    "date": 1661084883328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1109,10 +1109,9 @@\n \t }\r\n }\r\n .listtt_tt__{\r\n \twidth: 50%;\r\n-\tlist-style: circle;\r\n-\tmargin-left: 10px;\r\n+\t\r\n \tfloat: left;\r\n \t.li_ul_list{\r\n \t\tborder-style: solid;\r\n \t\tborder-bottom-width: 1px;\r\n"
+                },
+                {
+                    "date": 1661085276525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,8 +174,17 @@\n \tfont-size: 100%;\r\n \tfont: inherit;\r\n \tvertical-align: baseline;\r\n }\r\n+@media screen and (max-width: 1190px){\r\n+\t.columleft__2 {\r\n+\t\twidth: 470px;\r\n+\t}}\r\n+\t@media screen and (max-width: 1366px){\r\n+\t.columleft__2 {\r\n+\t\twidth: 531px;\r\n+\t\tpadding-left: 15px;\r\n+\t} }\r\n acronym {\r\n \tmargin: 0;\r\n \tpadding: 0;\r\n \tborder: 0;\r\n@@ -921,17 +930,9 @@\n \t\tmargin-top: 10px;\r\n \t}\r\n \r\n } \r\n-@media screen and (max-width: 1190px){\r\n-.columleft__2 {\r\n-    width: 470px;\r\n-}}\r\n-@media screen and (max-width: 1366px){\r\n-.columleft__2 {\r\n-    width: 531px;\r\n-    padding-left: 15px;\r\n-} } .listutkhoa{\r\n+ .listutkhoa{\r\n \tpadding-top: 30px;\r\n \twidth: 100%;\r\n \tjustify-content: space-around;\r\n \t\r\n@@ -978,9 +979,9 @@\n \t\tposition: absolute;\r\n \t\twidth: 90%;\r\n \t\theight: 1px;\r\n \t\tbackground-color: black;\r\n-\t\ttop: 40%;\r\n+\t\ttop: 45%;\r\n \t\tleft:9%;\r\n \t}\r\n \t  }\r\n .share__link_word{\r\n"
+                },
+                {
+                    "date": 1661086249475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1122,5 +1122,18 @@\n \t\tfont-size: 0.9rem;\r\n \t\t}\r\n \r\n }\r\n+.div_photonoi_{\r\n+\t\r\n+\t\t.photo__one_noi{\r\n+\t\t\t\r\n+\t\t\timg{\r\n \r\n+\t\t\t}\r\n+\t\t\t.tieudephotonoi{\r\n+\r\n+\t\t\t}\r\n+\t\t}\r\n+\t\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1661086343965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1125,14 +1125,17 @@\n }\r\n .div_photonoi_{\r\n \t\r\n \t\t.photo__one_noi{\r\n-\t\t\t\r\n+\r\n \t\t\timg{\r\n \r\n \t\t\t}\r\n \t\t\t.tieudephotonoi{\r\n-\r\n+\t\t\t\ta{\r\n+\t\t\t\t\tcolor: white;\r\n+\t\t\t\t\tfont-size: 1.1rem;\r\n+\t\t\t\t}\r\n \t\t\t}\r\n \t\t}\r\n \t\r\n }\r\n"
+                },
+                {
+                    "date": 1661086416335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1130,8 +1130,9 @@\n \t\t\timg{\r\n \r\n \t\t\t}\r\n \t\t\t.tieudephotonoi{\r\n+\t\t\t\tbackground: #333;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086446637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1127,9 +1127,9 @@\n \t\r\n \t\t.photo__one_noi{\r\n \r\n \t\t\timg{\r\n-\r\n+\t\t\t\twidth: 100%;\r\n \t\t\t}\r\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n \t\t\t\ta{\r\n"
+                },
+                {
+                    "date": 1661086471431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1131,8 +1131,9 @@\n \t\t\t\twidth: 100%;\r\n \t\t\t}\r\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n+\t\t\t\ttext-align: center;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086502938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1125,15 +1125,17 @@\n }\r\n .div_photonoi_{\r\n \t\r\n \t\t.photo__one_noi{\r\n+\t\t\tposition: relative;\r\n \r\n \t\t\timg{\r\n \t\t\t\twidth: 100%;\r\n \t\t\t}\r\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n \t\t\t\ttext-align: center;\r\n+\t\t\t\tposition: absolute;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086513983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1134,8 +1134,9 @@\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n \t\t\t\ttext-align: center;\r\n \t\t\t\tposition: absolute;\r\n+\t\t\t\tbottom: 10px;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086539351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1135,8 +1135,9 @@\n \t\t\t\tbackground: #333;\r\n \t\t\t\ttext-align: center;\r\n \t\t\t\tposition: absolute;\r\n \t\t\t\tbottom: 10px;\r\n+\t\t\t\twidth: 100%;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086598576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1134,9 +1134,9 @@\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n \t\t\t\ttext-align: center;\r\n \t\t\t\tposition: absolute;\r\n-\t\t\t\tbottom: 10px;\r\n+\t\t\t\tbottom: 11px;\r\n \t\t\t\twidth: 100%;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n"
+                },
+                {
+                    "date": 1661086619383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1134,9 +1134,9 @@\n \t\t\t.tieudephotonoi{\r\n \t\t\t\tbackground: #333;\r\n \t\t\t\ttext-align: center;\r\n \t\t\t\tposition: absolute;\r\n-\t\t\t\tbottom: 11px;\r\n+\t\t\t\tbottom: 9px;\r\n \t\t\t\twidth: 100%;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n"
+                },
+                {
+                    "date": 1661086636975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1136,8 +1136,9 @@\n \t\t\t\ttext-align: center;\r\n \t\t\t\tposition: absolute;\r\n \t\t\t\tbottom: 9px;\r\n \t\t\t\twidth: 100%;\r\n+\t\t\t\theight: 30px;\r\n \t\t\t\ta{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661086660534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1126,8 +1126,9 @@\n .div_photonoi_{\r\n \t\r\n \t\t.photo__one_noi{\r\n \t\t\tposition: relative;\r\n+\t\t\tmargin-top: 20px;\r\n \r\n \t\t\timg{\r\n \t\t\t\twidth: 100%;\r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087039647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1144,7 +1144,15 @@\n \t\t\t\t\tfont-size: 1.1rem;\r\n \t\t\t\t}\r\n \t\t\t}\r\n \t\t}\r\n+\t\t.pho_to_two_noi{\r\n+\t\t\timg{\r\n+\r\n+\t\t\t}\r\n+\t\t\t.photow_1_nd{\r\n+\t\t\t\t\r\n+\t\t\t}\r\n+\t\t}\r\n \t\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661087084960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1145,14 +1145,19 @@\n \t\t\t\t}\r\n \t\t\t}\r\n \t\t}\r\n \t\t.pho_to_two_noi{\r\n-\t\t\timg{\r\n+\t\t\t.phototw_1{\r\n+\t\t\t\twidth: 40%;\r\n+\t\t\t\timg{\r\n \r\n+\t\t\t\t}\r\n+\t\t\t\t.photow_1_nd{\r\n+\t\r\n+\t\t\t\t}\r\n+\r\n \t\t\t}\r\n-\t\t\t.photow_1_nd{\r\n-\t\t\t\t\r\n-\t\t\t}\r\n+\t\t\t\r\n \t\t}\r\n \t\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661087185940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1148,9 +1148,9 @@\n \t\t.pho_to_two_noi{\r\n \t\t\t.phototw_1{\r\n \t\t\t\twidth: 40%;\r\n \t\t\t\timg{\r\n-\r\n+\t\t\t\t\twidth: 100%;\r\n \t\t\t\t}\r\n \t\t\t\t.photow_1_nd{\r\n \t\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087230458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1147,12 +1147,15 @@\n \t\t}\r\n \t\t.pho_to_two_noi{\r\n \t\t\t.phototw_1{\r\n \t\t\t\twidth: 40%;\r\n+\t\t\t\tposition: relative;\r\n \t\t\t\timg{\r\n \t\t\t\t\twidth: 100%;\r\n \t\t\t\t}\r\n \t\t\t\t.photow_1_nd{\r\n+\t\t\t\t\tcolor: white;\r\n+\t\t\t\t\tposition: absolute;\r\n \t\r\n \t\t\t\t}\r\n \r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087239113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1154,8 +1154,9 @@\n \t\t\t\t}\r\n \t\t\t\t.photow_1_nd{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tposition: absolute;\r\n+\t\t\t\t\tbottom: 10px;\r\n \t\r\n \t\t\t\t}\r\n \r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087261512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1155,8 +1155,9 @@\n \t\t\t\t.photow_1_nd{\r\n \t\t\t\t\tcolor: white;\r\n \t\t\t\t\tposition: absolute;\r\n \t\t\t\t\tbottom: 10px;\r\n+\t\t\t\t\ttext-align: center;\r\n \t\r\n \t\t\t\t}\r\n \r\n \t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087314387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1145,8 +1145,9 @@\n \t\t\t\t}\r\n \t\t\t}\r\n \t\t}\r\n \t\t.pho_to_two_noi{\r\n+\t\t\tjustify-content: space-between;\r\n \t\t\t.phototw_1{\r\n \t\t\t\twidth: 40%;\r\n \t\t\t\tposition: relative;\r\n \t\t\t\timg{\r\n"
+                },
+                {
+                    "date": 1661087349091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1147,9 +1147,9 @@\n \t\t}\r\n \t\t.pho_to_two_noi{\r\n \t\t\tjustify-content: space-between;\r\n \t\t\t.phototw_1{\r\n-\t\t\t\twidth: 40%;\r\n+\t\t\t\twidth: 48%;\r\n \t\t\t\tposition: relative;\r\n \t\t\t\timg{\r\n \t\t\t\t\twidth: 100%;\r\n \t\t\t\t}\r\n"
+                },
+                {
+                    "date": 1661087587018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1090,8 +1090,9 @@\n \t.tieudenoitroi{\r\n \t\tfont-size: 16px;\r\n \t\tcolor: #ea0000;\r\n \t\tmargin-top: 10px;\r\n+\t    text-transform: uppercase;;\r\n \r\n \t}\r\n      .baotrumganh_dvnoibat{\r\n \t\tborder-style: solid;\r\n"
                 }
             ],
             "date": 1660989762112,
