@@ -10,17 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   showSearch:boolean = false;
+  showMenuLeft:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  hiden = false;
   public openSearch(){
     this.showSearch = !this.showSearch;
   }
 
+  public openMenuLeft(){
+    this.showMenuLeft = !this.showMenuLeft;
+    // alert('button menu left')
+  }
   
 
 }
