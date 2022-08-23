@@ -13,6 +13,10 @@ import {NgxPaginationModule} from "ngx-pagination";
 import { BoxNewsHomeComponent } from './sharepages/box-news-home/box-news-home.component';
 import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuong.component';
 import { LoginComponent } from './pages/login/login.component';
+import { HeaderComponent } from './sharepages/header/header.component';
+import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
+import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
+import { ItalyComponent } from './pages/italy/italy.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,12 @@ import { LoginComponent } from './pages/login/login.component';
     BoxNewsHomeComponent,
     HomeComponent,
     TinchuyennhuongComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+      HeaderComponent,
+      LeftMenuComponent,
+      RightMenuComponent,
+      ItalyComponent
   ],
   imports: [
     BrowserModule,
