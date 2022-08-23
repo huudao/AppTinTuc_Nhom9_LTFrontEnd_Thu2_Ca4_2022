@@ -17,6 +17,18 @@ import { HeaderComponent } from './sharepages/header/header.component';
 import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
 import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
 import { ItalyComponent } from './pages/italy/italy.component';
+import {MdbTableModule} from 'mdb-angular-ui-kit/table';
+import {MdbTabsModule} from 'mdb-angular-ui-kit/tabs';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import {
+  FacebookLoginProvider,
+  GoogleLoginProvider,
+  SocialAuthService,
+  SocialAuthServiceConfig, SocialLoginModule
+} from "@abacritt/angularx-social-login";
+import {MdbCookiesManagementService} from 'mdb-angular-cookies-management';
+import {MdbStorageManagementService} from 'mdb-angular-storage-management';
+import {OAuthModule} from "angular-oauth2-oidc";
 
 @NgModule({
   declarations: [
@@ -30,19 +42,41 @@ import { ItalyComponent } from './pages/italy/italy.component';
     TinchuyennhuongComponent,
     LoginComponent,
     HomeComponent,
-      HeaderComponent,
-      LeftMenuComponent,
-      RightMenuComponent,
-      ItalyComponent
+    HeaderComponent,
+    LeftMenuComponent,
+    RightMenuComponent,
+    ItalyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    OAuthModule.forRoot(),
+    MdbTabsModule,
+    MdbFormsModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [ MdbCookiesManagementService, MdbStorageManagementService, {
+    provide: 'SocialAuthServiceConfig',
+    useValue: {
+      autoLogin: false,
+      providers: [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider("334644398802455")
+        },
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider("673998932925-t5a5tat8u3f03886mbqqi8tlhguul6eb.apps.googleusercontent.com")
+        },
+      ],
+      onError:(err)=> {
+        console.log(err)
+      }
+    } as SocialAuthServiceConfig
+  }, SocialAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

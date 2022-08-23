@@ -1,6 +1,8 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import {faGoogle} from '@fortawesome/free-brands-svg-icons'
 import { BrowserModule } from '@angular/platform-browser';
+import {FacebookLoginProvider, GoogleLoginProvider, SocialAuthService,SocialUser} from "@abacritt/angularx-social-login";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,73 +10,22 @@ import { BrowserModule } from '@angular/platform-browser';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  faGoogle = faGoogle;
-
-  auth2 : any;
-  @ViewChild('loginGG', {static:true}) loginElement!:ElementRef;
-  constructor() { }
-
-  /*------------------------------------------
-  --------------------------------------------
-  About
-  --------------------------------------------
-  --------------------------------------------*/
+  @Output() loggedInEvent = new EventEmitter<any>();
+  public loggedIn: boolean = false;
+  public user:any = {};
+  constructor(private authService:SocialAuthService,private route:Router) {
+  }
   ngOnInit() {
-
-    this.googleAuthSDK();
+    this.authService.authState.subscribe((user)=> {
+      this.user = user;
+      this.loggedIn = user != null
+      this.route.navigateByUrl("/");
+    })
   }
-
-  /**
-   * Write code on Method
-   *
-   * @return response()
-   */
-  callLoginButton() {
-
-    this.auth2.attachClickHandler(this.loginElement.nativeElement, {},
-      (googleAuthUser:any) => {
-
-        let profile = googleAuthUser.getBasicProfile();
-        console.log('Token || ' + googleAuthUser.getAuthResponse().id_token);
-        console.log('ID: ' + profile.getId());
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail());
-
-        /* Write Your Code Here */
-
-      }, (error:any) => {
-        alert(JSON.stringify(error, undefined, 2));
-      });
-
+  signInWithGoogle() {
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }
-
-  /**
-   * Write code on Method
-   *
-   * @return response()
-   */
-  googleAuthSDK() {
-
-    (<any>window)['googleSDKLoaded'] = () => {
-      (<any>window)['gapi'].load('auth2', () => {
-        this.auth2 = (<any>window)['gapi'].auth2.init({
-          client_id: '72023525219-ldr5ss039fenmdlvmcgh0rihsrrhipj0.apps.googleusercontent.com',
-          cookiepolicy: 'single_host_origin',
-          scope: 'profile email'
-        });
-        this.callLoginButton();
-      });
-    }
-
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement('script');
-      js.id = id;
-      js.src = "https://apis.google.com/js/platform.js?onload=googleSDKLoaded";
-      fjs?.parentNode?.insertBefore(js, fjs);
-    }(document, 'script', 'google-jssdk'));
+  signInWithFb(){
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
-
 }
