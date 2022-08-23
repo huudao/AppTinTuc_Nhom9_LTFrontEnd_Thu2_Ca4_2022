@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1660977869095,
@@ -36,6 +36,22 @@
                 {
                     "date": 1661153812570,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <!-- <router-outlet></router-outlet> -->\r\n <!-- cril /  commant -->\r\n <app-tinchuyennhuong></app-tinchuyennhuong>\r\n+<app-scroll-to-top></app-scroll-to-top>\r\n <app-footer></app-footer>\r\n-<app-scroll-to-top></app-scroll-to-top>\r\n+\r\n"
+                },
+                {
+                    "date": 1661240233699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <!-- <router-outlet></router-outlet> -->\r\n <!-- cril /  commant -->\r\n-<app-tinchuyennhuong></app-tinchuyennhuong>\r\n+<!-- <app-tinchuyennhuong></app-tinchuyennhuong> -->\r\n+<app-club></app-club>\r\n <app-scroll-to-top></app-scroll-to-top>\r\n <app-footer></app-footer>\r\n \r\n"
+                },
+                {
+                    "date": 1661240249908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <!-- <router-outlet></router-outlet> -->\r\n <!-- cril /  commant -->\r\n <!-- <app-tinchuyennhuong></app-tinchuyennhuong> -->\r\n-<app-club></app-club>\r\n+<app-new></app-new>\r\n <app-scroll-to-top></app-scroll-to-top>\r\n <app-footer></app-footer>\r\n \r\n"
+                },
+                {
+                    "date": 1661240272690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-<!-- <router-outlet></router-outlet> -->\r\n+<router-outlet></router-outlet>\r\n <!-- cril /  commant -->\r\n <!-- <app-tinchuyennhuong></app-tinchuyennhuong> -->\r\n-<app-new></app-new>\r\n+\r\n <app-scroll-to-top></app-scroll-to-top>\r\n <app-footer></app-footer>\r\n \r\n"
+                },
+                {
+                    "date": 1661240584311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <router-outlet></router-outlet>\r\n <!-- cril /  commant -->\r\n <!-- <app-tinchuyennhuong></app-tinchuyennhuong> -->\r\n+<!-- // -->\r\n \r\n <app-scroll-to-top></app-scroll-to-top>\r\n <app-footer></app-footer>\r\n \r\n"
                 }
             ],
             "date": 1660977869095,

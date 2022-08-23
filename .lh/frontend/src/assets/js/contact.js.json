@@ -1,0 +1,18 @@
+{
+    "sourceFile": "frontend/src/assets/js/contact.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1661236746054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1661236746054,
+            "name": "Commit-0",
+            "content": "$(window).scroll(function(){\r\n    if($(window).scrollTop() >= 10) {\r\n        $('.button_scroll2top').show();\r\n    } else {\r\n        $('.button_scroll2top').hide();\r\n    }\r\n});\r\nfunction page_scroll2top(){\r\n    $('html,body').animate({\r\n        scrollTop: 0\r\n    }, 'fast');\r\n}"
+        }
+    ]
+}

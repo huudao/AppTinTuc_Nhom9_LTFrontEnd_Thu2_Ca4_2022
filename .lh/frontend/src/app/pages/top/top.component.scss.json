@@ -1,0 +1,22 @@
+{
+    "sourceFile": "frontend/src/app/pages/top/top.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1661236539654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661236555232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +0,0 @@\n-a.on_top { opacity:0.6; display: none;}\r\n-a.on_top:hover{\r\n-background-color: #007bb6;\r\n-color: #fff;\r\n-border: 1px solid #007bb6;\r\n-opacity:1;\r\n-}\r\n-a.on_top i{ font-size: 20px;}\r\n-a.on_top {\r\n-border-radius: 6px;\r\n-background-color: #333333;\r\n-padding: 10px 20px;\r\n-white-space: nowrap; color: #fff;\r\n-position: fixed;\r\n-bottom: 75px;\r\n-right: 30px;\r\n-height: 44px;\r\n-}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1661236539654,
+            "name": "Commit-0",
+            "content": "a.on_top { opacity:0.6; display: none;}\r\na.on_top:hover{\r\nbackground-color: #007bb6;\r\ncolor: #fff;\r\nborder: 1px solid #007bb6;\r\nopacity:1;\r\n}\r\na.on_top i{ font-size: 20px;}\r\na.on_top {\r\nborder-radius: 6px;\r\nbackground-color: #333333;\r\npadding: 10px 20px;\r\nwhite-space: nowrap; color: #fff;\r\nposition: fixed;\r\nbottom: 75px;\r\nright: 30px;\r\nheight: 44px;\r\n}"
+        }
+    ]
+}

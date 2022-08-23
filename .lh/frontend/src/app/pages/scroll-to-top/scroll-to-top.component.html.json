@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1661151034671,
@@ -16,6 +16,22 @@
                 {
                     "date": 1661151316896,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop()\" class=\"scroll-to-top\">\n+</button>\n \n"
+                },
+                {
+                    "date": 1661238348709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n-<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop()\" class=\"scroll-to-top\">\n-</button>\n-\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\" onWindowScroll()\" class=\"scroll-to-top\">\r\n+</button>\r\n+<!-- scrollToTop() -->\r\n+\r\n"
+                },
+                {
+                    "date": 1661238596182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\" onWindowScroll()\" class=\"scroll-to-top\">\r\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"  scrollToTop()\" class=\"scroll-to-top\">\r\n </button>\r\n <!-- scrollToTop() -->\r\n \r\n"
+                },
+                {
+                    "date": 1661238823007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"  scrollToTop()\" class=\"scroll-to-top\">\r\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\" onWindowScroll()\" class=\"scroll-to-top\">\r\n </button>\r\n <!-- scrollToTop() -->\r\n \r\n"
+                },
+                {
+                    "date": 1661239634431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,3 @@\n-<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\" onWindowScroll()\" class=\"scroll-to-top\">\r\n+<button [ngClass]=\"{'show-scroll': showScroll}\" (click)=\"scrollToTop() \" class=\"scroll-to-top\">\r\n </button>\r\n-<!-- scrollToTop() -->\r\n \r\n"
                 }
             ],
             "date": 1661151034671,

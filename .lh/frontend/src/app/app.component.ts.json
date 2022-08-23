@@ -1,0 +1,26 @@
+{
+    "sourceFile": "frontend/src/app/app.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1661239710509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661239781844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,14 @@\n   templateUrl: './app.component.html',\r\n   styleUrls: ['./app.component.scss']\r\n })\r\n export class AppComponent {\r\n-  title = 'frontend';\r\n-  scrollToTop(){\r\n+  \r\n+\r\n+  constructor() {\r\n+\r\n+   }\r\n+\r\n+   clickEvent(){\r\n     \r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1661239807439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,6 @@\n   templateUrl: './app.component.html',\r\n   styleUrls: ['./app.component.scss']\r\n })\r\n export class AppComponent {\r\n-  \r\n-\r\n-  constructor() {\r\n-\r\n-   }\r\n-\r\n-   clickEvent(){\r\n-    \r\n-  }\r\n+  title = 'frontend';\r\n }\r\n"
+                }
+            ],
+            "date": 1661239710509,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'frontend';\r\n  scrollToTop(){\r\n    \r\n  }\r\n}\r\n"
+        }
+    ]
+}
