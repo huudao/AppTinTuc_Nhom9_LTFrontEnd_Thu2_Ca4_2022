@@ -341,10 +341,10 @@ header {
                 .main_avt {
                     width: 40px;
                     margin: 0 auto;
-                    padding: 5px 0 11px ;
+                    // padding: 5px 0 11px ;
                     img {
                         width: 100%;
-                        padding-top: 5px;
+                        margin-top: 5px;
                         clip-path: circle(50%);
                     }
                     .btn_logout{
