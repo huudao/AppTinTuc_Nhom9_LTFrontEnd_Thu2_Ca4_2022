@@ -324,6 +324,13 @@ header {
                     float: none;
                     border-bottom: 1px solid #ccc;
 
+                    >div {
+                        color: black;
+                        font-weight: 600;
+                        display: block;
+                        text-align: center;
+                    }
+
                     a {
                         color: black;
                         font-weight: 600;
@@ -344,7 +351,7 @@ header {
                     padding: 5px 0 11px ;
                     img {
                         width: 100%;
-                        padding-top: 5px;
+                        margin-top: 5px;
                         clip-path: circle(50%);
                     }
                     .btn_logout{

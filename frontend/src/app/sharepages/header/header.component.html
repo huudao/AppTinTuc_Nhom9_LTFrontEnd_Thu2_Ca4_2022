@@ -1,8 +1,10 @@
 <header>
     <ul class="menu_left_mobile" [class.menu_left_mobile_active]="showMenuLeft">
         <li><a href="/">Trang chủ</a></li>
-        <li><a href="#">Đăng nhập</a></li>
-        <li><a href="#">Đăng ký</a></li>
+        <ng-container *ngIf="!user">
+            <li><a href="#">Đăng nhập</a></li>  
+            <li><a href="#">Đăng ký</a></li>
+        </ng-container>
         <li><a href="#"> MỚI NHẤT</a></li>
         <li class="">
             <a href="#">
@@ -366,36 +368,38 @@
                     <li class="9  menu_full">
                         <a href="#"> Video </a>
                     </li>
-                    <li class="user" style="width: 60px; text-align: center; display:none;">
-                        <a href="#"> <i class="fa-solid fa-user"></i> </a>
-                        <ul class="sub_menu_main">
-                            <li style="text-align: left;">
-                                <a href="#">
-                                    Đăng nhập</a>
-                            </li>
-                            <li style="text-align: left;">
-                                <a href="#">
-                                    Đăng ký </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="avt">
-                        <div class="main_avt">
-                            <img src="../assets/img/avt.png">
-                            <ul class="sub_menu_main menu_avt">
-                                <li>
+                    <ng-container *ngIf="!user; else loginSuccess">
+                        <li class="user" style="width: 60px; text-align: center;">
+                            <a href="#"> <i class="fa-solid fa-user"></i> </a>
+                            <ul class="sub_menu_main">
+                                <li style="text-align: left;">
                                     <a href="#">
                                         Đăng nhập</a>
                                 </li>
-                                <li class="btn_logout" >
-                                    
+                                <li style="text-align: left;">
                                     <a href="#">
-                                        Đăng xuất </a>
+                                        Đăng ký </a>
                                 </li>
                             </ul>
-                        </div>
-                    </li>
-
+                        </li>
+                    </ng-container>
+                    <ng-template #loginSuccess>    
+                        <li class="avt">
+                            <div class="main_avt">
+                                <img src="{{user.photoUrl}}">
+                                <ul class="sub_menu_main menu_avt">
+                                    <li>
+                                        <div href="javascript:void(0)">{{user.name}}</div>
+                                    </li>
+                                    <li class="btn_logout" >
+                                        
+                                        <a href="#">
+                                            Đăng xuất </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ng-template>
 
                 </ul>
             </div>
