@@ -13,6 +13,7 @@ import { HeaderComponent } from './sharepages/header/header.component';
 import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
 import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
 import { ItalyComponent } from './pages/italy/italy.component';
+import { ListNewsSearchComponent } from './pages/list-news-search/list-news-search.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ItalyComponent } from './pages/italy/italy.component';
       HeaderComponent,
       LeftMenuComponent,
       RightMenuComponent,
-      ItalyComponent
+      ItalyComponent,
+      ListNewsSearchComponent
 
   ],
   imports: [
