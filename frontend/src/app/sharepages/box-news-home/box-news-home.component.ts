@@ -9,5 +9,7 @@ export class BoxNewsHomeComponent {
   @Input() title?: string;
   @Input() arrData? : any;
   constructor() { }
-
+  replaceAll(str: string, search: string, replacement: string) {
+    return str.replace(new RegExp(search, 'g'), replacement);
+  }
 }

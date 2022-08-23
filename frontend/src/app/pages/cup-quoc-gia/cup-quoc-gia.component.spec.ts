@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClubComponent } from './club.component';
+import { CupQuocGiaComponent } from './cup-quoc-gia.component';
 
-describe('ClubComponent', () => {
-  let component: ClubComponent;
-  let fixture: ComponentFixture<ClubComponent>;
+describe('CupQuocGiaComponent', () => {
+  let component: CupQuocGiaComponent;
+  let fixture: ComponentFixture<CupQuocGiaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClubComponent ]
+      declarations: [ CupQuocGiaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ClubComponent);
+    fixture = TestBed.createComponent(CupQuocGiaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

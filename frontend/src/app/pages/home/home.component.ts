@@ -6,7 +6,7 @@ import { NewsApiService } from 'src/app/service/news-api.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {  
+export class HomeComponent implements OnInit {
 
   constructor(private service: NewsApiService) {}
   
@@ -107,5 +107,5 @@ export class HomeComponent implements OnInit {
   replaceAll(str: string, search: string, replacement: string) {
     return str.replace(new RegExp(search, 'g'), replacement);
   }
-
+  
 }
