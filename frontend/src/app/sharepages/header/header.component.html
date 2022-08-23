@@ -1,4 +1,3 @@
-
 <header>
     <ul class="menu_left_mobile" [class.menu_left_mobile_active]="showMenuLeft">
         <li><a href="/">Trang chủ</a></li>
@@ -205,7 +204,7 @@
             <a href="#">
                 Bóng Đá Châu Mỹ </a>
         </li>
-        <li class="">   
+        <li class="">
             <a href="#">
                 Bóng đá Châu Phi </a>
         </li>
@@ -222,7 +221,8 @@
         <nav class="navigation">
             <div class="grid1190 pkg">
 
-                <div class="button_menu_mobile fl" (click)="openMenuLeft()" [class.button_menu_mobile_active]="showMenuLeft">
+                <div class="button_menu_mobile fl" (click)="openMenuLeft()"
+                    [class.button_menu_mobile_active]="showMenuLeft">
                     <div class="open"> <span class="cls"></span> <span> </span> <span class="cls"></span></div>
                 </div>
 
@@ -366,7 +366,7 @@
                     <li class="9  menu_full">
                         <a href="#"> Video </a>
                     </li>
-                    <li class="10l" style="width: 40px; text-align: center;">
+                    <li class="user" style="width: 60px; text-align: center; display:none;">
                         <a href="#"> <i class="fa-solid fa-user"></i> </a>
                         <ul class="sub_menu_main">
                             <li style="text-align: left;">
@@ -379,7 +379,24 @@
                             </li>
                         </ul>
                     </li>
-                    
+                    <li class="avt">
+                        <div class="main_avt">
+                            <img src="../assets/img/avt.png">
+                            <ul class="sub_menu_main menu_avt">
+                                <li>
+                                    <a href="#">
+                                        Đăng nhập</a>
+                                </li>
+                                <li class="btn_logout" >
+                                    
+                                    <a href="#">
+                                        Đăng xuất </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
                 </ul>
             </div>
         </nav>
