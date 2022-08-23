@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from "ngx-pagination";
 import { BoxNewsHomeComponent } from './sharepages/box-news-home/box-news-home.component';
 import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuong.component';
+import {Ng2SearchPipeModule} from "ng2-search-filter";
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuon
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

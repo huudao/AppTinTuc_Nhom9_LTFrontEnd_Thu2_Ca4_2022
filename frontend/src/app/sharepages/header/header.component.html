@@ -234,8 +234,8 @@
                         <form action="#" method="#" class="box_search_main" id="searchform"
                             [class.box_search_active]="showSearch">
                             <div>
-                                <input name="search" type="text" height="20" class="txt_search_main" placeholder="Nhập từ khóa cần tìm" />
-                                <input type="submit" value="tìm kiếm" class="btn_search_main" />
+                                <input name="search" type="text" height="20" class="txt_search_main" placeholder="Nhập từ khóa cần tìm" [(ngModel)]="searchTerm"/>
+                                <input (click)="search()"  type="submit" value="tìm kiếm" class="btn_search_main" />
                             </div>
                         </form>
                     </div>

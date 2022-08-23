@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
 
   showSearch: boolean = false;
   showMenuLeft: boolean = false;
-  // searchTerm: string = "";
+  searchTerm: string = "";
 
   constructor(private  router : Router, private  ativatedRouter :ActivatedRoute) { }
 
   ngOnInit(): void {
-    // this.ativatedRouter.params.subscribe(params => {
-    //   this.searchTerm = params['searchTerm'];
-    // });
+    this.ativatedRouter.params.subscribe(params => {
+      this.searchTerm = params['searchTerm'];
+    });
   }
 
   public openSearch() {
@@ -31,18 +31,16 @@ export class HeaderComponent implements OnInit {
     this.showMenuLeft = !this.showMenuLeft;
   }
 
-  // @Output()
-  // searchTextChanged:EventEmitter<string> = new EventEmitter<string>();
-  // onSearchTextChange() {
+  @Output()
+  searchTextChanged:EventEmitter<string> = new EventEmitter<string>();
+  onSearchTextChange() {
 
-  //   this.searchTextChanged.emit(this.searchTerm);
-  // }
+    this.searchTextChanged.emit(this.searchTerm);
+  }
 
-  // search(){
-  //   this.router.navigate(['/search',this.searchTerm],{
-  //     state:{signoreLoadingBar: true}
-  //   });
-  // }
+  search(){
+    this.router.navigate(['/search',this.searchTerm]);
+  }
 
 
 

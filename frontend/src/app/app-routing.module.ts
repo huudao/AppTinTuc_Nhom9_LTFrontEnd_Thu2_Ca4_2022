@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'News', component: NewsComponent},
   {path: 'NewsDetails', component: NewDetailsComponent},
   {path: 'Italy', component: ItalyComponent},
-  {path: 'search', component: ListNewsSearchComponent}
+  {path: 'search/:searchTerm', component: ListNewsSearchComponent}
 
 
 ];

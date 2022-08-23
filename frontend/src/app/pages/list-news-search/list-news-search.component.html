@@ -1,113 +1,39 @@
-<main>
+
+<body>
     <div class="grid1190 pkg">
         <div class="content_main pad20 pkg">
             <div class="pkg">
                 <div class="left-content fl">
                     <div class="breadcump">
                         <li><a itemprop="url" href="/"><span itemprop="title">Trang chủ</span></a> »</li>
-                        <li><a itemprop="url" href="https://www.bongda.com.vn/pháp-search/"><span itemprop="title">Tìm
-                                    kiếm tin tức liên quan đến "pháp"</span></a></li>
+                        <li><a itemprop="url" href="#"><span itemprop="title">Tìm
+                                    kiếm tin tức liên quan đến "{{searchText}}"  </span></a></li>
                     </div>
                     <div class="right_child_content fr" data-vr-zone="Search page_List News">
                         <div class="head_news" style="border: none; padding-top: 0;">Tìm kiếm tin tức liên quan đến
-                            "pháp"</div>
-                        <div class="head_detail"> <span>Chia sẻ chủ đề</span> </div>
-                        <ul class="sharing-zone sharing-zone-bottom pkg mar_bottom40">
-                            <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.bongda.com.vn/pháp-search/"
-                                    class="sendsocial fb_share" rel="nofollow" target="_blank"><i
-                                        class="fa fa-facebook"></i><span>Facebook</span></a></li>
-                            <li><a href="https://plus.google.com/share?url=https://www.bongda.com.vn/pháp-search/"
-                                    class="sendsocial glus_share" rel="nofollow" target="_blank"><i
-                                        class="fa fa-google-plus"></i><span>Google+</span></a></li>
-                            <li><a href="http://www.twitter.com/share?url=https://www.bongda.com.vn/pháp-search/"
-                                    class="sendsocial tweet_share" rel="nofollow" target="_blank"><i
-                                        class="fa fa-twitter"></i><span>Twitter</span></a></li>
-                        </ul>
-
-
-
+                            "{{searchText}}"</div>
 
                         <ul class="list_top_news list_news_cate">
-                            <li>
-                                <h2><a data-vr-contentbox="position 1_title"
-                                        href="#"
-                                        class="title_list_top_news"
-                                        title="'#">"Kẻ hủy diệt" Man
-                                        City khiến Chelsea thêm thèm khát</a></h2>
+                            <li *ngFor="let listSearchItem of arrSearchResult |filter:searchText|  paginate: { itemsPerPage: 8, currentPage: page } ">
+                                <h2><a data-vr-contentbox="position 1_title" href="#" class="title_list_top_news"
+                                        title="{{listSearchItem.title}}">{{listSearchItem.title}}</a></h2>
                                 <div class="pkg">
-                                    <a data-vr-contentbox="position 1"
-                                        data-vr-contentbox-url="https://www.bongda.com.vn/ke-huy-diet-man-city-khien-chelsea-them-them-khat-d650462.html"
-                                        href="https://www.bongda.com.vn/ke-huy-diet-man-city-khien-chelsea-them-them-khat-d650462.html"
-                                        class="thumbblock thumb260x170 fl"
-                                        title="'Kẻ hủy diệt' Man City khiến Chelsea thêm thèm khát"><img class=""
-                                            src="https://media.bongda.com.vn/resize/190x120/files/news/2022/08/22/ke-huy-diet-man-city-khien-chelsea-them-them-khat-205254.jpg"
+                                    <a href="#"
+                                        class="thumbblock thumb fl"
+                                        title="{{listSearchItem.title}}"><img class=""
+                                            src="{{listSearchItem.image}}"
                                             width="190" height="120"
-                                            alt="'Kẻ hủy diệt' Man City khiến Chelsea thêm thèm khát" /></a>
+                                            alt="{{listSearchItem.title}}" /></a>
                                     <div class="info_list_top_news">
-                                        <div class="time_comment text-left mar_bottom7">
-                                            <span>22 giờ </span>
-                                            <span class="line_cm">|</span> <span title="Lượt chia sẻ"
-                                                class="icon_share">1</span>
-                                        </div>
-                                        <div class="sapo_news">Ngôi sao người Pháp đã có một màn trình diễn thực sự xuất
-                                            sắc trước đoàn quân của HLV Pep Guardiola. </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <h2><a data-vr-contentbox="position 2_title"
-                                        href="https://www.bongda.com.vn/chelsea-chuan-bi-ra-gia-moi-cho-sieu-bom-80-trieu-bang-d650440.html"
-                                        class="title_list_top_news"
-                                        title="Chelsea chuẩn bị ra giá mới cho 'siêu bom' 80 triệu bảng">Chelsea chuẩn
-                                        bị ra giá mới cho "siêu bom" 80 triệu bảng</a></h2>
-                                <div class="pkg">
-                                    <a data-vr-contentbox="position 2"
-                                        data-vr-contentbox-url="https://www.bongda.com.vn/chelsea-chuan-bi-ra-gia-moi-cho-sieu-bom-80-trieu-bang-d650440.html"
-                                        href="https://www.bongda.com.vn/chelsea-chuan-bi-ra-gia-moi-cho-sieu-bom-80-trieu-bang-d650440.html"
-                                        class="thumbblock thumb260x170 fl"
-                                        title="Chelsea chuẩn bị ra giá mới cho 'siêu bom' 80 triệu bảng"><img class=""
-                                            src="https://media.bongda.com.vn/resize/190x120/files/huy.phandang/2022/07/30/1-0942.jpg"
-                                            width="190" height="120"
-                                            alt="Chelsea chuẩn bị ra giá mới cho 'siêu bom' 80 triệu bảng" /></a>
-                                    <div class="info_list_top_news">
-                                        <div class="time_comment text-left mar_bottom7">
-                                            <span>1 ngày </span>
-                                        </div>
-                                        <div class="sapo_news">Đội chủ sân Stamford Bridge hạ quyết tâm chiêu mộ ngôi
-                                            sao người Pháp trước khi phiên chợ hè đóng cửa.</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <h2><a data-vr-contentbox="position 3_title"
-                                        href="https://www.bongda.com.vn/pep-dong-y-voi-klopp-ve-co-may-re-bong-premier-league-d650398.html"
-                                        class="title_list_top_news"
-                                        title="Pep đồng ý với Klopp về 'cỗ máy rê bóng' Premier League ">Pep đồng ý với
-                                        Klopp về "cỗ máy rê bóng" Premier League </a></h2>
-                                <div class="pkg">
-                                    <a data-vr-contentbox="position 3"
-                                        data-vr-contentbox-url="https://www.bongda.com.vn/pep-dong-y-voi-klopp-ve-co-may-re-bong-premier-league-d650398.html"
-                                        href="https://www.bongda.com.vn/pep-dong-y-voi-klopp-ve-co-may-re-bong-premier-league-d650398.html"
-                                        class="thumbblock thumb260x170 fl"
-                                        title="Pep đồng ý với Klopp về 'cỗ máy rê bóng' Premier League "><img class=""
-                                            src="https://media.bongda.com.vn/resize/190x120/files/trong.le/2022/08/06/screenshot-2022-08-06-142648-1427.jpg"
-                                            width="190" height="120"
-                                            alt="Pep đồng ý với Klopp về 'cỗ máy rê bóng' Premier League " /></a>
-                                    <div class="info_list_top_news">
-                                        <div class="time_comment text-left mar_bottom7">
-                                            <span>1 ngày </span>
-                                            <span class="line_cm">|</span> <span title="Lượt chia sẻ"
-                                                class="icon_share">1</span>
-                                        </div>
-                                        <div class="sapo_news">Cả hai chiến lược gia xuất sắc bậc nhất Premier League
-                                            đều đã công nhận tài năng của ngôi sao người Pháp. </div>
+                                        <div class="sapo_news">{{listSearchItem.description}} </div>
                                     </div>
                                 </div>
                             </li>
                             
+
                             
+                            <div class="clearfix"></div>
                         </ul>
-                        
                     </div>
                     <app-left-menu></app-left-menu>
                 </div>
@@ -115,4 +41,4 @@
             </div>
         </div>
     </div>
-</main>
+</body>
