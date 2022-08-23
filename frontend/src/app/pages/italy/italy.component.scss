@@ -67,8 +67,39 @@ body {
         color: #eb2537;
     }
 
-    .clearfix {
+    .clearfix ::after {
         clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+
+    .time_comment {
+        font-size: 11px;
+        color: #999;
+        text-align: right;
+    }
+
+    .sapo_news {
+        color: #666;
+        text-align: justify;
+        font-size: 15px;
+        margin-top: 12px;
+    }
+
+    .head_news {
+        border-top: 3px solid #eb2537;
+        padding-top: 7px;
+        margin-bottom: 10px;
+
+        a {
+            font-size: 16px;
+            color: #eb2537;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
     }
 
     .grid1190 {
@@ -79,18 +110,7 @@ body {
             background-color: #fff;
             padding: 20px;
 
-            .head_news {
-                border-top: 3px solid #eb2537;
-                padding-top: 7px;
-                margin-bottom: 10px;
 
-                a {
-                    font-size: 16px;
-                    color: #eb2537;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                }
-            }
 
             .left-content {
                 width: 69%;
@@ -156,6 +176,10 @@ body {
                             font-weight: 500;
                         }
 
+                        .sapo_news {
+                            color: #fff;
+                        }
+
                         .time_comment {
                             color: #fff;
                             text-align: left;
@@ -163,12 +187,6 @@ body {
                             font-size: 11px;
                         }
 
-                        .sapo_news {
-                            color: #fff;
-                            text-align: justify;
-                            font-size: 15px;
-                            margin-top: 12px;
-                        }
                     }
 
                     .bg_shadow {
@@ -182,19 +200,67 @@ body {
                     }
 
                     .list_news_cate {
+                        padding-left: 0;
+
                         li {
-                            padding-bottom: 15px;
-                            margin-bottom: 10px;
+                            margin-bottom: 15px;
                             width: 100%;
                             border-bottom: 1px solid #ddd;
                             float: left;
                             margin-right: 3%;
+
                             .thumb260x170 {
-                                width: 260px;
-                                height: 170px;
+                                width: 30%;
+                                height: 30%;
+                            }
+
+                            .thumb {
+                                width: 43%;
+                                padding-right: 10px;
+                            }
+
+                            .info_list_top_news {
+                                .text-left {
+                                    text-align: left;
+                                    margin-bottom: 7px;
+
+                                    .title_list_top_news {
+                                        font-size: 21px;
+                                        font-weight: 400;
+                                        line-height: 19px;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
                             }
                         }
 
+                    }
+
+                    .paging {
+                        text-align: center;
+
+                        a {
+                            background: #f3f3f3;
+                            border: 1px solid #d9d9d9;
+                            padding: 5px 15px;
+                            display: inline-block;
+                            color: #777;
+                            font-size: 15px;
+                            margin: 0 5px;
+                        }
+
+                        a:hover {
+                            background: #fff;
+                            color: #ea0000;
+                            border: 1px solid #ea0000;
+                        }
+
+                        .active {
+                            background: #fff;
+                            color: #ea0000;
+                            border: 1px solid #ea0000;
+                        }
                     }
 
                 }
@@ -203,7 +269,6 @@ body {
                     position: relative;
                     display: block;
                     overflow: hidden;
-                    padding-bottom: 10px;
 
                     img {
                         width: 100%;
@@ -239,63 +304,6 @@ body {
                             li {
                                 border-bottom: none;
                                 padding-bottom: 0;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .right-content {
-                width: 29%;
-
-                .box_right {
-                    margin-bottom: 20px;
-
-                    .list_news_right {
-                        padding-left: 0;
-
-                        .time_comment {
-                            font-size: 11px;
-                            color: #999;
-                            text-align: right;
-                        }
-
-                        .first {
-                            width: 100%;
-                            float: none;
-                            padding: 0;
-
-                            a {
-                                font-size: 16px;
-                            }
-
-                            .mar10 {
-                                margin: 10px;
-
-                                a {
-                                    font-size: 17px;
-                                    font-weight: 700;
-                                    opacity: 0.8;
-                                }
-                            }
-
-                        }
-
-                        li {
-                            width: 50%;
-                            float: left;
-                            padding: 2%;
-
-                            a {
-                                font-size: 13px;
-                            }
-
-                            .mar_top7 {
-                                margin-top: 7px;
-                            }
-
-                            .mar_bottom10 {
-                                margin-bottom: 10px;
                             }
                         }
                     }

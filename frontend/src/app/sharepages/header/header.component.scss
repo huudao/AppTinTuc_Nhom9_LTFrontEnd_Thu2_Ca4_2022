@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     position: sticky !important;
     top: 0;
     z-index: 99999999;
@@ -186,7 +186,7 @@ header{
 .pkg {
     margin: 0;
     padding: 0;
-    
+
 
     li {
         list-style: none;
@@ -334,6 +334,31 @@ header{
                     }
                 }
 
+            }
+
+            .avt {
+                width: 60px;
+                .main_avt {
+                    width: 40px;
+                    margin: 0 auto;
+                    padding: 5px 0 11px ;
+                    img {
+                        width: 100%;
+                        padding-top: 5px;
+                        clip-path: circle(50%);
+                    }
+                    .btn_logout{
+                        text-align: center;
+                        a{
+                            background-color: #f2f2f2;
+                            border-radius: 5px;
+                            border: 1px solid #ccc;
+                            padding: 10px 16px;
+                            margin: 10px 0;
+                        }
+
+                    }
+                }
             }
 
         }
