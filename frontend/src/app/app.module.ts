@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from "ngx-pagination";
 import { BoxNewsHomeComponent } from './sharepages/box-news-home/box-news-home.component';
 import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuong.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TinchuyennhuongComponent } from './pages/tinchuyennhuong/tinchuyennhuon
     HomeComponent,
     BoxNewsHomeComponent,
     HomeComponent,
-    TinchuyennhuongComponent
+    TinchuyennhuongComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
