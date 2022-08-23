@@ -1,0 +1,64 @@
+<body class="">
+    <div class="grid1190 pkg">
+        <div class="content_main pad20 pkg">
+            <div class="pkg">
+                <div class="left-content fl">
+                    <div class="breadcump">
+                        <li><a itemprop="url" href="/"><span itemprop="title">Trang chủ</span></a> » </li>
+                        <li><a itemprop="url" href="#"><span itemprop="title"> {{title}}</span></a></li>
+                    </div>
+                    <div class="news-title-block">
+                        <p class="title-1">{{title}}</p>
+                        <div class="news-short-description f14">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="right_child_content fr" data-vr-zone="Category Page_Bóng đá Ý">
+                        <a *ngFor="let news of dataArray.slice(0,1)" class="thumbblock" routerLink="/detail/{{replaceAll(news.link,'/','?')}}" title="#">
+                            <div class="content_shadow">
+                                <div class="f24">{{news.title}}
+                                </div>
+                                <div class="time_comment">
+                                    <span>{{news.pubDate}} </span>
+                                </div>
+                                <div class="sapo_news">{{news.description}}</div>
+                            </div>
+                            <div class="bg_shadow"></div>
+                            <img src="{{news.image}}"
+                                alt="#" />
+                        </a>
+
+                        <ul class="list_top_news list_news_cate">
+                            <li *ngFor="let news of dataArray |paginate: {
+                                itemsPerPage: 10,
+                                currentPage: page,
+                                totalItems: totalLength
+                                }">
+                                <div class="clear"></div>
+                                <div class="pkg">
+                                    <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock thumb fl" title="#"><img
+                                            src="{{news.image}}"
+                                            alt="Inter Milan chiếm ngôi đầu Serie A" /></a>
+                                    <div class="info_list_top_news">
+                                        <div class="time_comment text-left">
+                                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="title_list_top_news" title="#">{{news.title}}</a>
+                                        </div>
+                                        <div class="sapo_news txt_align_just">{{news.description}}}}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <div style="clear: both"></div>
+                        </ul>
+                        <pagination-controls class="pagination" (pageChange)="page =$event" previousLabel="" nextLabel=""></pagination-controls>
+                    </div>
+                    <app-left-menu></app-left-menu>
+                    
+                </div>
+                <app-right-menu></app-right-menu>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</body>

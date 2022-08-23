@@ -6,24 +6,24 @@
                     <div class="title-type-news"><a href="#">Tin nóng</a></div>
                     <ul>
                         <li *ngFor="let trangChuNewsItem of trangChuResult.slice(9,20)">
-                            <a href="#">{{trangChuNewsItem.title}}</a>
+                            <a routerLink="/detail/{{replaceAll(trangChuNewsItem.link,'/','?')}}">{{trangChuNewsItem.title}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="home-news">
                     <ng-container *ngFor="let trangChuNewsItem of trangChuResult.slice(0,1)">
-                        <a class="main-img-link" href="#">
+                        <a class="main-img-link" routerLink="/detail/{{replaceAll(trangChuNewsItem.link,'/','?')}}">
                             <img src="{{trangChuNewsItem.image}}" alt="">
                         </a>
-                        <a class="title-main" href="#"><h1>{{trangChuNewsItem.title}}</h1></a>
+                        <a class="title-main" routerLink="/detail/{{replaceAll(trangChuNewsItem.link,'/','?')}}"><h1>{{trangChuNewsItem.title}}</h1></a>
                         <p>{{trangChuNewsItem.description}}</p>
                     </ng-container>
                     <ul class="home-news-related">
                         <li *ngFor="let trangChuNewsItem of trangChuResult.slice(1,7)">
-                            <a href="news-related">
+                            <a routerLink="/detail/{{replaceAll(trangChuNewsItem.link,'/','?')}}">
                                 <img src="{{trangChuNewsItem.image}}" alt="">
                             </a>
-                            <a class="title_list_top_news" href="">{{trangChuNewsItem.title}}</a>
+                            <a class="title_list_top_news" routerLink="/detail/{{replaceAll(trangChuNewsItem.link,'/','?')}}">{{trangChuNewsItem.title}}</a>
                         </li>
                     </ul>
                 </div>
@@ -31,13 +31,19 @@
            <div id="lastest-news">
                 <div class="title-type-news"><a href="#">Tin mới nhất</a></div>
                 <ul class="list-lastest-news">
-                    <li *ngFor="let news of tinMoiResult.slice(0,10)">
-                        <a href="">
+                    <li *ngFor="let news of tinMoiResult |paginate: {
+                        itemsPerPage: 10,
+                        currentPage: page,
+                        totalItems: totalLength
+                        }">
+                        <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                             <img src="{{news.image}}" alt="">
                         </a>
-                        <a href="">{{news.title}}</a>
+                        <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                     </li>
                 </ul>
+                <div><pagination-controls class="pagination" (pageChange)="page =$event" previousLabel="" nextLabel=""></pagination-controls></div>
+                
            </div>
            <div class="box-left-home">
                 <app-box-news-home [title]="'Tin chuyển nhượng'" [arrData]="trangChuResult"></app-box-news-home>
@@ -62,32 +68,32 @@
                     <div class="title-type-news"><a href="#">V-League</a></div>
                     <div class="pkg-content">
                         <ng-container *ngFor="let news of vLeagueResult.slice(0,1)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <img src="{{news.image}}" alt="">
                             </a>
-                            <a href="">{{news.title}}</a>    
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>    
                         </ng-container>
                         <hr>
                         <ul>
                             <li *ngFor="let news of vLeagueResult.slice(1,5)">
-                                <a href="">{{news.title}}</a>
+                                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <div class="title-type-news"><a href="#">Bóng đá ý</a></div>
+                    <div class="title-type-news"><a href="">Bóng đá ý</a></div>
                     <div class="pkg-content">
                         <ng-container *ngFor="let news of italyResult.slice(0,1)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <img src="{{news.image}}" alt="">
                             </a>
-                            <a href="">{{news.title}}</a>    
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>    
                         </ng-container>
                         <hr>
                         <ul>
                             <li *ngFor="let news of italyResult.slice(1,5)">
-                                <a href="">{{news.title}}</a>
+                                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                             </li>
                         </ul>
                     </div>
@@ -95,35 +101,35 @@
             </div>
             <div class="pkg">
                 <div>
-                    <div class="title-type-news"><a href="#">Bóng đá đức</a></div>
+                    <div class="title-type-news"><a href="">Bóng đá đức</a></div>
                     <div class="pkg-content">
                         <ng-container *ngFor="let news of germanyResult.slice(0,1)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <img src="{{news.image}}" alt="">
                             </a>
-                            <a href="">{{news.title}}</a>    
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>    
                         </ng-container>
                         <hr>
                         <ul>
                             <li *ngFor="let news of germanyResult.slice(1,5)">
-                                <a href="">{{news.title}}</a>
+                                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <div class="title-type-news"><a href="#">Bóng đá Pháp</a></div>
+                    <div class="title-type-news"><a href="">Bóng đá Pháp</a></div>
                     <div class="pkg-content">
                         <ng-container *ngFor="let news of franceResult.slice(0,1)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <img src="{{news.image}}" alt="">
                             </a>
-                            <a href="">{{news.title}}</a>
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                         </ng-container>
                         <hr>
                         <ul>
                             <li *ngFor="let news of franceResult.slice(1,5)">
-                                <a href="">{{news.title}}</a>
+                                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                             </li>
                         </ul>
                     </div>
@@ -133,14 +139,14 @@
                 <div class="title-type-news"><a href="#">Video</a></div>
                 <div class="videos-content">
                     <ng-container *ngFor="let news of franceResult.slice(0,1)">
-                        <a href="">
+                        <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                             <h2>{{news.title}}</h2>
                             <img src="{{news.image}}" alt="">
                         </a>
                     </ng-container>
                     <ul>
                         <li *ngFor="let news of franceResult.slice(1,5)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <h3>{{news.title}}</h3>
                                 <img src="{{news.image}}" alt="">
                             </a>
@@ -154,14 +160,14 @@
                 <div class="title-type-news"><a href="#">TIN ĐỌC NHIỀU NHẤT</a></div>
                 <div class="most-read-content">
                     <ng-container *ngFor="let news of tinDocNhieuResult.slice(0,1)">
-                        <a href="">
+                        <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                             <img src="{{news.image}}" alt="">
                         </a>
-                        <a href="">{{news.title}}</a>
+                        <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
                     </ng-container>
                     <ul>
                         <li *ngFor="let news of tinDocNhieuResult.slice(1,5)">
-                            <a href="">
+                            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                                 <img src="{{news.image}}" alt="">
                             </a>
                             <a href="">{{news.title}}</a>

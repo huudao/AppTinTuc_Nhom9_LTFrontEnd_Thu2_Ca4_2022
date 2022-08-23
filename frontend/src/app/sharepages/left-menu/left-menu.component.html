@@ -1,0 +1,36 @@
+<div class="left_child_content fl">
+    <br>
+    <div class="news_content pkg" data-vr-zone="Category Page_Tin nóng">
+        <div class="head_news"><a>Tin nóng</a></div>
+        <ul class="list_news">
+            <li *ngFor="let news of tinDocNhieuResult.slice(9,10)">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock" title="#"><img src="{{news.image}}"
+                        alt="#" /></a>
+                <a href="#" class="f14" title="#">{{news.title}}</a>
+            </li>
+            <li *ngFor="let news of tinDocNhieuResult.slice(10,18)">
+                <a data-vr-contentbox="position 1_title" routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f14"
+                    title="{{news.title}}">{{news.title}}</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="news_content pkg mar_bottom20">
+        <div class="head_news"><a>Tiêu điểm</a></div>
+        <ul class="list_news list_trend">
+            <li *ngFor="let news of vietNamResult.slice(10,18)">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock thumb160x100 mar-1 mar_bottom10"
+                    title="{{news.title}}"><img class=""
+                        src="{{news.image}}"
+                        width="160" height="100"
+                        alt="{{news.title}}" /></a>
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}"
+                    class="f14" title="{{news.title}}"><span
+                        data-vr-headline>{{news.title}} </span></a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>

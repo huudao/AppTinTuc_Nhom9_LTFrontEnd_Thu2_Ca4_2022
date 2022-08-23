@@ -1,0 +1,59 @@
+<div class="right-content fr">
+
+    <br>
+    <div class="box_right" data-vr-zone="Category Page_Tin mới nhất">
+        <div class="head_news"><a href="#">Tin mới nhất</a></div>
+        <ul class="list_news_right pkg">
+            <li *ngFor="let news of tinMoiResult.slice(9,10)" class="first">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumb180 thumbblock" title="#"><img
+                        src="{{news.image}}"    
+                        alt="#" /></a>
+                <div class="mar10">
+                    <div class="time_comment mar_top7 mar_bottom10">
+                        <span>{{news.pubDate}} </span>
+                    </div><a data-vr-contentbox="top_title" routerLink="/detail/{{replaceAll(news.link,'/','?')}}" title="#"><span>{{news.title}}</span></a>
+                </div>
+            </li>
+             <li *ngFor="let news of tinMoiResult.slice(11,19)"> <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock" title="#"><img class="news_docnhieu"
+                        src="{{news.image}}"
+                        alt="#" /></a>
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f14" title="{{news.title}}"><span
+                            data-vr-headline>{{news.title}}</span></a>
+                <div class="time_comment mar_top7 mar_bottom7"><span>{{news.pubDate}} </span> </div>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    
+
+    <div class="box_right fl" data-vr-zone="Category Page_Tin đọc nhiều nhất">
+        <div class="head_news" style="margin-top:20px;"><a>Tin đọc nhiều nhất</a></div>
+        <ul class="list_news_right pkg">
+            <li *ngFor="let news of tinDocNhieuResult.slice(0,1)" class="first">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock"
+                    title="Tân binh của Man Utd đã hoàn tất kiểm tra y tế"><img class="news_docnhieu"
+                        src="https://media.bongda.com.vn/resize/300x180/files/hai.phan/2022/08/22/15022197777906-0457.jpg"
+                        alt="#" /></a>
+                <div class="mar10">
+                    <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f18 fontbold news_docnhieu" title="#"><span>Tân binh của Man Utd
+                            đã hoàn tất kiểm tra y tế</span></a>
+                    <div class="time_comment mar_top7 mar_bottom7">
+                        <span>5 giờ </span>
+
+                    </div>
+                </div>
+            </li>
+            <li *ngFor="let news of tinDocNhieuResult.slice(1,9)"> <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock" title="#"><img class="news_docnhieu"
+                        src="{{news.image}}"
+                        alt="#" /></a>
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f14" title="{{news.title}}"><span
+                            data-vr-headline>{{news.title}}</span></a>
+                <div class="time_comment mar_top7 mar_bottom7"><span>{{news.pubDate}} </span> </div>
+            </li>
+            
+
+        </ul>
+    </div>
+
+</div>
+
