@@ -5,6 +5,8 @@ import {Router} from "@angular/router";
 import {SocialAuthService, SocialUser} from "@abacritt/angularx-social-login";
 import { GoogleApiService } from 'src/app/pages/login/google-api.service';
 import { NewsApiService } from 'src/app/service/news-api.service';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -33,6 +35,9 @@ export class HeaderComponent implements OnInit {
   germanyResult : any = [];
   franceResult : any = [];
   videoNewsResult : any = [];
+  showSearch: boolean = false;
+  showMenuLeft: boolean = false;
+  searchTerm: string = "";
   
 
   showSearch:boolean = false;
@@ -129,15 +134,28 @@ export class HeaderComponent implements OnInit {
     this.service.tinDocNhieu().subscribe((result) => {
       this.tinDocNhieuResult = result.rss.channel.item;
     })
+    this.ativatedRouter.params.subscribe(params => {
+      this.searchTerm = params['searchTerm'];
+    });
   }
 
-  public openSearch(){
+  public openSearch() {
     this.showSearch = !this.showSearch;
   }
 
-  public openMenuLeft(){
+  public openMenuLeft() {
     this.showMenuLeft = !this.showMenuLeft;
-    // alert('button menu left')
+  }
+
+  @Output()
+  searchTextChanged:EventEmitter<string> = new EventEmitter<string>();
+  onSearchTextChange() {
+
+    this.searchTextChanged.emit(this.searchTerm);
+  }
+
+  search(){
+    this.router.navigate(['/search',this.searchTerm]);
   }
 
   isLoggedIn():boolean {
@@ -150,5 +168,6 @@ export class HeaderComponent implements OnInit {
     // this.googleService.signOut();
   }
   
+
 
 }

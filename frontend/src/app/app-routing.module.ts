@@ -5,6 +5,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { NewDetailsComponent } from './pages/new-details/new-details.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ItalyComponent } from './pages/italy/italy.component';
+import { ListNewsSearchComponent } from './pages/list-news-search/list-news-search.component';
 import { TinMoiNhatComponent } from './pages/tin-moi-nhat/tin-moi-nhat.component';
 import { TinChuyenNhuongComponent } from './pages/tin-chuyen-nhuong/tin-chuyen-nhuong.component';
 import { BongDaAnhComponent } from './pages/bong-da-anh/bong-da-anh.component';
@@ -28,26 +29,10 @@ const routes: Routes = [
   {path: 'News', component: NewsComponent},
   {path: 'detail/:link', component: NewDetailsComponent},
   {path: 'NewsDetails', component: NewDetailsComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'NewsDetails', component: NewDetailsComponent},
-  {path: 'italy', component: ItalyComponent},
-  {path: 'tinmoi', component: TinMoiNhatComponent},
-  {path: 'tinchuyennhuong', component: TinChuyenNhuongComponent},
-  {path: 'anh', component: BongDaAnhComponent},
-  {path: 'taybannha', component: BongDaSpainComponent},
-  {path: 'championsleague', component: ChampionsLeageComponent},
-  {path: 'vietnam', component: VietNamComponent},
-  {path: 'cacdoituyenquocgia', component: ClubsVietNamComponent},
-  {path: 'vleague', component: VLeagueComponent},
-  {path: 'cupquocgia', component: CupQuocGiaComponent},
-  {path: 'hangnhat', component: HangNhatComponent},
-  {path: 'giaitre', component: GiaiTreComponent},
-  {path: 'bongdanu', component: BongDaNuComponent},
-  {path: 'vff', component: VffComponent},
-  {path: 'hautruong', component: HauTruongComponent},
-  {path: 'video', component: VideoComponent},
-  {path: 'duc', component: BongDaSpainComponent},
-  {path: 'phap', component: BongDaPhapComponent}
+  {path: 'Italy', component: ItalyComponent},
+  {path: 'search/:searchTerm', component: ListNewsSearchComponent}
+
+
 ];
 
 @NgModule({

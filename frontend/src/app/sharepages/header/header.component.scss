@@ -230,12 +230,12 @@ header {
 
             }
 
-            .btn_search_active {
+            .btn_search:hover {
                 background-color: #e2e2e2;
                 color: #ea0000;
             }
 
-            :hover {
+            .btn_search_active {
                 background-color: #e2e2e2;
                 color: #ea0000;
             }
@@ -348,7 +348,7 @@ header {
                 .main_avt {
                     width: 40px;
                     margin: 0 auto;
-                    padding: 5px 0 11px ;
+                    // padding: 5px 0 11px ;
                     img {
                         width: 100%;
                         margin-top: 5px;

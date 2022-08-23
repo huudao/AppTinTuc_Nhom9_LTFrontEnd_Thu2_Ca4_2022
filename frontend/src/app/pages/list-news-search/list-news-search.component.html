@@ -1,0 +1,44 @@
+
+<body>
+    <div class="grid1190 pkg">
+        <div class="content_main pad20 pkg">
+            <div class="pkg">
+                <div class="left-content fl">
+                    <div class="breadcump">
+                        <li><a itemprop="url" href="/"><span itemprop="title">Trang chủ</span></a> »</li>
+                        <li><a itemprop="url" href="#"><span itemprop="title">Tìm
+                                    kiếm tin tức liên quan đến "{{searchText}}"  </span></a></li>
+                    </div>
+                    <div class="right_child_content fr" data-vr-zone="Search page_List News">
+                        <div class="head_news" style="border: none; padding-top: 0;">Tìm kiếm tin tức liên quan đến
+                            "{{searchText}}"</div>
+
+                        <ul class="list_top_news list_news_cate">
+                            <li *ngFor="let listSearchItem of arrSearchResult |filter:searchText|  paginate: { itemsPerPage: 8, currentPage: page } ">
+                                <h2><a data-vr-contentbox="position 1_title" href="#" class="title_list_top_news"
+                                        title="{{listSearchItem.title}}">{{listSearchItem.title}}</a></h2>
+                                <div class="pkg">
+                                    <a href="#"
+                                        class="thumbblock thumb fl"
+                                        title="{{listSearchItem.title}}"><img class=""
+                                            src="{{listSearchItem.image}}"
+                                            width="190" height="120"
+                                            alt="{{listSearchItem.title}}" /></a>
+                                    <div class="info_list_top_news">
+                                        <div class="sapo_news">{{listSearchItem.description}} </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+
+                            
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                    <app-left-menu></app-left-menu>
+                </div>
+                <app-right-menu></app-right-menu>
+            </div>
+        </div>
+    </div>
+</body>
