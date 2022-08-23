@@ -30,8 +30,26 @@ const routes: Routes = [
   {path: 'detail/:link', component: NewDetailsComponent},
   {path: 'NewsDetails', component: NewDetailsComponent},
   {path: 'Italy', component: ItalyComponent},
-  {path: 'search/:searchTerm', component: ListNewsSearchComponent}
-
+  {path: 'search/:searchTerm', component: ListNewsSearchComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'italy', component: ItalyComponent},
+  {path: 'tinmoi', component: TinMoiNhatComponent},
+  {path: 'tinchuyennhuong', component: TinChuyenNhuongComponent},
+  {path: 'anh', component: BongDaAnhComponent},
+  {path: 'taybannha', component: BongDaSpainComponent},
+  {path: 'championsleague', component: ChampionsLeageComponent},
+  {path: 'vietnam', component: VietNamComponent},
+  {path: 'cacdoituyenquocgia', component: ClubsVietNamComponent},
+  {path: 'vleague', component: VLeagueComponent},
+  {path: 'cupquocgia', component: CupQuocGiaComponent},
+  {path: 'hangnhat', component: HangNhatComponent},
+  {path: 'giaitre', component: GiaiTreComponent},
+  {path: 'bongdanu', component: BongDaNuComponent},
+  {path: 'vff', component: VffComponent},
+  {path: 'hautruong', component: HauTruongComponent},
+  {path: 'video', component: VideoComponent},
+  {path: 'duc', component: BongDaSpainComponent},
+  {path: 'phap', component: BongDaPhapComponent}
 
 ];
 

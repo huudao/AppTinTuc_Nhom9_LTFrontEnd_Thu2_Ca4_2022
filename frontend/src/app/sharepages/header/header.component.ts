@@ -5,8 +5,8 @@ import {Router} from "@angular/router";
 import {SocialAuthService, SocialUser} from "@abacritt/angularx-social-login";
 import { GoogleApiService } from 'src/app/pages/login/google-api.service';
 import { NewsApiService } from 'src/app/service/news-api.service';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {EventEmitter, Output } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-header',
