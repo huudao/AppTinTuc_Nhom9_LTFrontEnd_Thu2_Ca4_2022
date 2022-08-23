@@ -2,16 +2,16 @@
 <div class="main-content">
     <div>
         <ng-container *ngFor="let news of arrData.slice(0,1)">
-            <a href=""><img src="{{news.image}}" alt=""></a>
-            <a href="">{{news.title}}</a>
+            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}"><img src="{{news.image}}" alt=""></a>
+            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
             <p>{{news.description}}</p>
         </ng-container>
         </div>
     <ul class="custom_scroll">
         <li *ngFor="let news of arrData.slice(1,12)">
-            <a href="">
+            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">
                 <img src="{{news.image}}" alt=""></a>
-            <a href="">{{news.title}}</a>
+            <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}">{{news.title}}</a>
         </li>
     </ul>
 </div>

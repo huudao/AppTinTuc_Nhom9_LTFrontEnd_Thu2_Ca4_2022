@@ -3,51 +3,14 @@
     <div class="news_content pkg" data-vr-zone="Category Page_Tin nóng">
         <div class="head_news"><a>Tin nóng</a></div>
         <ul class="list_news">
-            <li>
-                <a href="#" class="thumbblock" title="#"><img src="/assets/img/casemiro-081612.jpg"
+            <li *ngFor="let news of tinDocNhieuResult.slice(9,10)">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock" title="#"><img src="{{news.image}}"
                         alt="#" /></a>
-                <a href="#" class="f14" title="#">Man Utd
-                    chốt số áo huyền thoại cho Casemiro</a>
+                <a href="#" class="f14" title="#">{{news.title}}</a>
             </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
-            </li>
-            <li>
-                <a data-vr-contentbox="position 1_title" href="#" class="f14"
-                    title="Man Utd muốn nổ cả 2 bom tấn ở hành lang cánh">Man
-                    Utd muốn nổ cả 2 bom tấn ở hành lang cánh</a>
+            <li *ngFor="let news of tinDocNhieuResult.slice(10,18)">
+                <a data-vr-contentbox="position 1_title" routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f14"
+                    title="{{news.title}}">{{news.title}}</a>
             </li>
 
         </ul>
@@ -56,80 +19,15 @@
     <div class="news_content pkg mar_bottom20">
         <div class="head_news"><a>Tiêu điểm</a></div>
         <ul class="list_news list_trend">
-            <li>
-                <a href="#" class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="Man Utd vừa hoàn tất thương vụ khiến tất cả ngỡ ngàng "><img class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/news/2022/08/22/man-utd-vua-hoan-tat-thuong-vu-gay-ngo-ngang-ca-mua-he-083704.jpg"
+            <li *ngFor="let news of vietNamResult.slice(10,18)">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock thumb160x100 mar-1 mar_bottom10"
+                    title="{{news.title}}"><img class=""
+                        src="{{news.image}}"
                         width="160" height="100"
-                        alt="Man Utd vừa hoàn tất thương vụ khiến tất cả ngỡ ngàng " /></a>
-                <a href="https://www.bongda.com.vn/man-utd-vua-hoan-tat-thuong-vu-khien-tat-ca-ngo-ngang-d650389.html"
-                    class="f14" title="Man Utd vừa hoàn tất thương vụ khiến tất cả ngỡ ngàng "><span
-                        data-vr-headline>Man Utd vừa hoàn tất thương vụ khiến tất cả ngỡ
-                        ngàng </span></a>
-            </li>
-            <li>
-                <a href="https://www.bongda.com.vn/2-diem-sang--toi-cua-arsenal-sau-tran-bournemouth-d650387.html"
-                    class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="2 điểm sáng - tối của Arsenal sau trận Bournemouth"><img class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/huy.phandang/2022/08/21/0-1004.jpg"
-                        width="160" height="100"
-                        alt="2 điểm sáng - tối của Arsenal sau trận Bournemouth" /></a>
-                <a href="https://www.bongda.com.vn/2-diem-sang--toi-cua-arsenal-sau-tran-bournemouth-d650387.html"
-                    class="f14" title="2 điểm sáng - tối của Arsenal sau trận Bournemouth"><span
-                        data-vr-headline>2 điểm sáng - tối của Arsenal sau trận
-                        Bournemouth</span></a>
-            </li>
-            <li>
-                <a href="https://www.bongda.com.vn/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-d650377.html"
-                    class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài"><img
-                        class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/news/2022/08/22/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-061531.jpg"
-                        width="160" height="100"
-                        alt="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài" /></a>
-                <a href="https://www.bongda.com.vn/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-d650377.html"
-                    class="f14"
-                    title="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài"><span
-                        data-vr-headline>Đội hình Man Utd đấu Liverpool: Varane xung trận;
-                        Fernandes ngồi ngoài</span></a>
-            </li>
-            <li>
-                <a href="https://www.bongda.com.vn/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-d650367.html"
-                    class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="4 quyết định sai lầm của Tuchel trong trận thua Leeds"><img class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/news/2022/08/22/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-052830.png"
-                        width="160" height="100"
-                        alt="4 quyết định sai lầm của Tuchel trong trận thua Leeds" /></a>
-                <a href="https://www.bongda.com.vn/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-d650367.html"
-                    class="f14" title="4 quyết định sai lầm của Tuchel trong trận thua Leeds"><span
-                        data-vr-headline>4 quyết định sai lầm của Tuchel trong trận thua
-                        Leeds</span></a>
-            </li>
-            <li>
-                <a href="https://www.bongda.com.vn/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-d650377.html"
-                    class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài"><img
-                        class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/news/2022/08/22/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-061531.jpg"
-                        width="160" height="100"
-                        alt="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài" /></a>
-                <a href="https://www.bongda.com.vn/doi-hinh-man-utd-dau-liverpool-varane-xung-tran-fernandes-ngoi-ngoai-d650377.html"
-                    class="f14"
-                    title="Đội hình Man Utd đấu Liverpool: Varane xung trận; Fernandes ngồi ngoài"><span
-                        data-vr-headline>Đội hình Man Utd đấu Liverpool: Varane xung trận;
-                        Fernandes ngồi ngoài</span></a>
-            </li>
-            <li>
-                <a href="https://www.bongda.com.vn/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-d650367.html"
-                    class="thumbblock thumb160x100 mar-1 mar_bottom10"
-                    title="4 quyết định sai lầm của Tuchel trong trận thua Leeds"><img class=""
-                        src="https://media.bongda.com.vn/resize/160x100/files/news/2022/08/22/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-052830.png"
-                        width="160" height="100"
-                        alt="4 quyết định sai lầm của Tuchel trong trận thua Leeds" /></a>
-                <a href="https://www.bongda.com.vn/4-quyet-dinh-sai-lam-cua-tuchel-trong-tran-thua-leeds-d650367.html"
-                    class="f14" title="4 quyết định sai lầm của Tuchel trong trận thua Leeds"><span
-                        data-vr-headline>4 quyết định sai lầm của Tuchel trong trận thua
-                        Leeds</span></a>
+                        alt="{{news.title}}" /></a>
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}"
+                    class="f14" title="{{news.title}}"><span
+                        data-vr-headline>{{news.title}} </span></a>
             </li>
 
         </ul>

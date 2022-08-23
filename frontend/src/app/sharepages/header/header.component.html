@@ -1,8 +1,10 @@
 <header>
     <ul class="menu_left_mobile" [class.menu_left_mobile_active]="showMenuLeft">
         <li><a href="/">Trang chủ</a></li>
-        <li><a href="#">Đăng nhập</a></li>
-        <li><a href="#">Đăng ký</a></li>
+        <ng-container *ngIf="!user">
+            <li><a [routerLink]="'login'">Đăng nhập</a></li>  
+            <li><a href="#">Đăng ký</a></li>
+        </ng-container>
         <li><a href="#"> MỚI NHẤT</a></li>
         <li class="">
             <a href="#">
@@ -241,13 +243,13 @@
                     </div>
                 </div>
                 <ul class="menu_main fr">
-                    <li><a href="/" class="icon_home"> <i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li><a href="#"> MỚI NHẤT</a></li>
+                    <li><a [routerLink]="''" class="icon_home"> <i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a [routerLink]="'tinmoi'"> MỚI NHẤT </a></li>
                     <li class="0   ">
-                        <a href="#"> Chuyển nhượng </a>
+                        <a [routerLink]="'tinchuyennhuong'"> Chuyển nhượng </a>
                     </li>
                     <li class="1   ">
-                        <a href="#"> Anh </a>
+                        <a [routerLink]="'anh'"> Anh </a>
                         <ul class="sub_menu_main">
                             <li>
                                 <a href="#">
@@ -268,7 +270,7 @@
                         </ul>
                     </li>
                     <li class="2   ">
-                        <a href="#"> TBN </a>
+                        <a [routerLink]="'taybannha'"> TBN </a>
                         <ul class="sub_menu_main">
                             <li>
                                 <a href="#">
@@ -281,7 +283,7 @@
                         </ul>
                     </li>
                     <li class="3   ">
-                        <a href="#"> Ý </a>
+                        <a [routerLink]="'italy'"> Ý </a>
                         <ul class="sub_menu_main">
                             <li>
                                 <a href="#">
@@ -294,7 +296,7 @@
                         </ul>
                     </li>
                     <li class="4   ">
-                        <a href="#"> Đức </a>
+                        <a [routerLink]="'duc'"> Đức </a>
                         <ul class="sub_menu_main">
                             <li>
                                 <a href="#">
@@ -307,7 +309,7 @@
                         </ul>
                     </li>
                     <li class="5   ">
-                        <a href="#"> Pháp </a>
+                        <a [routerLink]="'phap'"> Pháp </a>
                         <ul class="sub_menu_main">
                             <li>
                                 <a href="#">
@@ -320,81 +322,78 @@
                         </ul>
                     </li>
                     <li class="6   ">
-                        <a href="#"> Champions League </a>
+                        <a [routerLink]="'championsleague'"> Champions League </a>
                     </li>
                     <li class="7   ">
-                        <a href="#"> Việt Nam </a>
+                        <a [routerLink]="'vietnam'"> Việt Nam </a>
                         <ul class="sub_menu_main">
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'cacdoituyenquocgia'">
                                     Các ĐTQG </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'vleague'">
                                     V-League </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'cupquocgia'">
                                     Cúp Quốc Gia </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'hangnhat'">
                                     Hạng Nhất </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'giaitre'">
                                     Giải Trẻ </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a [routerLink]="'bongdanu'">
                                     Bóng Đá Nữ </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    VFF </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Tin Khác </a>
+                                <a [routerLink]="'vff'"> VFF </a>
                             </li>
                         </ul>
                     </li>
                     <li class="8   ">
-                        <a href="#"> Hậu trường </a>
+                        <a [routerLink]="'hautruong'"> Hậu trường </a>
                     </li>
                     <li class="9  menu_full">
-                        <a href="#"> Video </a>
+                        <a [routerLink]="'video'"> Video </a>
                     </li>
-                    <li class="user" style="width: 60px; text-align: center;">
-                        <a href="#"> <i class="fa-solid fa-user"></i> </a>
-                        <ul class="sub_menu_main">
-                            <li style="text-align: left;">
-                                <a href="#">
-                                    Đăng nhập</a>
-                            </li>
-                            <li style="text-align: left;">
-                                <a href="#">
-                                    Đăng ký </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- <li class="avt">
-                        <div class="main_avt">
-                            <img src="../assets/img/avt.jpg">
-                            <ul class="sub_menu_main menu_avt">
-                                <li>
-                                    <a href="#">
+                    <ng-container *ngIf="!user; else loginSuccess">
+                        <li class="user" style="width: 60px; text-align: center;">
+                            <a href="#"> <i class="fa-solid fa-user"></i> </a>
+                            <ul class="sub_menu_main">
+                                <li style="text-align: left;">
+                                    <a [routerLink]="'login'">
                                         Đăng nhập</a>
                                 </li>
-                                <li class="btn_logout" >
-
+                                <li style="text-align: left;">
                                     <a href="#">
-                                        Đăng xuất </a>
+                                        Đăng ký </a>
                                 </li>
                             </ul>
-                        </div>
-                    </li> -->
-
+                        </li>
+                    </ng-container>
+                    <ng-template #loginSuccess>    
+                        <li class="avt">
+                            <div class="main_avt">
+                                <img src="{{user.photoUrl}}">
+                                <ul class="sub_menu_main menu_avt">
+                                    <li>
+                                        <div href="javascript:void(0)">{{user.name}}</div>
+                                    </li>
+                                    <li class="btn_logout" >
+                                        
+                                        <a (click)="logout()" style="cursor: pointer">
+                                            Đăng xuất </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ng-template>
 
                 </ul>
             </div>

@@ -4,16 +4,14 @@
     <div class="box_right" data-vr-zone="Category Page_Tin mới nhất">
         <div class="head_news"><a href="#">Tin mới nhất</a></div>
         <ul class="list_news_right pkg">
-            <li class="first">
-                <a href="#" class="thumb180 thumbblock" title="#"><img
-                        src="https://media.bongda.com.vn/resize/300x180/files/phi.do/2022/08/22/zinchenko-1008.jpg"
+            <li *ngFor="let news of tinMoiResult.slice(9,10)" class="first">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumb180 thumbblock" title="#"><img
+                        src="{{news.image}}"    
                         alt="#" /></a>
                 <div class="mar10">
                     <div class="time_comment mar_top7 mar_bottom10">
-                        <span>2 phút </span>
-                    </div><a data-vr-contentbox="top_title" href="#" title="#"><span>Arteta nêu bật 2 ưu
-                            điểm của
-                            Zinchenko</span></a>
+                        <span>{{news.pubDate}} </span>
+                    </div><a data-vr-contentbox="top_title" routerLink="/detail/{{replaceAll(news.link,'/','?')}}" title="#"><span>{{news.title}}</span></a>
                 </div>
             </li>
             <li>
@@ -88,13 +86,13 @@
     <div class="box_right fl" data-vr-zone="Category Page_Tin đọc nhiều nhất">
         <div class="head_news" style="margin-top:20px;"><a>Tin đọc nhiều nhất</a></div>
         <ul class="list_news_right pkg">
-            <li class="first">
-                <a href="#" class="thumbblock"
+            <li *ngFor="let news of tinDocNhieuResult.slice(0,1)" class="first">
+                <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock"
                     title="Tân binh của Man Utd đã hoàn tất kiểm tra y tế"><img class="news_docnhieu"
                         src="https://media.bongda.com.vn/resize/300x180/files/hai.phan/2022/08/22/15022197777906-0457.jpg"
                         alt="#" /></a>
                 <div class="mar10">
-                    <a href="#" class="f18 fontbold news_docnhieu" title="#"><span>Tân binh của Man Utd
+                    <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="f18 fontbold news_docnhieu" title="#"><span>Tân binh của Man Utd
                             đã hoàn tất kiểm tra y tế</span></a>
                     <div class="time_comment mar_top7 mar_bottom7">
                         <span>5 giờ </span>
@@ -102,8 +100,8 @@
                     </div>
                 </div>
             </li>
-            <li> <a href="#" class="thumbblock" title="#"><img class="news_docnhieu"
-                        src="https://media.bongda.com.vn/resize/140x90/files/news/2022/08/22/james-garner-ngac-nhien-voi-man-united-052835.jpg"
+            <li *ngFor="let news of tinDocNhieuResult.slice(1,9)"> <a routerLink="/detail/{{replaceAll(news.link,'/','?')}}" class="thumbblock" title="#"><img class="news_docnhieu"
+                        src="{{news.image}}"
                         alt="#" /></a>
                 <a href="#" class="f14" title="James Garner ngạc nhiên với Man United"><span
                             data-vr-headline>James Garner ngạc nhiên với Man United</span></a>

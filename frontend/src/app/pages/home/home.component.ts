@@ -9,7 +9,9 @@ import { NewsApiService } from 'src/app/service/news-api.service';
 export class HomeComponent implements OnInit {
 
   constructor(private service: NewsApiService) {}
-
+  
+  totalLength:any;
+  page:number=1;
   trangChuResult : any = [];
   // trangChuResultMix : any = [];
   chuyenNhuongResult : any = [];
@@ -39,11 +41,13 @@ export class HomeComponent implements OnInit {
   // second : number = 0;
 
   newPersons : any = [];
+  
 
   ngOnInit(): void {
     this.service.trangChu().subscribe((result) => {
       console.log(result);
       this.trangChuResult = result.rss.channel.item;
+      this.totalLength = result.rss.channel.item.length;
       // this.trangChuResultMix = this.trangChuResult.sort(() => Math.random() - 0.5);
     })
 
@@ -98,6 +102,10 @@ export class HomeComponent implements OnInit {
     this.service.tinDocNhieu().subscribe((result) => {
       this.tinDocNhieuResult = result.rss.channel.item;
     })
+  }
+  
+  replaceAll(str: string, search: string, replacement: string) {
+    return str.replace(new RegExp(search, 'g'), replacement);
   }
   
 }
