@@ -78,7 +78,8 @@ import { RightMenuComponent } from './sharepages/right-menu/right-menu.component
     BongDaNuComponent,
     VffComponent,
     HauTruongComponent,
-    VideoComponent
+    VideoComponent,
+    ListNewsSearchComponent
   ],
   imports: [
     BrowserModule,

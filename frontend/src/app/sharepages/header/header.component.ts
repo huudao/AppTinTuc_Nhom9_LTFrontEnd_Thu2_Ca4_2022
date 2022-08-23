@@ -38,15 +38,11 @@ export class HeaderComponent implements OnInit {
   showSearch: boolean = false;
   showMenuLeft: boolean = false;
   searchTerm: string = "";
-  
-
-  showSearch:boolean = false;
-  showMenuLeft:boolean = false;
 
   user: any;
   loggedIn!: boolean;
 
-  constructor(private service: NewsApiService ,private readonly googleService: GoogleApiService,private router: Router, public socialAuthService: SocialAuthService) { }
+  constructor(private ativatedRouter: ActivatedRoute, private service: NewsApiService ,private readonly googleService: GoogleApiService,private router: Router, public socialAuthService: SocialAuthService) { }
 
   ngOnInit(): void {
     this.socialAuthService.authState.subscribe((user) => {
