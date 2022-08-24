@@ -47,6 +47,7 @@ import { VideoComponent } from './pages/video/video.component';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
 import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -92,9 +93,28 @@ import { RightMenuComponent } from './sharepages/right-menu/right-menu.component
     MdbTabsModule,
     MdbFormsModule,
     SocialLoginModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [ MdbCookiesManagementService, MdbStorageManagementService, {
+    provide: 'SocialAuthServiceConfig',
+    useValue: {
+      autoLogin: false,
+      providers: [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider("334644398802455")
+        },
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider("673998932925-t5a5tat8u3f03886mbqqi8tlhguul6eb.apps.googleusercontent.com")
+        },
+      ],
+      onError:(err)=> {
+        console.log(err)
+      }
+    } as SocialAuthServiceConfig
+  }, SocialAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
