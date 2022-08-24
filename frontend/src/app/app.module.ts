@@ -48,6 +48,7 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
 import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
 import { RouterModule } from '@angular/router';
+import { ScrollToTopComponent } from './pages/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { RouterModule } from '@angular/router';
     VffComponent,
     HauTruongComponent,
     VideoComponent,
-    ListNewsSearchComponent
+    ListNewsSearchComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
