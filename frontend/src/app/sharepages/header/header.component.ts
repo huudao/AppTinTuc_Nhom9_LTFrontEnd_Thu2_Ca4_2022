@@ -5,8 +5,8 @@ import {Router} from "@angular/router";
 import {SocialAuthService, SocialUser} from "@abacritt/angularx-social-login";
 import { GoogleApiService } from 'src/app/pages/login/google-api.service';
 import { NewsApiService } from 'src/app/service/news-api.service';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {EventEmitter, Output } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -38,15 +38,11 @@ export class HeaderComponent implements OnInit {
   showSearch: boolean = false;
   showMenuLeft: boolean = false;
   searchTerm: string = "";
-  
-
-  showSearch:boolean = false;
-  showMenuLeft:boolean = false;
 
   user: any;
   loggedIn!: boolean;
 
-  constructor(private service: NewsApiService ,private readonly googleService: GoogleApiService,private router: Router, public socialAuthService: SocialAuthService) { }
+  constructor(private ativatedRouter: ActivatedRoute, private service: NewsApiService ,private readonly googleService: GoogleApiService,private router: Router, public socialAuthService: SocialAuthService) { }
 
   ngOnInit(): void {
     this.socialAuthService.authState.subscribe((user) => {

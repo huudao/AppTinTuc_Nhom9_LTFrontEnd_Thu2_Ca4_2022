@@ -3,7 +3,6 @@ import { NewsApiService } from 'src/app/service/news-api.service';
 import { forkJoin } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-list-news-search',
   templateUrl: './list-news-search.component.html',
