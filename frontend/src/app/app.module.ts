@@ -44,11 +44,12 @@ import { BongDaNuComponent } from './pages/bong-da-nu/bong-da-nu.component';
 import { VffComponent } from './pages/vff/vff.component';
 import { HauTruongComponent } from './pages/hau-truong/hau-truong.component';
 import { VideoComponent } from './pages/video/video.component';
-import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { LeftMenuComponent } from './sharepages/left-menu/left-menu.component';
 import { RightMenuComponent } from './sharepages/right-menu/right-menu.component';
 import { RouterModule } from '@angular/router';
 import { ScrollToTopComponent } from './pages/scroll-to-top/scroll-to-top.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
